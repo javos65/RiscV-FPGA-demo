@@ -31,5 +31,5 @@ Key is to add the post-constain file to constain the IO pins of the RX/TX and SC
 + ![logo](/images/Sysmem0.jpg?raw=true)
 
 ## Licenses
-Propel is license free, but yo udo need to apply for a free license via their website.
+Propel is license free, but you do need to apply for a free license via their website after registration.
 + [Tools / License overview](https://www.latticesemi.com/Support/Licensing)
