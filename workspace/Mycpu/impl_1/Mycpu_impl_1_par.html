@@ -1,0 +1,501 @@
+<HTML>
+<HEAD>
+<TITLE>Place & Route Report</TITLE>
+<link href="file:///C:/lscc/radiant/2023.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2023.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Par"></A>Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Wed Jun 26 14:47:25 2024
+
+Command Line: par -w -n 10 -t 1 -s 1 -cores 1 -stopzero -hsp m -exp \
+	parPathBased=OFF Mycpu_impl_1_map.udb Mycpu_impl_1.udb 
+
+
+<A name="par_cts"></A><B><U><big>Cost Table Summary</big></U></B>
+Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
+Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
+----------   --------     -----------     ------       ---------------    -----------     ----     ------
+<span style="background-color:red">5_3   *      0            -6.358          7202964      -                  -               01:03    Completed</span>
+5_1          0            -7.286          7558001      -                  -               01:03    Completed
+5_2          0            -7.435          7985719      -                  -               01:10    Completed
+5_4          -            -               -            -                  -               40       Skipped
+5_5          -            -               -            -                  -               44       Skipped
+5_6          -            -               -            -                  -               33       Skipped
+5_7          -            -               -            -                  -               30       Skipped
+5_8          -            -               -            -                  -               38       Skipped
+5_9          -            -               -            -                  -               37       Skipped
+5_10         -            -               -            -                  -               44       Skipped
+* : Design saved.
+
+INFO &lt;60001138&gt; - par: Iterations 5_4, 5_5, 5_6, 5_7, 5_8, 5_9, and 5_10 were terminated during the PAR process to save total runtime, as it was determined they would not improve upon a timing result achieved in a previous iteration.
+
+Total (real) run time for 10-seed: 7 mins 42 secs 
+
+par done!
+
+Lattice Place and Route Report for Design &quot;Mycpu_impl_1_map.udb&quot;
+Wed Jun 26 14:49:38 2024
+
+
+<A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
+PAR: Place And Route Radiant Software (64-bit) 2023.2.1.288.0.
+Command Line: par -w -t 3 -hsp m -exp \
+	parPathBased=OFF:aseRouteInitSetupSlackThreshold=-7.286 Mycpu_impl_1_map.udb \
+	Mycpu_impl_1_par.dir/5_3.udb 
+
+Loading Mycpu_impl_1_map.udb ...
+Loading device for application GENERIC from file &apos;jd5s30.nph&apos; in environment: C:/lscc/radiant/2023.2/ispfpga.
+Package Status:                     Final          Version 4.
+Performance Hardware Data Status:   Final          Version 107.1.
+
+
+
+Design:  Mycpu
+Family:  LFD2NX
+Device:  LFD2NX-40
+Package: CABGA196
+Performance Grade:   7_High-Performance_1.0V
+WARNING &lt;71003020&gt; - par: Top module port &apos;TCK&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TMS&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TDI&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TDO&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TCK&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TMS&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TDI&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TDO&apos; does not connect to anything.
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE           5958/16128        36% used
+
+Number of Signals: 9940
+Number of Connections: 30009
+
+<A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
+
+   VHI                   1/1           100% used
+   SIOLOGIC              9/186           5% used
+   DCC                   1/62            2% used
+   EBR                  18/84           21% used
+   MULT9                12/112          11% used
+   MULT18                6/56           11% used
+   MULT18X36             2/28            7% used
+   REG18                10/112           9% used
+   PREADD9              12/112          11% used
+   SEIO33               13/150           9% used
+                        13/92           14% bonded
+   OSC                   1/1           100% used
+   PLL                   1/3            33% used
+   CONFIG_JTAG           1/1           100% used
+   SLICE              5958/16128        37% used
+     LUT              5252/32256        16% used
+     REG              3019/32256         9% used
+
+
+Pin Constraint Summary:
+   7 out of 13 pins locked (53% locked).
+INFO: signal &apos;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1&apos; driving mixed DCC load types requires multi-feedlines.
+
+INFO: signal &apos;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1&apos; driving mixed DCC load types requires multi-feedlines.
+.
+Starting Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 5 secs 
+...........
+Finished Placer Phase 0 (HIER). CPU time: 2 secs , REAL time: 7 secs 
+
+
+Starting Placer Phase 1. CPU time: 2 secs , REAL time: 8 secs 
+..  ..
+..................
+
+Placer score = 3941661.
+Finished Placer Phase 1. CPU time: 5 secs , REAL time: 24 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  3766498
+Finished Placer Phase 2.  CPU time: 5 secs , REAL time: 25 secs 
+
+
+
+<A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 26 (0%)
+  PLL        : 1 out of 3 (33%)
+  DCS        : 0 out of 1 (0%)
+  DCC        : 1 out of 62 (1%)
+  ECLKDIV    : 0 out of 12 (0%)
+  PCLKDIV    : 0 out of 1 (0%)
+  OSC        : 1 out of 1 (100%)
+  PCIE       : 0 out of 1 (0%)
+
+Global Clocks:
+  PRIMARY &quot;osc0_inst_hf_clk_out_o_net&quot; from HFCLKOUT on comp &quot;osc0_inst.lscc_osc_inst.gen_osca.u_OSC_A.OSCA_inst&quot; on site &quot;OSC_CORE_R1C77&quot;, clk load = 1, ce load = 0, sr load = 0
+  PRIMARY &quot;pll0_inst_clkop_o_net&quot; from CLKOP on comp &quot;pll0_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst&quot; on PLL site &quot;PLL_LLC&quot;, clk load = 1941, ce load = 0, sr load = 0
+  PRIMARY &quot;pll0_inst_clkos_o_net&quot; from CLKOS on comp &quot;pll0_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst&quot; on PLL site &quot;PLL_LLC&quot;, clk load = 844, ce load = 0, sr load = 0
+  PRIMARY &quot;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1&quot; from JTCK on comp &quot;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.genblk3.jtag.jtagg_u&quot; on site &quot;TCONFIG_JTAG_CORE73&quot;, clk load = 58, ce load = 0, sr load = 0
+  PRIMARY &quot;cpu0_inst_system_resetn_o_net&quot; from Q0 on comp &quot;SLICE_1231&quot; on site &quot;R38C49A&quot;, clk load = 0, ce load = 0, sr load = 716
+  PRIMARY DCC &quot;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.NbbICH&quot; from comp &quot;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.Iohm428if6nkdrszemy5wAmC&quot; on DCC site &quot;DCC_T0&quot;, total # of clk loads = 83
+     - DCC input &quot;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1&quot; from JTCK on comp &quot;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.genblk3.jtag.jtagg_u&quot; on site &quot;TCONFIG_JTAG_CORE73&quot;
+
+  PRIMARY  : 6 out of 16 (37%)
+
+Edge Clocks:
+
+  No edge clock selected.
+
+
+
+
+
+I/O Usage Summary (final):
+   13 out of 150 (8.7%) SEIO33 sites used.
+   13 out of 92 (14.1%) bonded SEIO33 sites used.
+   Number of SEIO33 components: 13; differential: 0
+   Number of Vref pins used: 0
+   0 out of 74 (0.0%) SEIO18 sites used.
+   0 out of 58 (0.0%) bonded SEIO18 sites used.
+   Number of SEIO18 components: 0; differential: 0
+   0 out of 37 (0.0%) DIFFIO18 sites used.
+   0 out of 29 (0.0%) bonded DIFFIO18 sites used.
+   Number of DIFFIO18 components: 0; differential: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 3 / 12 ( 25%) | 3.3V       | -          | -          |
+| 1        | 2 / 17 ( 11%) | 3.3V       | -          | -          |
+| 2        | 8 / 20 ( 40%) | 3.3V       | -          | -          |
+| 3        | 0 / 32 (  0%) | -          | -          | -          |
+| 4        | 0 / 16 (  0%) | -          | -          | -          |
+| 5        | 0 / 10 (  0%) | -          | -          | -          |
+| 6        | 0 / 25 (  0%) | -          | -          | -          |
+| 7        | 0 / 18 (  0%) | -          | -          | -          |
++----------+---------------+------------+------------+------------+
+
+Total Placer CPU time: 5 secs , REAL time: 25 secs 
+
+
+Checksum -- place: 1027969879fad9772ba36edb3aef309864076ae
+Writing design to file Mycpu_impl_1_par.dir/5_3.udb ...
+
+WARNING &lt;71003020&gt; - par: Top module port &apos;TCK&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TMS&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TDI&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - par: Top module port &apos;TDO&apos; does not connect to anything.
+
+Start NBR router at 14:50:05 06/26/24
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+Preassignment Summary:
+--------------------------------------------------------------------------------
+3622 connections routed with dedicated routing resources
+6 global clock signals routed
+7538 connections routed (of 30009 total) (25.12%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (12 used out of 32 available):
+    Signal &quot;pll0_inst_clkop_o_net&quot; (3, 19)
+       Clock   loads: 1941  out of  1941 routed (100.00%)
+    Signal &quot;pll0_inst_clkos_o_net&quot; (5, 21)
+       Clock   loads: 844   out of   844 routed (100.00%)
+    Signal &quot;cpu0_inst_system_resetn_o_net&quot; (0, 16)
+       Control loads: 716   out of   716 routed (100.00%)
+       Data    loads: 0     out of    13 routed (  0.00%)
+    Signal &quot;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.IbCuo3aEvk5cF25j4DHzkJGG2F.NbqAaKcoy7LeAHb1&quot; (10, 26)
+       Clock   loads: 58    out of    58 routed (100.00%)
+       Data    loads: 1     out of     1 routed (100.00%)
+    Signal &quot;cpu0_inst.riscvsmall_inst.Ib1w9tjglomgvCgAIkup60xKDx.NbbICH&quot; (4, 20)
+       Clock   loads: 83    out of    83 routed (100.00%)
+    Signal &quot;osc0_inst_hf_clk_out_o_net&quot; (2, 18)
+       Clock   loads: 1     out of     1 routed (100.00%)
+Other clocks:
+    Signal &quot;pll0_inst.lscc_pll_inst.intclkop_w&quot;
+       Clock   loads: 1     out of     1 routed (100.00%)
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+
+Start NBR section for initial routing at 14:50:09 06/26/24
+Level 4, iteration 1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Routing in Serial Mode ......
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4718(0.27%) conflicts; 0(0.00%) untouched conn; 30397788 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.480ns/-30397.789ns; real time: 14 secs 
+
+Info: Initial congestion level at 75.00% usage is 0
+Info: Initial congestion area  at 75.00% usage is 9 (0.20%)
+
+Start NBR section for normal routing at 14:50:19 06/26/24
+Level 4, iteration 1
+4075(0.23%) conflicts; 0(0.00%) untouched conn; 29819311 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.300ns/-29819.312ns; real time: 19 secs 
+Level 4, iteration 2
+1742(0.10%) conflicts; 0(0.00%) untouched conn; 30192925 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.271ns/-30192.926ns; real time: 22 secs 
+Level 4, iteration 3
+1074(0.06%) conflicts; 0(0.00%) untouched conn; 30352976 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.271ns/-30352.977ns; real time: 24 secs 
+Level 4, iteration 4
+719(0.04%) conflicts; 0(0.00%) untouched conn; 30352976 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.271ns/-30352.977ns; real time: 26 secs 
+Level 4, iteration 5
+485(0.03%) conflicts; 0(0.00%) untouched conn; 30953582 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.326ns/-30953.583ns; real time: 28 secs 
+Level 4, iteration 6
+323(0.02%) conflicts; 0(0.00%) untouched conn; 30953582 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.326ns/-30953.583ns; real time: 28 secs 
+Level 4, iteration 7
+193(0.01%) conflicts; 0(0.00%) untouched conn; 31023990 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.365ns/-31023.991ns; real time: 29 secs 
+Level 4, iteration 8
+152(0.01%) conflicts; 0(0.00%) untouched conn; 31023990 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.365ns/-31023.991ns; real time: 30 secs 
+Level 4, iteration 9
+79(0.00%) conflicts; 0(0.00%) untouched conn; 30981855 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.335ns/-30981.856ns; real time: 30 secs 
+Level 4, iteration 10
+39(0.00%) conflicts; 0(0.00%) untouched conn; 30981855 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.335ns/-30981.856ns; real time: 31 secs 
+Level 4, iteration 11
+34(0.00%) conflicts; 0(0.00%) untouched conn; 30999751 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.366ns/-30999.752ns; real time: 31 secs 
+Level 4, iteration 12
+33(0.00%) conflicts; 0(0.00%) untouched conn; 30999751 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.366ns/-30999.752ns; real time: 31 secs 
+Level 4, iteration 13
+13(0.00%) conflicts; 0(0.00%) untouched conn; 30999133 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.358ns/-30999.134ns; real time: 32 secs 
+Level 4, iteration 14
+10(0.00%) conflicts; 0(0.00%) untouched conn; 30999133 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.358ns/-30999.134ns; real time: 32 secs 
+Level 4, iteration 15
+5(0.00%) conflicts; 0(0.00%) untouched conn; 30998278 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.358ns/-30998.279ns; real time: 32 secs 
+Level 4, iteration 16
+2(0.00%) conflicts; 0(0.00%) untouched conn; 30998278 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.358ns/-30998.279ns; real time: 32 secs 
+Level 4, iteration 17
+2(0.00%) conflicts; 0(0.00%) untouched conn; 31000404 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.358ns/-31000.405ns; real time: 33 secs 
+Level 4, iteration 18
+2(0.00%) conflicts; 0(0.00%) untouched conn; 31000404 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.358ns/-31000.405ns; real time: 33 secs 
+Level 4, iteration 19
+2(0.00%) conflicts; 0(0.00%) untouched conn; 31002289 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.358ns/-31002.290ns; real time: 33 secs 
+Level 4, iteration 20
+2(0.00%) conflicts; 0(0.00%) untouched conn; 31002289 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.358ns/-31002.290ns; real time: 33 secs 
+Level 4, iteration 21
+0(0.00%) conflict; 0(0.00%) untouched conn; 31046560 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -6.358ns/-31046.561ns; real time: 34 secs 
+
+Start NBR section for post-routing at 14:50:38 06/26/24
+
+End NBR router with 0 unrouted connection
+
+Checksum -- route: 99f0038e788d2adc46ed153fb0ddcdaaa27f2e1
+
+Total CPU time 6 secs 
+Total REAL time: 36 secs 
+Completely routed.
+End of route.  30009 routed (100.00%); 0 unrouted.
+
+Writing design to file Mycpu_impl_1_par.dir/5_3.udb ...
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Estimated worst slack&lt;setup/&lt;ns&gt;&gt; = -6.358
+PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 7202.964
+PAR_SUMMARY::Estimated worst slack&lt;hold/&lt;ns&gt;&gt; = &lt;n/a&gt;
+PAR_SUMMARY::Timing score&lt;hold/&lt;ns&gt;&gt; = &lt;n/a&gt;
+PAR_SUMMARY::Number of errors = 0
+
+Note: user must run &apos;timing&apos; for timing closure signoff.
+
+Total CPU  Time: 12 secs 
+Total REAL Time: 1 mins 3 secs 
+Peak Memory Usage: 651.93 MB
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#par_cts>Cost Table Summary</A></LI>
+<LI><A href=#par_best>Best Par Run</A></LI>
+<LI><A href=#par_dus>Device utilization summary</A></LI>
+<LI><A href=#par_clk>Clock Report</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

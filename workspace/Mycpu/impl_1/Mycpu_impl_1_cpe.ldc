@@ -1,0 +1,14 @@
+###File created by Lattice CPE. Do not modify.###
+set_hierarchy_separator /
+create_clock -name {osc0_inst_hf_clk_out_o} -period 55.556 [get_pins {osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A/HFCLKOUT }]
+##Original File: C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/module/osc0/1.4.0/constraints/osc0.ldc
+create_clock -name {osc0_inst_lf_clk_out_o} -period 31250 [get_pins {osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A/LFCLKOUT }]
+##Original File: C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/module/osc0/1.4.0/constraints/osc0.ldc
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl0]
+##Original File: C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/ip/i2c0/2.0.1/constraints/i2c0.ldc
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io]
+##Original File: C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/ip/i2c0/2.0.1/constraints/i2c0.ldc
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports sda0]
+##Original File: C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/ip/i2c0/2.0.1/constraints/i2c0.ldc
+# IO_TYPE constraint - Refclk
+##Original File: C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/module/pll0/1.8.0/constraints/pll0.ldc

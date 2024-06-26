@@ -1,0 +1,80 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "14:47:13    26-Jun-2024",
+	"Working Directory" : "C:/Users/javos/workspace/Mycpu/impl_1",
+	"Install" : "C:/lscc/radiant/2023.2/synpbase"
+},
+"impl_1" :{
+   "Start Time" : "14:45:40",
+   "Runtime" : "01m:33s",
+   "Executable Run Time" : "01m:32s",
+   "synthesis" : {
+      "Start Time" : "14:45:40",
+      "Runtime" : "01m:33s",
+      "Executable Run Time" : "01m:32s",
+      "compile" : {
+         "Start Time" : "14:45:40",
+         "Runtime" : "34s",
+         "Executable Run Time" : "33s",
+         "compile_flow" : {
+            "Start Time" : "14:45:40",
+            "Runtime" : "29s",
+            "Executable Run Time" : "28s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/javos/workspace/Mycpu/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "14:45:40",
+               "Run Time" : "28s",
+               "Exe Run Time" : "27s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/javos/workspace/Mycpu/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "14:46:08",
+               "Run Time" : "01s",
+               "Exe Run Time" : "01s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/javos/workspace/Mycpu/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "14:46:09",
+            "Run Time" : "05s",
+            "Exe Run Time" : "05s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Start Time" : "14:46:14",
+         "Runtime" : "59s",
+         "Executable Run Time" : "59s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/javos/workspace/Mycpu/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "14:46:14",
+            "Run Time" : "59s",
+            "Exe Run Time" : "59s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

@@ -1,0 +1,401 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: FOXXPS15
+
+Implementation : impl_1
+Synopsys HDL compiler and linker, Version comp202303synp1, Build 300R, Built Mar  7 2024 08:13:58, @
+
+Modified Files: 3
+FID:  path (prevtimestamp, timestamp)
+58       C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01)
+62       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46)
+69       C:\Users\javos\workspace\Mycpu\reginit.bin (2024-06-26 14:35:23, 2024-06-26 14:45:03)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 66
+MID:  lib.cell.view
+76       work.lscc_add_sub.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+77       work.lscc_adder.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+78       work.lscc_cntr.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+79       work.lscc_complex_mult.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+80       work.lscc_distributed_dpram.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+81       work.lscc_distributed_rom.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+82       work.lscc_distributed_spram.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+83       work.lscc_fifo.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+84       work.lscc_fifo_dc.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+85       work.lscc_fifo_dc_fwft_fabric.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+86       work.lscc_fifo_dc_hw_core.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+87       work.lscc_fifo_dc_main.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+88       work.lscc_fifo_fwft_fabric.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+89       work.lscc_fifo_hw_core.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+90       work.lscc_fifo_main.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+91       work.lscc_fifo_mem.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+92       work.lscc_fifo_mem_core.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+93       work.lscc_fifo_mem_main.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+94       work.lscc_hard_fifo.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+95       work.lscc_hard_fifo_dc.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+96       work.lscc_mult_accumulate.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (module definition)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+97       work.lscc_mult_add_sub.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+98       work.lscc_mult_add_sub_sum.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+99       work.lscc_multiplier.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+100      work.lscc_multiplier_dsp.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+101      work.lscc_multiplier_lut.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+102      work.lscc_ram_dp.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+103      work.lscc_ram_dp_core.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+104      work.lscc_ram_dp_main.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+105      work.lscc_ram_dp_true.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+106      work.lscc_ram_dp_true_core.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+107      work.lscc_ram_dp_true_inst.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+108      work.lscc_ram_dp_true_main.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+109      work.lscc_ram_dq.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+110      work.lscc_ram_dq_core.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+111      work.lscc_ram_dq_inst.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+112      work.lscc_ram_dq_main.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+113      work.lscc_rom.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+114      work.lscc_rom_inst.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+115      work.lscc_rom_inst_core.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+116      work.lscc_shift_register.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+117      work.lscc_soft_fifo.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+118      work.lscc_soft_fifo_dc.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+119      work.lscc_subtractor.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+120      work.lscc_write_through.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+126      work.pmi_add.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+127      work.pmi_addsub.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+128      work.pmi_complex_mult.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+129      work.pmi_counter.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+130      work.pmi_distributed_dpram.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+131      work.pmi_distributed_rom.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+132      work.pmi_distributed_shift_reg.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+133      work.pmi_distributed_spram.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+134      work.pmi_fifo.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+135      work.pmi_fifo_dc.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+136      work.pmi_mac.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+137      work.pmi_mult.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (module definition)
+138      work.pmi_multaddsub.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+139      work.pmi_multaddsubsum.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+140      work.pmi_ram_dp.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+141      work.pmi_ram_dp_be.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+142      work.pmi_ram_dp_true.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+143      work.pmi_ram_dq.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+144      work.pmi_ram_dq_be.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+145      work.pmi_rom.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+146      work.pmi_sub.verilog may have changed because the following files changed:
+                        C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v (2024-06-26 14:35:20, 2024-06-26 14:45:01) <-- (may instantiate this module)
+                        C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v (2024-06-26 14:32:34, 2024-06-26 14:44:46) <-- (may instantiate this module)
+
+*******************************************************************
+Unmodified files: 55
+FID:  path (timestamp)
+59       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\cpu0\2.5.0\rtl\cpu0.v (2024-06-21 20:43:06)
+60       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v (2024-06-21 15:47:14)
+61       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v (2024-06-25 15:41:12)
+63       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v (2024-06-21 15:47:04)
+64       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v (2023-05-22 07:48:18)
+65       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl2apb0\1.1.0\rtl\ahbl2apb0.v (2023-05-22 07:48:20)
+66       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v (2024-06-21 20:44:32)
+67       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\osc0\1.4.0\rtl\osc0.v (2024-06-21 15:47:20)
+68       C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v (2024-06-25 15:40:58)
+10       C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo/rtl/lscc_fifo.v (2024-02-08 06:44:28)
+11       C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl/lscc_fifo_dc.v (2024-02-08 06:45:03)
+12       C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl/lscc_ram_dp.v (2024-01-18 08:49:38)
+13       C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl/lscc_ram_dp_true.v (2024-01-18 08:50:45)
+14       C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dq/rtl/lscc_ram_dq.v (2024-01-18 08:51:06)
+15       C:\lscc\radiant\2023.2\ip\pmi\../avant/rom/rtl/lscc_rom.v (2024-01-18 08:51:27)
+16       C:\lscc\radiant\2023.2\ip\pmi\../common/adder/rtl/lscc_adder.v (2023-05-23 02:53:03)
+17       C:\lscc\radiant\2023.2\ip\pmi\../common/adder_subtractor/rtl/lscc_add_sub.v (2023-05-08 04:30:52)
+18       C:\lscc\radiant\2023.2\ip\pmi\../common/complex_mult/rtl/lscc_complex_mult.v (2023-10-25 11:09:00)
+19       C:\lscc\radiant\2023.2\ip\pmi\../common/counter/rtl/lscc_cntr.v (2019-08-05 09:41:47)
+20       C:\lscc\radiant\2023.2\ip\pmi\../common/distributed_dpram/rtl/lscc_distributed_dpram.v (2023-09-18 08:20:57)
+21       C:\lscc\radiant\2023.2\ip\pmi\../common/distributed_rom/rtl/lscc_distributed_rom.v (2023-09-18 08:21:20)
+22       C:\lscc\radiant\2023.2\ip\pmi\../common/distributed_spram/rtl/lscc_distributed_spram.v (2023-09-18 08:21:44)
+23       C:\lscc\radiant\2023.2\ip\pmi\../common/mult_accumulate/rtl/lscc_mult_accumulate.v (2023-10-25 11:39:25)
+24       C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub/rtl/lscc_mult_add_sub.v (2023-10-25 11:44:01)
+25       C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v (2023-10-25 11:46:56)
+26       C:\lscc\radiant\2023.2\ip\pmi\../common/multiplier/rtl/lscc_multiplier.v (2023-10-25 11:49:49)
+27       C:\lscc\radiant\2023.2\ip\pmi\../common/ram_shift_reg/rtl/lscc_shift_register.v (2023-09-18 08:37:22)
+28       C:\lscc\radiant\2023.2\ip\pmi\../common/subtractor/rtl/lscc_subtractor.v (2019-08-05 09:43:15)
+29       C:\lscc\radiant\2023.2\ip\pmi\pmi_add.v (2019-07-11 01:12:46)
+30       C:\lscc\radiant\2023.2\ip\pmi\pmi_addsub.v (2019-07-11 01:13:20)
+31       C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v (2019-07-11 01:14:03)
+32       C:\lscc\radiant\2023.2\ip\pmi\pmi_counter.v (2019-07-11 01:14:35)
+33       C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_dpram.v (2019-08-06 04:55:15)
+34       C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_rom.v (2019-08-06 04:55:15)
+35       C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_shift_reg.v (2022-10-18 10:05:48)
+36       C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_spram.v (2019-08-06 04:55:15)
+37       C:\lscc\radiant\2023.2\ip\pmi\pmi_fifo.v (2024-01-26 09:02:18)
+38       C:\lscc\radiant\2023.2\ip\pmi\pmi_fifo_dc.v (2024-01-26 09:02:25)
+39       C:\lscc\radiant\2023.2\ip\pmi\pmi_lfd2nx.v (2020-05-11 03:31:40)
+40       C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v (2019-07-11 01:15:11)
+41       C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v (2019-07-11 01:15:37)
+42       C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v (2019-07-11 01:16:06)
+43       C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v (2019-07-11 01:16:55)
+44       C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp.v (2022-02-16 03:51:13)
+45       C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_be.v (2022-02-16 04:07:36)
+46       C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_true.v (2022-02-16 03:51:54)
+47       C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq.v (2022-02-16 03:52:03)
+48       C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq_be.v (2022-02-16 03:52:13)
+49       C:\lscc\radiant\2023.2\ip\pmi\pmi_rom.v (2022-02-16 03:52:24)
+50       C:\lscc\radiant\2023.2\ip\pmi\pmi_sub.v (2019-07-11 01:17:30)
+51       C:\lscc\radiant\2023.2\synpbase\lib\lucent\lfd2nx.v (2024-03-21 10:31:06)
+52       C:\lscc\radiant\2023.2\synpbase\lib\lucent\pmi_def.v (2024-03-09 05:24:43)
+53       C:\lscc\radiant\2023.2\synpbase\lib\vlog\hypermods.v (2024-03-09 05:24:53)
+54       C:\lscc\radiant\2023.2\synpbase\lib\vlog\scemi_objects.v (2024-03-09 05:24:53)
+55       C:\lscc\radiant\2023.2\synpbase\lib\vlog\scemi_pipes.svh (2024-03-09 05:24:53)
+
+*******************************************************************
+Unchanged modules: 116
+MID:  lib.cell.view
+0        work.Mycpu.verilog
+1        work.ahbl0.verilog
+2        work.ahbl0_ipgen_lscc_ahbl_arbiter.verilog
+3        work.ahbl0_ipgen_lscc_ahbl_arbmux.verilog
+4        work.ahbl0_ipgen_lscc_ahbl_bus.verilog
+5        work.ahbl0_ipgen_lscc_ahbl_crossbar.verilog
+6        work.ahbl0_ipgen_lscc_ahbl_decoder.verilog
+7        work.ahbl0_ipgen_lscc_ahbl_decoder_comp.verilog
+8        work.ahbl0_ipgen_lscc_ahbl_decoder_prim.verilog
+9        work.ahbl0_ipgen_lscc_ahbl_default_slv.verilog
+10       work.ahbl0_ipgen_lscc_ahbl_fair_arb.verilog
+11       work.ahbl0_ipgen_lscc_ahbl_input_stage.verilog
+12       work.ahbl0_ipgen_lscc_ahbl_interconnect.verilog
+13       work.ahbl0_ipgen_lscc_ahbl_multiplexor.verilog
+14       work.ahbl0_ipgen_lscc_ahbl_prio_arb.verilog
+15       work.ahbl2apb0.verilog
+16       work.ahbl2apb0_ipgen_lscc_ahbl2apb.verilog
+17       work.apb0.verilog
+18       work.apb0_ipgen_lscc_apb_arbiter.verilog
+19       work.apb0_ipgen_lscc_apb_arbmux.verilog
+20       work.apb0_ipgen_lscc_apb_bus.verilog
+21       work.apb0_ipgen_lscc_apb_crossbar.verilog
+22       work.apb0_ipgen_lscc_apb_decoder.verilog
+23       work.apb0_ipgen_lscc_apb_decoder_comp.verilog
+24       work.apb0_ipgen_lscc_apb_decoder_prim.verilog
+25       work.apb0_ipgen_lscc_apb_interconnect.verilog
+26       work.apb0_ipgen_lscc_apb_multiplexor.verilog
+27       work.apb0_ipgen_lscc_apb_prio_arb.verilog
+28       work.apb0_ipgen_lscc_apb_thermo_mask.verilog
+29       work.cpu0.verilog
+30       work.cpu0_ipgen_BufferCC_1_.verilog
+31       work.cpu0_ipgen_DataCache_Cache_Dbg_I.verilog
+32       work.cpu0_ipgen_DataCache_Cache_Dbg_IC.verilog
+33       work.cpu0_ipgen_DataCache_Cache_Dbg_IMAC.verilog
+34       work.cpu0_ipgen_DataCache_Cache_NoDbg_I.verilog
+35       work.cpu0_ipgen_DataCache_Cache_NoDbg_IC.verilog
+36       work.cpu0_ipgen_DataCache_Cache_NoDbg_IMAC.verilog
+37       work.cpu0_ipgen_FlowCCByToggle.verilog
+38       work.cpu0_ipgen_InstructionCache_Cache_Dbg_I.verilog
+39       work.cpu0_ipgen_InstructionCache_Cache_Dbg_IC.verilog
+40       work.cpu0_ipgen_InstructionCache_Cache_Dbg_IMAC.verilog
+41       work.cpu0_ipgen_InstructionCache_Cache_NoDbg_I.verilog
+42       work.cpu0_ipgen_InstructionCache_Cache_NoDbg_IC.verilog
+43       work.cpu0_ipgen_InstructionCache_Cache_NoDbg_IMAC.verilog
+44       work.cpu0_ipgen_JtagBridge.verilog
+45       work.cpu0_ipgen_Riscv_Cache_Dbg_I.verilog
+46       work.cpu0_ipgen_Riscv_Cache_Dbg_IC.verilog
+47       work.cpu0_ipgen_Riscv_Cache_Dbg_IMAC.verilog
+48       work.cpu0_ipgen_Riscv_Cache_NoDbg_I.verilog
+49       work.cpu0_ipgen_Riscv_Cache_NoDbg_IC.verilog
+50       work.cpu0_ipgen_Riscv_Cache_NoDbg_IMAC.verilog
+51       work.cpu0_ipgen_Riscv_Dbg_I.verilog
+52       work.cpu0_ipgen_Riscv_Dbg_IC.verilog
+53       work.cpu0_ipgen_Riscv_Dbg_IMAC.verilog
+54       work.cpu0_ipgen_Riscv_NoDbg_I.verilog
+55       work.cpu0_ipgen_Riscv_NoDbg_IC.verilog
+56       work.cpu0_ipgen_Riscv_NoDbg_IMAC.verilog
+57       work.cpu0_ipgen_StreamFifoLowLatency_Dbg_I.verilog
+58       work.cpu0_ipgen_StreamFifoLowLatency_Dbg_IC.verilog
+59       work.cpu0_ipgen_StreamFifoLowLatency_Dbg_IMAC.verilog
+60       work.cpu0_ipgen_StreamFifoLowLatency_NoDbg_I.verilog
+61       work.cpu0_ipgen_StreamFifoLowLatency_NoDbg_IC.verilog
+62       work.cpu0_ipgen_StreamFifoLowLatency_NoDbg_IMAC.verilog
+63       work.cpu0_ipgen_SystemDebugger.verilog
+64       work.cpu0_ipgen_d_ff_plain_rst_t.verilog
+65       work.cpu0_ipgen_d_ff_plain_rst_we_t.verilog
+66       work.cpu0_ipgen_lscc_cpu_ahbl_mux.verilog
+67       work.cpu0_ipgen_pic.verilog
+68       work.cpu0_ipgen_riscvsmall.verilog
+69       work.cpu0_ipgen_timer_32.verilog
+70       work.cpu0_ipgen_vex_debug.verilog
+71       work.cpu0_ipgen_vex_jtag_bridge.verilog
+72       work.gpio0.verilog
+73       work.gpio0_ipgen_lscc_apb2lmmi.verilog
+74       work.gpio0_ipgen_lscc_gpio.verilog
+75       work.gpio0_ipgen_lscc_gpio_lmmi.verilog
+165      work.i2c0.verilog
+166      work.i2c0_ipgen_lscc_apb2lmmi.verilog
+167      work.i2c0_ipgen_lscc_delay_gen.verilog
+168      work.i2c0_ipgen_lscc_i2c_bus_cntrl_fsm_top.verilog
+169      work.i2c0_ipgen_lscc_i2c_glitch_filter.verilog
+170      work.i2c0_ipgen_lscc_i2c_master.verilog
+171      work.i2c0_ipgen_lscc_i2c_master_arbtr.verilog
+172      work.i2c0_ipgen_lscc_i2c_master_byte_rx_fsm.verilog
+173      work.i2c0_ipgen_lscc_i2c_master_byte_tx_fsm.verilog
+174      work.i2c0_ipgen_lscc_i2c_master_cntrl_fsm.verilog
+175      work.i2c0_ipgen_lscc_i2c_master_cntrl_fsm_top.verilog
+176      work.i2c0_ipgen_lscc_i2c_master_controller.verilog
+177      work.i2c0_ipgen_lscc_i2c_master_lmmi.verilog
+178      work.i2c0_ipgen_lscc_i2c_master_native.verilog
+179      work.i2c0_ipgen_lscc_i2c_master_start_gen.verilog
+180      work.i2c0_ipgen_lscc_i2c_master_stop_gen.verilog
+181      work.i2c0_ipgen_lscc_sclk_gen.verilog
+121      work.osc0.verilog
+122      work.osc0_ipgen_lscc_osc.verilog
+123      work.pll0.verilog
+124      work.pll0_ipgen_lscc_apb2lmmi.verilog
+125      work.pll0_ipgen_lscc_pll.verilog
+147      work.sysmem0.verilog
+148      work.sysmem0_ipgen_lscc_ahblmem_arbiter.verilog
+149      work.sysmem0_ipgen_lscc_ahblmem_subordinate.verilog
+150      work.sysmem0_ipgen_lscc_axi4mem_arbiter.verilog
+151      work.sysmem0_ipgen_lscc_axi4mem_subordinate.verilog
+152      work.sysmem0_ipgen_lscc_axi4stream_rx.verilog
+153      work.sysmem0_ipgen_lscc_fifo_streamer.verilog
+154      work.sysmem0_ipgen_lscc_lram_core.verilog
+155      work.sysmem0_ipgen_lscc_mem.verilog
+156      work.sysmem0_ipgen_lscc_smem_lram.verilog
+157      work.sysmem0_ipgen_lscc_sys_mem.verilog
+158      work.uart0.verilog
+159      work.uart0_ipgen_lscc_uart.verilog
+160      work.uart0_ipgen_lscc_uart_intface.verilog
+161      work.uart0_ipgen_lscc_uart_rxcver.verilog
+162      work.uart0_ipgen_lscc_uart_rxcver_fifo.verilog
+163      work.uart0_ipgen_lscc_uart_txcver_fifo.verilog
+164      work.uart0_ipgen_lscc_uart_txmitt.verilog

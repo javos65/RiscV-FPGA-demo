@@ -1,0 +1,6 @@
+-ver "C:/lscc/radiant/2023.2/ip/pmi/pmi_lfd2nx.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.2/ip/pmi/pmi_lfd2nx.vhd"
+-ver "C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/ip/sysmem0/2.1.0/rtl/sysmem0.v"
+-path "C:/Users/javos/workspace/Mycpu" "C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/ip/sysmem0/2.1.0" "C:/Users/javos/workspace/Mycpu"
+-top sysmem0
+-a "LFD2NX"

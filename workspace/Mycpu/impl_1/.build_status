@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="2" build_time="1719406531">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1719406531"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1719406535"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1719406542"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1719406043">
+            <Task name="Map" build_result="2" update_result="0" update_time="1719406043"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1718977786"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1719406507">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1719406507"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1719406513"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1719406038">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1719406038"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1718996104"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1718996104"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1719298398"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1718977786"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1718977786"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1718977786"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1718977786"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1718977786"/>
+        </Milestone>
+        <Report name="IBIS/Mycpu_impl_1.ibs" last_build_time="1719406534" last_build_size="139929"/>
+        <Report name="Mycpu_impl_1.bgn" last_build_time="1719406531" last_build_size="4755"/>
+        <Report name="Mycpu_impl_1.bit" last_build_time="1719406531" last_build_size="852816"/>
+        <Report name="Mycpu_impl_1.twr.html" last_build_time="1719406513" last_build_size="826956"/>
+        <Report name="Mycpu_impl_1.udb" last_build_time="1719406507" last_build_size="1111862"/>
+        <Report name="Mycpu_impl_1_map.udb" last_build_time="1719406043" last_build_size="674091"/>
+        <Report name="Mycpu_impl_1_rtl.udb" last_build_time="1719243225" last_build_size="578350"/>
+        <Report name="Mycpu_impl_1_syn.udb" last_build_time="1719406037" last_build_size="470284"/>
+        <Report name="Mycpu_impl_1_vo.sdf" last_build_time="1719406541" last_build_size="14647396"/>
+        <Report name="Mycpu_impl_1_vo.vo" last_build_time="1719406541" last_build_size="18370284"/>
+    </Strategy>
+</BuildStatus>
+          

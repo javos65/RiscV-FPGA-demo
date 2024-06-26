@@ -1,0 +1,21 @@
+<top name = "Mycpu"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "pll0_inst_clkos_o_net"  type = "net" />
+    <clockitem name = "osc0_inst_hf_clk_out_o_net"  type = "net" />
+    <clockitem name = "cpu0_inst/riscvsmall_inst/genblk3.vex_debug/TCK"  type = "net" />
+    <clockitem name = "cpu0_inst/riscvsmall_inst/genblk3.vex_debug/vex_jtag_bridge_i/bscan_DRCK"  type = "net" />
+    <clockitem name = "pll0_inst_clkop_o_net"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 5
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+</top>

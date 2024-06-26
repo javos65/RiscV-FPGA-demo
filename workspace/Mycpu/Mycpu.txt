@@ -1,0 +1,9 @@
+RISC-V MC IP based SOC Project.
+
+Components included:
+	a) Processor - RISC-V MC w/ PIC/TIMER
+	b) GPIO
+	c) ASRAM - Asynchronous SRAM
+	d) UART - Serial port
+	e) PLL
+	f) Glue Logic

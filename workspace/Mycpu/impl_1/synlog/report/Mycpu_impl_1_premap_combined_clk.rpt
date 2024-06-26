@@ -1,0 +1,32 @@
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 9 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 3108 clock pin(s) of sequential element(s)
+0 instances converted, 3108 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_76      ENCRYPTED           JTAGH19                9          ENCRYPTED      
+=======================================================================================
+======================================================================================================================= Gated/Generated Clocks =======================================================================================================================
+Clock Tree ID     Driving Element                                            Drive Element Type     Unconverted Fanout     Sample Instance                                                                                              Explanation                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_25      pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOS     PLL                    935                    ahbl2apb0_inst.lscc_ahbl2apb_inst.dual_clk\.cs_apb_sm[1]                                                     Clock Optimization not enabled
+@KP:ckid0_72      pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP     PLL                    2090                   ahbl0_inst.lscc_ahbl_interconnect_inst.ahb_lite_bus\.u_lscc_ahbl_bus.u_lscc_ahbl_multiplexor.active_tx_r     Clock Optimization not enabled
+@KP:ckid0_75      ENCRYPTED                                                  DCC                    83                     ENCRYPTED                                                                                                    Clock Optimization not enabled
+======================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+

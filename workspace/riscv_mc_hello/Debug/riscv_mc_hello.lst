@@ -1,0 +1,3106 @@
+
+riscv_mc_hello.elf:     file format elf32-littleriscv
+riscv_mc_hello.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00000000
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x000015fc memsz 0x00002150 flags rwx
+
+Sections:
+Idx Name           Size      VMA       LMA       File off  Algn  Flags
+  0 .text          000013dc  00000000  00000000  00001000  2**4  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .ctors         00000000  000013dc  000013dc  000025fc  2**2  CONTENTS
+  2 .dtors         00000000  000013dc  000013dc  000025fc  2**2  CONTENTS
+  3 .rodata        00000070  000013dc  000013dc  000023dc  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .data          000001b0  0000144c  0000144c  0000244c  2**2  CONTENTS, ALLOC, LOAD, DATA
+  5 .bss           00000150  000015fc  000015fc  000025fc  2**2  ALLOC
+  6 .heap          00000000  00001750  00001750  00002600  2**3  CONTENTS
+  7 .stack         00000a00  00001750  00001750  000025fc  2**4  ALLOC
+  8 .debug_info    00001f61  00000000  00000000  00002600  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_abbrev  00000b42  00000000  00000000  00004561  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_aranges 000002a0  00000000  00000000  000050a8  2**3  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_ranges  000001f8  00000000  00000000  00005348  2**3  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_macro   0000303f  00000000  00000000  00005540  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .debug_line    00003946  00000000  00000000  0000857f  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_str     00009bde  00000000  00000000  0000bec5  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .comment       00000033  00000000  00000000  00015aa3  2**0  CONTENTS, READONLY
+ 16 .debug_frame   000007c8  00000000  00000000  00015ad8  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+000013dc l    d  .ctors	00000000 .ctors
+000013dc l    d  .dtors	00000000 .dtors
+000013dc l    d  .rodata	00000000 .rodata
+0000144c l    d  .data	00000000 .data
+000015fc l    d  .bss	00000000 .bss
+00001750 l    d  .heap	00000000 .heap
+00001750 l    d  .stack	00000000 .stack
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./src/bsp/driver/riscv_mc/crt0.o
+0000017c l       .text	00000000 crtInit
+00000068 l       .text	00000000 __handle_isr
+0000005a l       .text	00000000 __handle_esr
+0000006a l       .text	00000000 __handle_exit
+00000214 l       .text	00000000 bss_init
+0000021c l       .text	00000000 bss_loop
+00000228 l       .text	00000000 bss_done
+0000022e l       .text	00000000 infinitLoop
+00000000 l    df *ABS*	00000000 uart.c
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 interrupt.c
+00000000 l    df *ABS*	00000000 iob.c
+000015fc l     O .bss	00000004 s_putc_func
+00001600 l     O .bss	00000004 s_getc_func
+00001604 l     O .bss	00000004 s_flush_func
+00000378 l     F .text	0000003c iob_putc
+000003b4 l     F .text	0000002c iob_getc
+000003e0 l     F .text	0000002c iob_flush
+0000144c l     O .data	00000014 __stdio
+00000000 l    df *ABS*	00000000 pic.c
+00000000 l    df *ABS*	00000000 reg_access.c
+00000000 l    df *ABS*	00000000 i2c_master.c
+00000000 l    df *ABS*	00000000 gpio.c
+00000000 l    df *ABS*	00000000 main.c
+000015ec l     O .data	00000002 oled_normal
+000015f0 l     O .data	00000002 oled_inverse
+00001460 l     O .data	0000001b oled_init
+0000147c l     O .data	000000b5 lattice1
+00001534 l     O .data	000000b5 lattice2
+00000a56 l     F .text	0000005a lscc_uart_putc
+00000ab0 l     F .text	00000014 lscc_uart_getc
+00000ac4 l     F .text	00000014 lscc_uart_flush
+00000ad8 l     F .text	0000007c bsp_init
+0000160c l     O .bss	00000001 idx.1
+000015fb l     O .data	00000001 pin_state.0
+00000000 l    df *ABS*	00000000 utils.c
+00000000 l    df *ABS*	00000000 printf.c
+00000000 l    df *ABS*	00000000 putchar.c
+00000000 l    df *ABS*	00000000 puts.c
+00000000 l    df *ABS*	00000000 vfiprintf.c
+00000e6c l     F .text	0000003e __ultoa_invert
+00000000 l    df *ABS*	00000000 strnlen.c
+00000000 l    df *ABS*	00000000 fputc.c
+00000e28 g     F .text	00000008 putchar
+00000a0a g     F .text	0000004c gpio_output_write
+00000e02 g     F .text	00000026 printf
+00001dec g       .data	00000000 __global_pointer$
+00001382 g     F .text	00000028 .hidden __riscv_save_8
+000013ce g     F .text	0000000c .hidden __riscv_restore_3
+000006d6 g     F .text	00000264 i2c_master_write
+000013ba g     F .text	00000020 .hidden __riscv_restore_10
+00001382 g     F .text	00000028 .hidden __riscv_save_11
+00000586 g     F .text	00000054 i2c_master_init
+00000c28 g     F .text	000000c6 oled_clear
+000004de g     F .text	00000074 reg_8b_modify
+000013dc g       .text	00000000 _etext
+00000432 g     F .text	00000038 pic_int_pending
+000013dc g       .ctors	00000000 _ctors_end
+000013ce g     F .text	0000000c .hidden __riscv_restore_2
+00000242 g     F .text	000000be irq_callback
+00000300 g     F .text	00000044 esr_callback
+0000046a g     F .text	00000046 reg_32b_modify
+00000e30 g     F .text	0000003c puts
+000015fc g       .bss	00000000 _bss_start
+0000137a g     F .text	00000030 .hidden __riscv_save_12
+00000eaa g     F .text	00000498 __i_vfprintf
+000013ba g     F .text	00000020 .hidden __riscv_restore_11
+000013aa g     F .text	0000000c .hidden __riscv_save_1
+000013ce g     F .text	0000000c .hidden __riscv_restore_0
+00001390 g     F .text	0000001a .hidden __riscv_save_7
+000013c4 g     F .text	00000016 .hidden __riscv_restore_5
+00000b88 g     F .text	000000a0 oled_lattice
+00001608 g     O .bss	00000004 pic_dev
+00000344 g     F .text	00000034 iob_init
+00001342 g     F .text	00000018 strnlen
+000013c4 g     F .text	00000016 .hidden __riscv_restore_6
+0000174c g       .bss	00000000 _bss_end
+00001382 g     F .text	00000028 .hidden __riscv_save_9
+00001390 g     F .text	0000001a .hidden __riscv_save_4
+00000090 g     F .text	0000008a uart_init
+000004b0 g     F .text	0000002e reg_8b_write
+000013aa g     F .text	0000000c .hidden __riscv_save_3
+0000166c g     O .bss	00000058 uart_core_uart
+00000000 g       .text	00000000 _ftext
+00000000 g       .text	00000000 _start
+000013dc g       .ctors	00000000 _ctors_start
+00001382 g     F .text	00000028 .hidden __riscv_save_10
+000013c4 g     F .text	00000016 .hidden __riscv_restore_4
+000013ba g     F .text	00000020 .hidden __riscv_restore_8
+00000b54 g     F .text	00000034 oled_send
+00001390 g     F .text	0000001a .hidden __riscv_save_6
+00000a00 g       *ABS*	00000000 _STACK_SIZE
+000013ba g     F .text	00000020 .hidden __riscv_restore_9
+000013c4 g     F .text	00000016 .hidden __riscv_restore_7
+00000cee g     F .text	000000ba main
+00000010 g       .text	00000000 trap_entry
+00000000 g       *ABS*	00000000 _HEAP_SIZE
+0000011a g     F .text	00000062 uart_putc
+0000040c g     F .text	00000026 pic_int_clear
+00000da8 g     F .text	0000003e delayCycle
+0000135a g     F .text	00000020 putc
+00000de6 g     F .text	0000001c delay
+00002150 g       .stack	00000000 _stack_start
+000015f4 g     O .data	00000007 oled_graph
+000016c4 g     O .bss	00000088 gpio_inst
+0000135a g     F .text	00000020 fputc
+000013aa g     F .text	0000000c .hidden __riscv_save_2
+000005da g     F .text	000000fc i2c_master_config
+00001390 g     F .text	0000001a .hidden __riscv_save_5
+00000000 g     F *ABS*	000004f2 vfscanf
+00001610 g     O .bss	00000048 int_table
+000013b6 g     F .text	00000024 .hidden __riscv_restore_12
+000013aa g     F .text	0000000c .hidden __riscv_save_0
+00000236  w    F .text	0000000c _exit
+00001658 g     O .bss	00000014 i2c_core_i2c
+00000552 g     F .text	00000034 reg_8b_read
+00001410  w    O .rodata	0000000c __iob
+0000093a g     F .text	000000d0 gpio_init
+000013ce g     F .text	0000000c .hidden __riscv_restore_1
+000013dc g       .dtors	00000000 _dtors_start
+00000eaa g     F .text	000004ee vfprintf
+
+
+
+Disassembly of section .text:
+
+00000000 <_ftext>:
+_ftext():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:8
+.global main
+.weak   irq_callback
+.weak   esr_callback
+
+_start:
+  j crtInit
+       0:	17c0006f          	j	17c <crtInit>
+	...
+
+00000010 <trap_entry>:
+trap_entry():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:13
+
+.global  trap_entry
+.align 4
+trap_entry:
+  sw x1,  - 1*4(sp)
+      10:	fe112e23          	sw	ra,-4(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:14
+  sw x5,  - 2*4(sp)
+      14:	fe512c23          	sw	t0,-8(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:15
+  sw x6,  - 3*4(sp)
+      18:	fe612a23          	sw	t1,-12(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:16
+  sw x7,  - 4*4(sp)
+      1c:	fe712823          	sw	t2,-16(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:17
+  sw x10, - 5*4(sp)
+      20:	fea12623          	sw	a0,-20(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:18
+  sw x11, - 6*4(sp)
+      24:	feb12423          	sw	a1,-24(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:19
+  sw x12, - 7*4(sp)
+      28:	fec12223          	sw	a2,-28(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:20
+  sw x13, - 8*4(sp)
+      2c:	fed12023          	sw	a3,-32(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:21
+  sw x14, - 9*4(sp)
+      30:	fce12e23          	sw	a4,-36(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:22
+  sw x15, -10*4(sp)
+      34:	fcf12c23          	sw	a5,-40(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:23
+  sw x16, -11*4(sp)
+      38:	fd012a23          	sw	a6,-44(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:24
+  sw x17, -12*4(sp)
+      3c:	fd112823          	sw	a7,-48(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:25
+  sw x28, -13*4(sp)
+      40:	fdc12623          	sw	t3,-52(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:26
+  sw x29, -14*4(sp)
+      44:	fdd12423          	sw	t4,-56(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:27
+  sw x30, -15*4(sp)
+      48:	fde12223          	sw	t5,-60(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:28
+  sw x31, -16*4(sp)
+      4c:	fdf12023          	sw	t6,-64(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:29
+  addi sp,sp,-16*4
+      50:	7139                	addi	sp,sp,-64
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:30
+  csrr a0, mcause    // load mcause value as parameter
+      52:	34202573          	csrr	a0,mcause
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:31
+  bltz a0, __handle_isr
+      56:	00054963          	bltz	a0,68 <__handle_isr>
+
+0000005a <__handle_esr>:
+__handle_esr():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:33
+__handle_esr:
+  csrr a1, mepc
+      5a:	341025f3          	csrr	a1,mepc
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:34
+  mv   a2, sp
+      5e:	860a                	mv	a2,sp
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:35
+  call esr_callback
+      60:	2445                	jal	300 <esr_callback>
+      62:	34151073          	csrw	mepc,a0
+      66:	a011                	j	6a <__handle_exit>
+
+00000068 <__handle_isr>:
+__handle_isr():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:36
+  csrw mepc, a0
+      68:	2ae9                	jal	242 <irq_callback>
+
+0000006a <__handle_exit>:
+__handle_exit():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:36
+      6a:	50f2                	lw	ra,60(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:37
+  j    __handle_exit
+      6c:	52e2                	lw	t0,56(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:39
+__handle_isr:
+  call irq_callback
+      6e:	5352                	lw	t1,52(sp)
+      70:	53c2                	lw	t2,48(sp)
+      72:	5532                	lw	a0,44(sp)
+      74:	55a2                	lw	a1,40(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:41
+__handle_exit:
+  lw x1 , 15*4(sp)
+      76:	5612                	lw	a2,36(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:42
+  lw x5,  14*4(sp)
+      78:	5682                	lw	a3,32(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:43
+  lw x6,  13*4(sp)
+      7a:	4772                	lw	a4,28(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:44
+  lw x7,  12*4(sp)
+      7c:	47e2                	lw	a5,24(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:45
+  lw x10, 11*4(sp)
+      7e:	4852                	lw	a6,20(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:46
+  lw x11, 10*4(sp)
+      80:	48c2                	lw	a7,16(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:47
+  lw x12,  9*4(sp)
+      82:	4e32                	lw	t3,12(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:48
+  lw x13,  8*4(sp)
+      84:	4ea2                	lw	t4,8(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:49
+  lw x14,  7*4(sp)
+      86:	4f12                	lw	t5,4(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:50
+  lw x15,  6*4(sp)
+      88:	4f82                	lw	t6,0(sp)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:51
+  lw x16,  5*4(sp)
+      8a:	6121                	addi	sp,sp,64
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:52
+  lw x17,  4*4(sp)
+      8c:	30200073          	mret
+
+00000090 <uart_init>:
+uart_init():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:173
+unsigned char uart_init(struct uart_instance *this_uart,
+			unsigned int base_addr,
+			unsigned int sys_clk,
+			unsigned int baud_rate,
+			unsigned char stop_bits, unsigned char data_width)
+{
+      90:	7139                	addi	sp,sp,-64
+      92:	de22                	sw	s0,60(sp)
+      94:	0080                	addi	s0,sp,64
+      96:	fca42e23          	sw	a0,-36(s0)
+      9a:	fcb42c23          	sw	a1,-40(s0)
+      9e:	fcc42a23          	sw	a2,-44(s0)
+      a2:	fcd42823          	sw	a3,-48(s0)
+      a6:	86ba                	mv	a3,a4
+      a8:	873e                	mv	a4,a5
+      aa:	87b6                	mv	a5,a3
+      ac:	fcf407a3          	sb	a5,-49(s0)
+      b0:	87ba                	mv	a5,a4
+      b2:	fcf40723          	sb	a5,-50(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:175
+	volatile struct uart_dev *dev;
+	if (NULL == this_uart) {
+      b6:	fdc42783          	lw	a5,-36(s0)
+      ba:	e399                	bnez	a5,c0 <uart_init+0x30>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:176
+		return 1;
+      bc:	4785                	li	a5,1
+      be:	a891                	j	112 <uart_init+0x82>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:178
+	}
+	this_uart->base = base_addr;
+      c0:	fdc42783          	lw	a5,-36(s0)
+      c4:	fd842703          	lw	a4,-40(s0)
+      c8:	c3d8                	sw	a4,4(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:179
+	dev = (volatile struct uart_dev *) (this_uart->base);
+      ca:	fdc42783          	lw	a5,-36(s0)
+      ce:	43dc                	lw	a5,4(a5)
+      d0:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:182
+
+	/*initialize the instance data */
+	this_uart->base = base_addr;
+      d4:	fdc42783          	lw	a5,-36(s0)
+      d8:	fd842703          	lw	a4,-40(s0)
+      dc:	c3d8                	sw	a4,4(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:183
+	this_uart->sys_clk = sys_clk;
+      de:	fdc42783          	lw	a5,-36(s0)
+      e2:	fd442703          	lw	a4,-44(s0)
+      e6:	c798                	sw	a4,8(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:184
+	this_uart->baudrate = baud_rate;
+      e8:	fdc42783          	lw	a5,-36(s0)
+      ec:	fd042703          	lw	a4,-48(s0)
+      f0:	cb98                	sw	a4,16(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:185
+	this_uart->databits = data_width;
+      f2:	fce44703          	lbu	a4,-50(s0)
+      f6:	fdc42783          	lw	a5,-36(s0)
+      fa:	cbd8                	sw	a4,20(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:186
+	this_uart->stopbits = stop_bits;
+      fc:	fcf44703          	lbu	a4,-49(s0)
+     100:	fdc42783          	lw	a5,-36(s0)
+     104:	cf98                	sw	a4,24(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:191
+
+	/* set the data-configuration */
+	//uart_config(this_uart, 8, 0, 0, 1);
+
+	this_uart->blockingTx = 1;
+     106:	fdc42783          	lw	a5,-36(s0)
+     10a:	4705                	li	a4,1
+     10c:	00e78f23          	sb	a4,30(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:218
+		pic_isr_register(this_uart->intrLevel, uart_isr, this_uart);	//uart_isr have two parameter!!!!!
+	}
+#endif
+
+	/* all done! */
+	return 0;
+     110:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:219
+}
+     112:	853e                	mv	a0,a5
+     114:	5472                	lw	s0,60(sp)
+     116:	6121                	addi	sp,sp,64
+     118:	8082                	ret
+
+0000011a <uart_putc>:
+uart_putc():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:291
+ * Returns 0 if no error
+ ***************************************************************
+*/
+unsigned char uart_putc(struct uart_instance *this_uart,
+			unsigned char ucChar)
+{
+     11a:	7179                	addi	sp,sp,-48
+     11c:	d622                	sw	s0,44(sp)
+     11e:	1800                	addi	s0,sp,48
+     120:	fca42e23          	sw	a0,-36(s0)
+     124:	87ae                	mv	a5,a1
+     126:	fcf40da3          	sb	a5,-37(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:294
+	volatile unsigned char uiValue;
+	volatile struct uart_dev *dev;
+	if (NULL == this_uart) {
+     12a:	fdc42783          	lw	a5,-36(s0)
+     12e:	e399                	bnez	a5,134 <uart_putc+0x1a>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:295
+		return 1;
+     130:	4785                	li	a5,1
+     132:	a089                	j	174 <uart_putc+0x5a>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:297
+	}
+	dev = (volatile struct uart_dev *) (this_uart->base);
+     134:	fdc42783          	lw	a5,-36(s0)
+     138:	43dc                	lw	a5,4(a5)
+     13a:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:329
+	} else
+#endif
+	{
+		do {
+			/* if uart's ready to accept character, send immediately */
+			uiValue = dev->lsr;
+     13e:	fec42783          	lw	a5,-20(s0)
+     142:	4bdc                	lw	a5,20(a5)
+     144:	0ff7f793          	zext.b	a5,a5
+     148:	fef405a3          	sb	a5,-21(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:330
+			if (uiValue & UART_LSR_TX_RDY_MASK) {
+     14c:	feb44783          	lbu	a5,-21(s0)
+     150:	0ff7f793          	zext.b	a5,a5
+     154:	0207f793          	andi	a5,a5,32
+     158:	cb81                	beqz	a5,168 <uart_putc+0x4e>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:331
+				dev->rxtx = ucChar;
+     15a:	fdb44703          	lbu	a4,-37(s0)
+     15e:	fec42783          	lw	a5,-20(s0)
+     162:	c398                	sw	a4,0(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:332
+				return (0);
+     164:	4781                	li	a5,0
+     166:	a039                	j	174 <uart_putc+0x5a>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:336
+			}
+
+			/* if non-blocking tx, return immediately */
+			if (this_uart->blockingTx == 0)
+     168:	fdc42783          	lw	a5,-36(s0)
+     16c:	01e7c783          	lbu	a5,30(a5)
+     170:	f7f9                	bnez	a5,13e <uart_putc+0x24>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:337
+				return (UART_ERR_WOULD_BLOCK);
+     172:	4785                	li	a5,1
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/uart/uart.c:344
+		} while (1);
+	}
+
+	/* all done */
+	return 0;
+}
+     174:	853e                	mv	a0,a5
+     176:	5432                	lw	s0,44(sp)
+     178:	6145                	addi	sp,sp,48
+     17a:	8082                	ret
+
+0000017c <crtInit>:
+crtInit():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:64
+  .text
+
+
+crtInit:
+
+  mv x1, zero
+     17c:	00000093          	li	ra,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:65
+  mv x2, zero
+     180:	00000113          	li	sp,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:66
+  mv x3, zero
+     184:	00000193          	li	gp,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:67
+  mv x4, zero
+     188:	00000213          	li	tp,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:68
+  mv x5, zero
+     18c:	00000293          	li	t0,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:69
+  mv x6, zero
+     190:	00000313          	li	t1,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:70
+  mv x7, zero
+     194:	00000393          	li	t2,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:71
+  mv x8, zero
+     198:	00000413          	li	s0,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:72
+  mv x9, zero
+     19c:	00000493          	li	s1,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:73
+  mv x10, zero
+     1a0:	00000513          	li	a0,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:74
+  mv x11, zero
+     1a4:	00000593          	li	a1,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:75
+  mv x12, zero
+     1a8:	00000613          	li	a2,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:76
+  mv x13, zero
+     1ac:	00000693          	li	a3,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:77
+  mv x14, zero
+     1b0:	00000713          	li	a4,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:78
+  mv x15, zero
+     1b4:	00000793          	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:79
+  mv x16, zero
+     1b8:	00000813          	li	a6,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:80
+  mv x17, zero
+     1bc:	00000893          	li	a7,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:81
+  mv x18, zero
+     1c0:	00000913          	li	s2,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:82
+  mv x19, zero
+     1c4:	00000993          	li	s3,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:83
+  mv x20, zero
+     1c8:	00000a13          	li	s4,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:84
+  mv x21, zero
+     1cc:	00000a93          	li	s5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:85
+  mv x22, zero
+     1d0:	00000b13          	li	s6,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:86
+  mv x23, zero
+     1d4:	00000b93          	li	s7,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:87
+  mv x24, zero
+     1d8:	00000c13          	li	s8,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:88
+  mv x25, zero
+     1dc:	00000c93          	li	s9,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:89
+  mv x26, zero
+     1e0:	00000d13          	li	s10,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:90
+  mv x27, zero
+     1e4:	00000d93          	li	s11,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:91
+  mv x28, zero
+     1e8:	00000e13          	li	t3,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:92
+  mv x29, zero
+     1ec:	00000e93          	li	t4,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:93
+  mv x30, zero
+     1f0:	00000f13          	li	t5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:94
+  mv x31, zero
+     1f4:	00000f93          	li	t6,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:96
+ 
+  la t0, trap_entry
+     1f8:	01000293          	li	t0,16
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:97
+  csrw mtvec, t0
+     1fc:	30529073          	csrw	mtvec,t0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:98
+  csrwi mstatus, 0
+     200:	30005073          	csrwi	mstatus,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:99
+  csrwi mie, 0
+     204:	30405073          	csrwi	mie,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:103
+
+  .option push
+  .option norelax
+  la gp, __global_pointer$
+     208:	00002197          	auipc	gp,0x2
+     20c:	be418193          	addi	gp,gp,-1052 # 1dec <__global_pointer$>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:105
+  .option pop
+  la sp, _stack_start
+     210:	36418113          	addi	sp,gp,868 # 2150 <_stack_start>
+
+00000214 <bss_init>:
+bss_init():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:108
+
+bss_init:
+  la a0, _bss_start
+     214:	81018513          	addi	a0,gp,-2032 # 15fc <s_putc_func>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:109
+  la a1, _bss_end
+     218:	96018593          	addi	a1,gp,-1696 # 174c <_bss_end>
+
+0000021c <bss_loop>:
+bss_loop():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:111
+bss_loop:
+  beq a0,a1,bss_done
+     21c:	00b50663          	beq	a0,a1,228 <bss_done>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:112
+  sw zero,0(a0)
+     220:	00052023          	sw	zero,0(a0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:113
+  add a0,a0,4
+     224:	0511                	addi	a0,a0,4
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:114
+  j bss_loop
+     226:	bfdd                	j	21c <bss_loop>
+
+00000228 <bss_done>:
+bss_done():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:138
+//  li a0, 0x880     //880 enable timer + external interrupts
+//  csrw mie,a0
+//  li a0, 0x1808     //1808 enable interrupts
+//  csrw mstatus,a0
+
+  call main
+     228:	2c7000ef          	jal	ra,cee <main>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:139
+  call _exit
+     22c:	2029                	jal	236 <_exit>
+
+0000022e <infinitLoop>:
+infinitLoop():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:141
+infinitLoop:
+  j infinitLoop
+     22e:	a001                	j	22e <infinitLoop>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:144
+
+irq_callback:
+  ret
+     230:	8082                	ret
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/crt0.S:147
+
+esr_callback:
+  j esr_callback
+     232:	0ce0006f          	j	300 <esr_callback>
+
+00000236 <_exit>:
+_exit():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/exit.c:57
+#include <stdio.h>
+#include <sys/cdefs.h>
+
+void __attribute__ ((weak, __noreturn__))
+_exit (int status)
+{
+     236:	1101                	addi	sp,sp,-32
+     238:	ce22                	sw	s0,28(sp)
+     23a:	1000                	addi	s0,sp,32
+     23c:	fea42623          	sw	a0,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/exit.c:59 (discriminator 1)
+	(void) status;
+	while(1);
+     240:	a001                	j	240 <_exit+0xa>
+
+00000242 <irq_callback>:
+irq_callback():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:57
+#include "interrupt.h"
+
+extern struct interrupt_entry int_table[S_INT_NUM];
+
+void irq_callback(unsigned int mcause)
+{
+     242:	7179                	addi	sp,sp,-48
+     244:	d606                	sw	ra,44(sp)
+     246:	d422                	sw	s0,40(sp)
+     248:	1800                	addi	s0,sp,48
+     24a:	fca42e23          	sw	a0,-36(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:59
+
+	if ((mcause & MCAUSE_VAL_MASK) == MCAUSE_VAL_MTIP) {
+     24e:	fdc42783          	lw	a5,-36(s0)
+     252:	00f7f713          	andi	a4,a5,15
+     256:	479d                	li	a5,7
+     258:	02f71263          	bne	a4,a5,27c <irq_callback+0x3a>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:60
+		if (int_table[S_INT_TIMER].isr) {
+     25c:	6785                	lui	a5,0x1
+     25e:	61078793          	addi	a5,a5,1552 # 1610 <int_table>
+     262:	43bc                	lw	a5,64(a5)
+     264:	cbc9                	beqz	a5,2f6 <irq_callback+0xb4>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:61
+			int_table[S_INT_TIMER].isr(int_table[S_INT_TIMER].
+     266:	6785                	lui	a5,0x1
+     268:	61078793          	addi	a5,a5,1552 # 1610 <int_table>
+     26c:	43b8                	lw	a4,64(a5)
+     26e:	6785                	lui	a5,0x1
+     270:	61078793          	addi	a5,a5,1552 # 1610 <int_table>
+     274:	43fc                	lw	a5,68(a5)
+     276:	853e                	mv	a0,a5
+     278:	9702                	jalr	a4
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:76
+				}
+				pic_int_clear(idx);
+			}
+		}
+	}
+}
+     27a:	a8b5                	j	2f6 <irq_callback+0xb4>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:64
+	} else if ((mcause & MCAUSE_VAL_MASK) == MCASUE_VAL_MEIP) {
+     27c:	fdc42783          	lw	a5,-36(s0)
+     280:	00f7f713          	andi	a4,a5,15
+     284:	47ad                	li	a5,11
+     286:	06f71863          	bne	a4,a5,2f6 <irq_callback+0xb4>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:66
+		for (idx = S_INT_PIC0; idx < S_INT_NUM; idx++) {
+     28a:	fe042623          	sw	zero,-20(s0)
+     28e:	a8b9                	j	2ec <irq_callback+0xaa>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:67
+			if (pic_int_pending(idx)) {
+     290:	fec42783          	lw	a5,-20(s0)
+     294:	0ff7f793          	zext.b	a5,a5
+     298:	853e                	mv	a0,a5
+     29a:	2a61                	jal	432 <pic_int_pending>
+     29c:	87aa                	mv	a5,a0
+     29e:	c3b1                	beqz	a5,2e2 <irq_callback+0xa0>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:68
+				if (int_table[idx].isr) {
+     2a0:	6785                	lui	a5,0x1
+     2a2:	61078713          	addi	a4,a5,1552 # 1610 <int_table>
+     2a6:	fec42783          	lw	a5,-20(s0)
+     2aa:	078e                	slli	a5,a5,0x3
+     2ac:	97ba                	add	a5,a5,a4
+     2ae:	439c                	lw	a5,0(a5)
+     2b0:	c39d                	beqz	a5,2d6 <irq_callback+0x94>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:69
+					int_table[idx].isr(int_table[idx].
+     2b2:	6785                	lui	a5,0x1
+     2b4:	61078713          	addi	a4,a5,1552 # 1610 <int_table>
+     2b8:	fec42783          	lw	a5,-20(s0)
+     2bc:	078e                	slli	a5,a5,0x3
+     2be:	97ba                	add	a5,a5,a4
+     2c0:	4394                	lw	a3,0(a5)
+     2c2:	6785                	lui	a5,0x1
+     2c4:	61078713          	addi	a4,a5,1552 # 1610 <int_table>
+     2c8:	fec42783          	lw	a5,-20(s0)
+     2cc:	078e                	slli	a5,a5,0x3
+     2ce:	97ba                	add	a5,a5,a4
+     2d0:	43dc                	lw	a5,4(a5)
+     2d2:	853e                	mv	a0,a5
+     2d4:	9682                	jalr	a3
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:72
+				pic_int_clear(idx);
+     2d6:	fec42783          	lw	a5,-20(s0)
+     2da:	0ff7f793          	zext.b	a5,a5
+     2de:	853e                	mv	a0,a5
+     2e0:	2235                	jal	40c <pic_int_clear>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:66 (discriminator 2)
+		for (idx = S_INT_PIC0; idx < S_INT_NUM; idx++) {
+     2e2:	fec42783          	lw	a5,-20(s0)
+     2e6:	0785                	addi	a5,a5,1
+     2e8:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:66 (discriminator 1)
+     2ec:	fec42703          	lw	a4,-20(s0)
+     2f0:	47a1                	li	a5,8
+     2f2:	f8e7dfe3          	bge	a5,a4,290 <irq_callback+0x4e>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:76
+}
+     2f6:	0001                	nop
+     2f8:	50b2                	lw	ra,44(sp)
+     2fa:	5422                	lw	s0,40(sp)
+     2fc:	6145                	addi	sp,sp,48
+     2fe:	8082                	ret
+
+00000300 <esr_callback>:
+esr_callback():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:80
+
+unsigned int esr_callback(unsigned int mcause, unsigned int mepc,
+			  unsigned int sp)
+{
+     300:	1101                	addi	sp,sp,-32
+     302:	ce06                	sw	ra,28(sp)
+     304:	cc22                	sw	s0,24(sp)
+     306:	1000                	addi	s0,sp,32
+     308:	fea42623          	sw	a0,-20(s0)
+     30c:	feb42423          	sw	a1,-24(s0)
+     310:	fec42223          	sw	a2,-28(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:82
+
+	printf("Exception caught: mcause=%d ,", mcause);
+     314:	fec42583          	lw	a1,-20(s0)
+     318:	6785                	lui	a5,0x1
+     31a:	3dc78513          	addi	a0,a5,988 # 13dc <_etext>
+     31e:	2e5000ef          	jal	ra,e02 <printf>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:83
+	printf("mepc=%x, sp=%x \r\n", mepc, sp);
+     322:	fe442603          	lw	a2,-28(s0)
+     326:	fe842583          	lw	a1,-24(s0)
+     32a:	6785                	lui	a5,0x1
+     32c:	3fc78513          	addi	a0,a5,1020 # 13fc <_etext+0x20>
+     330:	2d3000ef          	jal	ra,e02 <printf>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:107
+		break;
+	}
+
+	printf("\r\n");
+#endif
+	return mepc + 4;
+     334:	fe842783          	lw	a5,-24(s0)
+     338:	0791                	addi	a5,a5,4
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/interrupt.c:108
+}
+     33a:	853e                	mv	a0,a5
+     33c:	40f2                	lw	ra,28(sp)
+     33e:	4462                	lw	s0,24(sp)
+     340:	6105                	addi	sp,sp,32
+     342:	8082                	ret
+
+00000344 <iob_init>:
+iob_init():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:63
+static lscc_getc_func s_getc_func;
+static lscc_flush_func s_flush_func;
+
+
+void iob_init(lscc_putc_func putc_func, lscc_getc_func getc_func, lscc_flush_func flush_func)
+{
+     344:	1101                	addi	sp,sp,-32
+     346:	ce22                	sw	s0,28(sp)
+     348:	1000                	addi	s0,sp,32
+     34a:	fea42623          	sw	a0,-20(s0)
+     34e:	feb42423          	sw	a1,-24(s0)
+     352:	fec42223          	sw	a2,-28(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:64
+	s_putc_func = putc_func;
+     356:	6785                	lui	a5,0x1
+     358:	fec42703          	lw	a4,-20(s0)
+     35c:	5ee7ae23          	sw	a4,1532(a5) # 15fc <s_putc_func>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:65
+	s_getc_func = getc_func;
+     360:	fe842703          	lw	a4,-24(s0)
+     364:	80e1aa23          	sw	a4,-2028(gp) # 1600 <s_getc_func>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:66
+	s_flush_func = flush_func;
+     368:	fe442703          	lw	a4,-28(s0)
+     36c:	80e1ac23          	sw	a4,-2024(gp) # 1604 <s_flush_func>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:67
+}
+     370:	0001                	nop
+     372:	4472                	lw	s0,28(sp)
+     374:	6105                	addi	sp,sp,32
+     376:	8082                	ret
+
+00000378 <iob_putc>:
+iob_putc():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:71
+
+
+static int iob_putc(char c, FILE *file)
+{
+     378:	1101                	addi	sp,sp,-32
+     37a:	ce06                	sw	ra,28(sp)
+     37c:	cc22                	sw	s0,24(sp)
+     37e:	1000                	addi	s0,sp,32
+     380:	87aa                	mv	a5,a0
+     382:	feb42423          	sw	a1,-24(s0)
+     386:	fef407a3          	sb	a5,-17(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:72
+	return s_putc_func ? (*s_putc_func)(c, file) : EOF;
+     38a:	6785                	lui	a5,0x1
+     38c:	5fc7a783          	lw	a5,1532(a5) # 15fc <s_putc_func>
+     390:	cf81                	beqz	a5,3a8 <iob_putc+0x30>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:72 (discriminator 1)
+     392:	6785                	lui	a5,0x1
+     394:	5fc7a703          	lw	a4,1532(a5) # 15fc <s_putc_func>
+     398:	fef40783          	lb	a5,-17(s0)
+     39c:	fe842583          	lw	a1,-24(s0)
+     3a0:	853e                	mv	a0,a5
+     3a2:	9702                	jalr	a4
+     3a4:	87aa                	mv	a5,a0
+     3a6:	a011                	j	3aa <iob_putc+0x32>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:72 (discriminator 2)
+     3a8:	57fd                	li	a5,-1
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:73 (discriminator 5)
+}
+     3aa:	853e                	mv	a0,a5
+     3ac:	40f2                	lw	ra,28(sp)
+     3ae:	4462                	lw	s0,24(sp)
+     3b0:	6105                	addi	sp,sp,32
+     3b2:	8082                	ret
+
+000003b4 <iob_getc>:
+iob_getc():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:77
+
+
+static int iob_getc(FILE *file)
+{
+     3b4:	1101                	addi	sp,sp,-32
+     3b6:	ce06                	sw	ra,28(sp)
+     3b8:	cc22                	sw	s0,24(sp)
+     3ba:	1000                	addi	s0,sp,32
+     3bc:	fea42623          	sw	a0,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:78
+	return s_getc_func ? (*s_getc_func)(file) : EOF;
+     3c0:	8141a783          	lw	a5,-2028(gp) # 1600 <s_getc_func>
+     3c4:	cb81                	beqz	a5,3d4 <iob_getc+0x20>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:78 (discriminator 1)
+     3c6:	8141a783          	lw	a5,-2028(gp) # 1600 <s_getc_func>
+     3ca:	fec42503          	lw	a0,-20(s0)
+     3ce:	9782                	jalr	a5
+     3d0:	87aa                	mv	a5,a0
+     3d2:	a011                	j	3d6 <iob_getc+0x22>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:78 (discriminator 2)
+     3d4:	57fd                	li	a5,-1
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:79 (discriminator 5)
+}
+     3d6:	853e                	mv	a0,a5
+     3d8:	40f2                	lw	ra,28(sp)
+     3da:	4462                	lw	s0,24(sp)
+     3dc:	6105                	addi	sp,sp,32
+     3de:	8082                	ret
+
+000003e0 <iob_flush>:
+iob_flush():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:83
+
+
+static int iob_flush(FILE *file)
+{
+     3e0:	1101                	addi	sp,sp,-32
+     3e2:	ce06                	sw	ra,28(sp)
+     3e4:	cc22                	sw	s0,24(sp)
+     3e6:	1000                	addi	s0,sp,32
+     3e8:	fea42623          	sw	a0,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:84
+	return s_flush_func ? (*s_flush_func)(file) : 0;
+     3ec:	8181a783          	lw	a5,-2024(gp) # 1604 <s_flush_func>
+     3f0:	cb81                	beqz	a5,400 <iob_flush+0x20>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:84 (discriminator 1)
+     3f2:	8181a783          	lw	a5,-2024(gp) # 1604 <s_flush_func>
+     3f6:	fec42503          	lw	a0,-20(s0)
+     3fa:	9782                	jalr	a5
+     3fc:	87aa                	mv	a5,a0
+     3fe:	a011                	j	402 <iob_flush+0x22>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:84 (discriminator 2)
+     400:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/iob.c:85 (discriminator 5)
+}
+     402:	853e                	mv	a0,a5
+     404:	40f2                	lw	ra,28(sp)
+     406:	4462                	lw	s0,24(sp)
+     408:	6105                	addi	sp,sp,32
+     40a:	8082                	ret
+
+0000040c <pic_int_clear>:
+pic_int_clear():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:94
+	pic_dev->pic_en &= (~(1 << src));
+	return 0;
+}
+
+uint8_t pic_int_clear(uint8_t src)
+{
+     40c:	1101                	addi	sp,sp,-32
+     40e:	ce22                	sw	s0,28(sp)
+     410:	1000                	addi	s0,sp,32
+     412:	87aa                	mv	a5,a0
+     414:	fef407a3          	sb	a5,-17(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:95
+	pic_dev->pic_status = 1 << (src);
+     418:	fef44783          	lbu	a5,-17(s0)
+     41c:	4705                	li	a4,1
+     41e:	00f71733          	sll	a4,a4,a5
+     422:	81c1a783          	lw	a5,-2020(gp) # 1608 <pic_dev>
+     426:	c398                	sw	a4,0(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:96
+	return 0;
+     428:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:97
+}
+     42a:	853e                	mv	a0,a5
+     42c:	4472                	lw	s0,28(sp)
+     42e:	6105                	addi	sp,sp,32
+     430:	8082                	ret
+
+00000432 <pic_int_pending>:
+pic_int_pending():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:100
+
+uint8_t pic_int_pending(uint8_t src)
+{
+     432:	7179                	addi	sp,sp,-48
+     434:	d622                	sw	s0,44(sp)
+     436:	1800                	addi	s0,sp,48
+     438:	87aa                	mv	a5,a0
+     43a:	fcf40fa3          	sb	a5,-33(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:101
+	uint32_t ifr = pic_dev->pic_status;
+     43e:	81c1a783          	lw	a5,-2020(gp) # 1608 <pic_dev>
+     442:	439c                	lw	a5,0(a5)
+     444:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:103
+
+	if (ifr & (1 << src)) {
+     448:	fdf44783          	lbu	a5,-33(s0)
+     44c:	4705                	li	a4,1
+     44e:	00f717b3          	sll	a5,a4,a5
+     452:	873e                	mv	a4,a5
+     454:	fec42783          	lw	a5,-20(s0)
+     458:	8ff9                	and	a5,a5,a4
+     45a:	c399                	beqz	a5,460 <pic_int_pending+0x2e>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:104
+		return 1;
+     45c:	4785                	li	a5,1
+     45e:	a011                	j	462 <pic_int_pending+0x30>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:107
+	}
+
+	return 0;
+     460:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/pic.c:108
+}
+     462:	853e                	mv	a0,a5
+     464:	5432                	lw	s0,44(sp)
+     466:	6145                	addi	sp,sp,48
+     468:	8082                	ret
+
+0000046a <reg_32b_modify>:
+reg_32b_modify():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:73
+	return 0;
+}
+
+uint8_t reg_32b_modify(uint32_t reg_addr, uint32_t bits_mask,
+			     uint32_t value)
+{
+     46a:	7179                	addi	sp,sp,-48
+     46c:	d622                	sw	s0,44(sp)
+     46e:	1800                	addi	s0,sp,48
+     470:	fca42e23          	sw	a0,-36(s0)
+     474:	fcb42c23          	sw	a1,-40(s0)
+     478:	fcc42a23          	sw	a2,-44(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:74
+	uint32_t volatile *reg_value = (void *) reg_addr;
+     47c:	fdc42783          	lw	a5,-36(s0)
+     480:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:77
+
+	//*reg_value = ((*reg_value) & ~bits_mask) | value;
+	*reg_value = ((*reg_value) & (~bits_mask)) | (value & bits_mask);
+     484:	fec42783          	lw	a5,-20(s0)
+     488:	4398                	lw	a4,0(a5)
+     48a:	fd842783          	lw	a5,-40(s0)
+     48e:	fff7c793          	not	a5,a5
+     492:	8f7d                	and	a4,a4,a5
+     494:	fd442683          	lw	a3,-44(s0)
+     498:	fd842783          	lw	a5,-40(s0)
+     49c:	8ff5                	and	a5,a5,a3
+     49e:	8f5d                	or	a4,a4,a5
+     4a0:	fec42783          	lw	a5,-20(s0)
+     4a4:	c398                	sw	a4,0(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:78
+	return 0;
+     4a6:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:79
+}
+     4a8:	853e                	mv	a0,a5
+     4aa:	5432                	lw	s0,44(sp)
+     4ac:	6145                	addi	sp,sp,48
+     4ae:	8082                	ret
+
+000004b0 <reg_8b_write>:
+reg_8b_write():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:98
+	*reg_16b_value = *reg_value;
+	return 0;
+}
+
+uint8_t reg_8b_write(uint32_t reg_addr, uint8_t value)
+{
+     4b0:	7179                	addi	sp,sp,-48
+     4b2:	d622                	sw	s0,44(sp)
+     4b4:	1800                	addi	s0,sp,48
+     4b6:	fca42e23          	sw	a0,-36(s0)
+     4ba:	87ae                	mv	a5,a1
+     4bc:	fcf40da3          	sb	a5,-37(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:99
+	uint8_t volatile *reg_value = (void *) reg_addr;
+     4c0:	fdc42783          	lw	a5,-36(s0)
+     4c4:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:101
+
+	*reg_value = value;
+     4c8:	fec42783          	lw	a5,-20(s0)
+     4cc:	fdb44703          	lbu	a4,-37(s0)
+     4d0:	00e78023          	sb	a4,0(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:102
+	return 0;
+     4d4:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:103
+}
+     4d6:	853e                	mv	a0,a5
+     4d8:	5432                	lw	s0,44(sp)
+     4da:	6145                	addi	sp,sp,48
+     4dc:	8082                	ret
+
+000004de <reg_8b_modify>:
+reg_8b_modify():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:107
+
+uint8_t reg_8b_modify(uint32_t reg_addr, uint8_t bits_mask,
+			    uint8_t value)
+{
+     4de:	7179                	addi	sp,sp,-48
+     4e0:	d622                	sw	s0,44(sp)
+     4e2:	1800                	addi	s0,sp,48
+     4e4:	fca42e23          	sw	a0,-36(s0)
+     4e8:	87ae                	mv	a5,a1
+     4ea:	8732                	mv	a4,a2
+     4ec:	fcf40da3          	sb	a5,-37(s0)
+     4f0:	87ba                	mv	a5,a4
+     4f2:	fcf40d23          	sb	a5,-38(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:108
+	uint8_t volatile *reg_value = (void *) reg_addr;
+     4f6:	fdc42783          	lw	a5,-36(s0)
+     4fa:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:110
+
+	*reg_value = ((*reg_value) & (~bits_mask)) | (value & bits_mask);
+     4fe:	fec42783          	lw	a5,-20(s0)
+     502:	0007c783          	lbu	a5,0(a5)
+     506:	0ff7f793          	zext.b	a5,a5
+     50a:	01879713          	slli	a4,a5,0x18
+     50e:	8761                	srai	a4,a4,0x18
+     510:	fdb40783          	lb	a5,-37(s0)
+     514:	fff7c793          	not	a5,a5
+     518:	07e2                	slli	a5,a5,0x18
+     51a:	87e1                	srai	a5,a5,0x18
+     51c:	8ff9                	and	a5,a5,a4
+     51e:	01879713          	slli	a4,a5,0x18
+     522:	8761                	srai	a4,a4,0x18
+     524:	fda44683          	lbu	a3,-38(s0)
+     528:	fdb44783          	lbu	a5,-37(s0)
+     52c:	8ff5                	and	a5,a5,a3
+     52e:	0ff7f793          	zext.b	a5,a5
+     532:	07e2                	slli	a5,a5,0x18
+     534:	87e1                	srai	a5,a5,0x18
+     536:	8fd9                	or	a5,a5,a4
+     538:	07e2                	slli	a5,a5,0x18
+     53a:	87e1                	srai	a5,a5,0x18
+     53c:	0ff7f713          	zext.b	a4,a5
+     540:	fec42783          	lw	a5,-20(s0)
+     544:	00e78023          	sb	a4,0(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:111
+	return 0;
+     548:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:112
+}
+     54a:	853e                	mv	a0,a5
+     54c:	5432                	lw	s0,44(sp)
+     54e:	6145                	addi	sp,sp,48
+     550:	8082                	ret
+
+00000552 <reg_8b_read>:
+reg_8b_read():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:116
+
+uint8_t reg_8b_read(uint32_t reg_addr,
+			  uint8_t *reg_8b_value)
+{
+     552:	7179                	addi	sp,sp,-48
+     554:	d622                	sw	s0,44(sp)
+     556:	1800                	addi	s0,sp,48
+     558:	fca42e23          	sw	a0,-36(s0)
+     55c:	fcb42c23          	sw	a1,-40(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:117
+	uint8_t volatile *reg_value = (void *) reg_addr;
+     560:	fdc42783          	lw	a5,-36(s0)
+     564:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:118
+	*reg_8b_value = *reg_value;
+     568:	fec42783          	lw	a5,-20(s0)
+     56c:	0007c783          	lbu	a5,0(a5)
+     570:	0ff7f713          	zext.b	a4,a5
+     574:	fd842783          	lw	a5,-40(s0)
+     578:	00e78023          	sb	a4,0(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:119
+	return 0;
+     57c:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/riscv_mc/reg_access.c:120
+}
+     57e:	853e                	mv	a0,a5
+     580:	5432                	lw	s0,44(sp)
+     582:	6145                	addi	sp,sp,48
+     584:	8082                	ret
+
+00000586 <i2c_master_init>:
+i2c_master_init():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:40
+#include "reg_access.h"
+#include <stddef.h>
+
+uint8_t i2c_master_init(struct i2cm_instance *this_i2cm,
+			uint32_t base_addr)
+{
+     586:	1101                	addi	sp,sp,-32
+     588:	ce22                	sw	s0,28(sp)
+     58a:	1000                	addi	s0,sp,32
+     58c:	fea42623          	sw	a0,-20(s0)
+     590:	feb42423          	sw	a1,-24(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:41
+	if (NULL == this_i2cm) {
+     594:	fec42783          	lw	a5,-20(s0)
+     598:	e399                	bnez	a5,59e <i2c_master_init+0x18>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:42
+        return 1;
+     59a:	4785                	li	a5,1
+     59c:	a81d                	j	5d2 <i2c_master_init+0x4c>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:45
+	}
+
+    this_i2cm->base_address = base_addr;
+     59e:	fec42783          	lw	a5,-20(s0)
+     5a2:	fe842703          	lw	a4,-24(s0)
+     5a6:	c3d8                	sw	a4,4(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:46
+    this_i2cm->addr_mode = 0;
+     5a8:	fec42783          	lw	a5,-20(s0)
+     5ac:	000784a3          	sb	zero,9(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:47
+    this_i2cm->state = I2CM_STATE_IDLE;
+     5b0:	fec42783          	lw	a5,-20(s0)
+     5b4:	00078423          	sb	zero,8(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:48
+    this_i2cm->interrupts_en = 0;
+     5b8:	fec42783          	lw	a5,-20(s0)
+     5bc:	00079523          	sh	zero,10(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:49
+    this_i2cm->rx_buff = NULL;
+     5c0:	fec42783          	lw	a5,-20(s0)
+     5c4:	0007a623          	sw	zero,12(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:50
+    this_i2cm->rcv_length = 0;
+     5c8:	fec42783          	lw	a5,-20(s0)
+     5cc:	00078823          	sb	zero,16(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:52
+
+	return 0;
+     5d0:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:53
+}
+     5d2:	853e                	mv	a0,a5
+     5d4:	4472                	lw	s0,28(sp)
+     5d6:	6105                	addi	sp,sp,32
+     5d8:	8082                	ret
+
+000005da <i2c_master_config>:
+i2c_master_config():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:57
+
+uint8_t i2c_master_config(struct i2cm_instance * this_i2cm,
+			  uint8_t i2c_mode, uint16_t interrupts_en, uint16_t pre_scaler)
+{
+     5da:	1101                	addi	sp,sp,-32
+     5dc:	ce06                	sw	ra,28(sp)
+     5de:	cc22                	sw	s0,24(sp)
+     5e0:	1000                	addi	s0,sp,32
+     5e2:	fea42623          	sw	a0,-20(s0)
+     5e6:	87ae                	mv	a5,a1
+     5e8:	8736                	mv	a4,a3
+     5ea:	fef405a3          	sb	a5,-21(s0)
+     5ee:	87b2                	mv	a5,a2
+     5f0:	fef41423          	sh	a5,-24(s0)
+     5f4:	87ba                	mv	a5,a4
+     5f6:	fef41323          	sh	a5,-26(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:58
+	if (NULL == this_i2cm) {
+     5fa:	fec42783          	lw	a5,-20(s0)
+     5fe:	e399                	bnez	a5,604 <i2c_master_config+0x2a>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:59
+        return 1;
+     600:	4785                	li	a5,1
+     602:	a0e9                	j	6cc <i2c_master_config+0xf2>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:62
+	}
+
+	if(interrupts_en != this_i2cm->interrupts_en)
+     604:	fec42783          	lw	a5,-20(s0)
+     608:	00a7d783          	lhu	a5,10(a5)
+     60c:	fe845703          	lhu	a4,-24(s0)
+     610:	04f70363          	beq	a4,a5,656 <i2c_master_config+0x7c>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:64
+	{
+		this_i2cm->interrupts_en = interrupts_en;
+     614:	fec42783          	lw	a5,-20(s0)
+     618:	fe845703          	lhu	a4,-24(s0)
+     61c:	00e79523          	sh	a4,10(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:65
+	    reg_8b_write(this_i2cm->base_address | REG_INT_ENABLE1,interrupts_en);
+     620:	fec42783          	lw	a5,-20(s0)
+     624:	43dc                	lw	a5,4(a5)
+     626:	0207e793          	ori	a5,a5,32
+     62a:	fe845703          	lhu	a4,-24(s0)
+     62e:	0ff77713          	zext.b	a4,a4
+     632:	85ba                	mv	a1,a4
+     634:	853e                	mv	a0,a5
+     636:	3dad                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:66
+	    reg_8b_write(this_i2cm->base_address | REG_INT_ENABLE2,interrupts_en >> 8);
+     638:	fec42783          	lw	a5,-20(s0)
+     63c:	43dc                	lw	a5,4(a5)
+     63e:	02c7e713          	ori	a4,a5,44
+     642:	fe845783          	lhu	a5,-24(s0)
+     646:	83a1                	srli	a5,a5,0x8
+     648:	07c2                	slli	a5,a5,0x10
+     64a:	83c1                	srli	a5,a5,0x10
+     64c:	0ff7f793          	zext.b	a5,a5
+     650:	85be                	mv	a1,a5
+     652:	853a                	mv	a0,a4
+     654:	3db1                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:70
+	}
+
+    // address mode set, 7-bit/10-bit mode
+	if(this_i2cm->addr_mode != i2c_mode)
+     656:	fec42783          	lw	a5,-20(s0)
+     65a:	0097c783          	lbu	a5,9(a5)
+     65e:	feb44703          	lbu	a4,-21(s0)
+     662:	02f70863          	beq	a4,a5,692 <i2c_master_config+0xb8>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:72
+	{
+		this_i2cm->addr_mode = i2c_mode;
+     666:	fec42783          	lw	a5,-20(s0)
+     66a:	feb44703          	lbu	a4,-21(s0)
+     66e:	00e784a3          	sb	a4,9(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:73
+		if (i2c_mode == I2CM_ADDR_10BIT_MODE) {
+     672:	feb44703          	lbu	a4,-21(s0)
+     676:	47a9                	li	a5,10
+     678:	00f71d63          	bne	a4,a5,692 <i2c_master_config+0xb8>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:74
+			reg_8b_modify(this_i2cm->base_address | REG_MODE,
+     67c:	fec42783          	lw	a5,-20(s0)
+     680:	43dc                	lw	a5,4(a5)
+     682:	0147e793          	ori	a5,a5,20
+     686:	02000613          	li	a2,32
+     68a:	02000593          	li	a1,32
+     68e:	853e                	mv	a0,a5
+     690:	35b9                	jal	4de <reg_8b_modify>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:80
+					I2C_ADDR_MODE, I2C_ADDR_MODE);
+		}
+	}
+
+	//set the pre_scaler to tune the i2c clock
+	reg_8b_modify(this_i2cm->base_address | REG_MODE,
+     692:	fec42783          	lw	a5,-20(s0)
+     696:	43dc                	lw	a5,4(a5)
+     698:	0147e713          	ori	a4,a5,20
+     69c:	fe645783          	lhu	a5,-26(s0)
+     6a0:	83a1                	srli	a5,a5,0x8
+     6a2:	07c2                	slli	a5,a5,0x10
+     6a4:	83c1                	srli	a5,a5,0x10
+     6a6:	0ff7f793          	zext.b	a5,a5
+     6aa:	863e                	mv	a2,a5
+     6ac:	458d                	li	a1,3
+     6ae:	853a                	mv	a0,a4
+     6b0:	353d                	jal	4de <reg_8b_modify>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:82
+			I2C_CLK_DIV_HIGH, pre_scaler>>8);
+	reg_8b_write(this_i2cm->base_address | REG_CLK_DIV_LSB,pre_scaler);
+     6b2:	fec42783          	lw	a5,-20(s0)
+     6b6:	43dc                	lw	a5,4(a5)
+     6b8:	0187e793          	ori	a5,a5,24
+     6bc:	fe645703          	lhu	a4,-26(s0)
+     6c0:	0ff77713          	zext.b	a4,a4
+     6c4:	85ba                	mv	a1,a4
+     6c6:	853e                	mv	a0,a5
+     6c8:	33e5                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:84
+
+	return 0;
+     6ca:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:85
+}
+     6cc:	853e                	mv	a0,a5
+     6ce:	40f2                	lw	ra,28(sp)
+     6d0:	4462                	lw	s0,24(sp)
+     6d2:	6105                	addi	sp,sp,32
+     6d4:	8082                	ret
+
+000006d6 <i2c_master_write>:
+i2c_master_write():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:381
+
+
+uint8_t i2c_master_write(struct i2cm_instance * this_i2cm,
+			 uint16_t address,
+			 uint8_t data_size, uint8_t * data_buffer)
+{
+     6d6:	7179                	addi	sp,sp,-48
+     6d8:	d606                	sw	ra,44(sp)
+     6da:	d422                	sw	s0,40(sp)
+     6dc:	1800                	addi	s0,sp,48
+     6de:	fca42e23          	sw	a0,-36(s0)
+     6e2:	87ae                	mv	a5,a1
+     6e4:	8732                	mv	a4,a2
+     6e6:	fcd42a23          	sw	a3,-44(s0)
+     6ea:	fcf41d23          	sh	a5,-38(s0)
+     6ee:	87ba                	mv	a5,a4
+     6f0:	fcf40ca3          	sb	a5,-39(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:382
+	uint8_t data_count = 0;
+     6f4:	fe0407a3          	sb	zero,-17(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:383
+	uint8_t i2c_status = 0;
+     6f8:	fe040723          	sb	zero,-18(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:384
+	uint8_t status = 0;
+     6fc:	fe0406a3          	sb	zero,-19(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:385
+	uint8_t i2c_int2 = 0;
+     700:	fe040623          	sb	zero,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:386
+	uint8_t fifo_status = 0;
+     704:	fe0405a3          	sb	zero,-21(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:388
+
+	if (NULL == this_i2cm || NULL == data_buffer )
+     708:	fdc42783          	lw	a5,-36(s0)
+     70c:	c781                	beqz	a5,714 <i2c_master_write+0x3e>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:388 (discriminator 1)
+     70e:	fd442783          	lw	a5,-44(s0)
+     712:	e399                	bnez	a5,718 <i2c_master_write+0x42>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:390
+	{
+		return 1;
+     714:	4785                	li	a5,1
+     716:	ac29                	j	930 <i2c_master_write+0x25a>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:394
+	}
+
+	// config the register before issue the transaction
+	reg_8b_write(this_i2cm->base_address | REG_BYTE_CNT, data_size);
+     718:	fdc42783          	lw	a5,-36(s0)
+     71c:	43dc                	lw	a5,4(a5)
+     71e:	0107e793          	ori	a5,a5,16
+     722:	fd944703          	lbu	a4,-39(s0)
+     726:	85ba                	mv	a1,a4
+     728:	853e                	mv	a0,a5
+     72a:	3359                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:396
+
+	reg_8b_write(this_i2cm->base_address | REG_SLAVE_ADDR_LOW,
+     72c:	fdc42783          	lw	a5,-36(s0)
+     730:	43dc                	lw	a5,4(a5)
+     732:	0047e713          	ori	a4,a5,4
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:397
+		      address & 0x7F);
+     736:	fda45783          	lhu	a5,-38(s0)
+     73a:	0ff7f793          	zext.b	a5,a5
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:396
+	reg_8b_write(this_i2cm->base_address | REG_SLAVE_ADDR_LOW,
+     73e:	07f7f793          	andi	a5,a5,127
+     742:	0ff7f793          	zext.b	a5,a5
+     746:	85be                	mv	a1,a5
+     748:	853a                	mv	a0,a4
+     74a:	339d                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:399
+
+    if(this_i2cm->addr_mode==I2CM_ADDR_10BIT_MODE)  // 10-bit mode
+     74c:	fdc42783          	lw	a5,-36(s0)
+     750:	0097c703          	lbu	a4,9(a5)
+     754:	47a9                	li	a5,10
+     756:	02f71463          	bne	a4,a5,77e <i2c_master_write+0xa8>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:401
+    {
+        reg_8b_write(this_i2cm->base_address | REG_SLAVE_ADDR_HIGH,
+     75a:	fdc42783          	lw	a5,-36(s0)
+     75e:	43dc                	lw	a5,4(a5)
+     760:	0087e713          	ori	a4,a5,8
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:402
+	              (address>>8) & 0x03);
+     764:	fda45783          	lhu	a5,-38(s0)
+     768:	83a1                	srli	a5,a5,0x8
+     76a:	07c2                	slli	a5,a5,0x10
+     76c:	83c1                	srli	a5,a5,0x10
+     76e:	0ff7f793          	zext.b	a5,a5
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:401
+        reg_8b_write(this_i2cm->base_address | REG_SLAVE_ADDR_HIGH,
+     772:	8b8d                	andi	a5,a5,3
+     774:	0ff7f793          	zext.b	a5,a5
+     778:	85be                	mv	a1,a5
+     77a:	853a                	mv	a0,a4
+     77c:	3b15                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:406
+    }
+
+    // set to write mode
+    reg_8b_modify(this_i2cm->base_address | REG_MODE, I2C_TXRX_MODE, 0);
+     77e:	fdc42783          	lw	a5,-36(s0)
+     782:	43dc                	lw	a5,4(a5)
+     784:	0147e793          	ori	a5,a5,20
+     788:	4601                	li	a2,0
+     78a:	45a1                	li	a1,8
+     78c:	853e                	mv	a0,a5
+     78e:	3b81                	jal	4de <reg_8b_modify>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:409
+
+    // clear status bits
+    reg_8b_read(this_i2cm->base_address | REG_INT_STATUS1, &status);
+     790:	fdc42783          	lw	a5,-36(s0)
+     794:	43dc                	lw	a5,4(a5)
+     796:	01c7e793          	ori	a5,a5,28
+     79a:	fed40713          	addi	a4,s0,-19
+     79e:	85ba                	mv	a1,a4
+     7a0:	853e                	mv	a0,a5
+     7a2:	3b45                	jal	552 <reg_8b_read>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:410
+    reg_8b_write(this_i2cm->base_address | REG_INT_STATUS1, status);
+     7a4:	fdc42783          	lw	a5,-36(s0)
+     7a8:	43dc                	lw	a5,4(a5)
+     7aa:	01c7e793          	ori	a5,a5,28
+     7ae:	fed44703          	lbu	a4,-19(s0)
+     7b2:	85ba                	mv	a1,a4
+     7b4:	853e                	mv	a0,a5
+     7b6:	39ed                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:411
+    reg_8b_read(this_i2cm->base_address | REG_INT_STATUS2, &i2c_int2);
+     7b8:	fdc42783          	lw	a5,-36(s0)
+     7bc:	43dc                	lw	a5,4(a5)
+     7be:	0287e793          	ori	a5,a5,40
+     7c2:	fec40713          	addi	a4,s0,-20
+     7c6:	85ba                	mv	a1,a4
+     7c8:	853e                	mv	a0,a5
+     7ca:	3361                	jal	552 <reg_8b_read>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:412
+    reg_8b_write(this_i2cm->base_address | REG_INT_STATUS2, i2c_int2);
+     7cc:	fdc42783          	lw	a5,-36(s0)
+     7d0:	43dc                	lw	a5,4(a5)
+     7d2:	0287e793          	ori	a5,a5,40
+     7d6:	fec44703          	lbu	a4,-20(s0)
+     7da:	85ba                	mv	a1,a4
+     7dc:	853e                	mv	a0,a5
+     7de:	39c9                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:414
+
+    while (data_count < data_size)
+     7e0:	a0a1                	j	828 <i2c_master_write+0x152>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:417
+    {
+    	// check tx fifo level,
+        reg_8b_read(this_i2cm->base_address | REG_INT_STATUS1, &status);
+     7e2:	fdc42783          	lw	a5,-36(s0)
+     7e6:	43dc                	lw	a5,4(a5)
+     7e8:	01c7e793          	ori	a5,a5,28
+     7ec:	fed40713          	addi	a4,s0,-19
+     7f0:	85ba                	mv	a1,a4
+     7f2:	853e                	mv	a0,a5
+     7f4:	3bb9                	jal	552 <reg_8b_read>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:420
+
+		// if tx fifo is full, stop loading fifo for now, resume in interrupt or polling loop
+		if ( (status & TX_FIFO_FULL_MASK) != 0 ) {
+     7f6:	fed44783          	lbu	a5,-19(s0)
+     7fa:	0207f793          	andi	a5,a5,32
+     7fe:	ef85                	bnez	a5,836 <i2c_master_write+0x160>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:424
+			break;
+		}
+
+        reg_8b_write(this_i2cm->base_address | REG_DATA_BUFFER, *data_buffer);  // push the data into tx buffer
+     800:	fdc42783          	lw	a5,-36(s0)
+     804:	43d8                	lw	a4,4(a5)
+     806:	fd442783          	lw	a5,-44(s0)
+     80a:	0007c783          	lbu	a5,0(a5)
+     80e:	85be                	mv	a1,a5
+     810:	853a                	mv	a0,a4
+     812:	3979                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:427
+
+        // update the counter and data buffer pointer
+        data_buffer++;
+     814:	fd442783          	lw	a5,-44(s0)
+     818:	0785                	addi	a5,a5,1
+     81a:	fcf42a23          	sw	a5,-44(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:428
+        data_count++;
+     81e:	fef44783          	lbu	a5,-17(s0)
+     822:	0785                	addi	a5,a5,1
+     824:	fef407a3          	sb	a5,-17(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:414
+    while (data_count < data_size)
+     828:	fef44703          	lbu	a4,-17(s0)
+     82c:	fd944783          	lbu	a5,-39(s0)
+     830:	faf769e3          	bltu	a4,a5,7e2 <i2c_master_write+0x10c>
+     834:	a011                	j	838 <i2c_master_write+0x162>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:421
+			break;
+     836:	0001                	nop
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:431
+    }
+
+    if(this_i2cm->state == I2CM_STATE_IDLE)
+     838:	fdc42783          	lw	a5,-36(s0)
+     83c:	0087c783          	lbu	a5,8(a5)
+     840:	ef99                	bnez	a5,85e <i2c_master_write+0x188>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:434
+    {
+    	// start the transaction
+    	this_i2cm->state = I2CM_STATE_WRITE;
+     842:	fdc42783          	lw	a5,-36(s0)
+     846:	4709                	li	a4,2
+     848:	00e78423          	sb	a4,8(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:435
+    	reg_8b_write(this_i2cm->base_address | REG_CONFIG, I2C_START);
+     84c:	fdc42783          	lw	a5,-36(s0)
+     850:	43dc                	lw	a5,4(a5)
+     852:	00c7e793          	ori	a5,a5,12
+     856:	4585                	li	a1,1
+     858:	853e                	mv	a0,a5
+     85a:	3999                	jal	4b0 <reg_8b_write>
+     85c:	a019                	j	862 <i2c_master_write+0x18c>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:439
+    }
+    else
+    {
+    	return 1;
+     85e:	4785                	li	a5,1
+     860:	a8c1                	j	930 <i2c_master_write+0x25a>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:447
+#if !INT_MODE
+    // check the status until transfer done
+    while(1)
+    {
+    	// cycle completes when all bytes are transmitted or a NACK is received or an ERROR is detected
+    	reg_8b_read(this_i2cm->base_address | REG_INT_STATUS1, &status);
+     862:	fdc42783          	lw	a5,-36(s0)
+     866:	43dc                	lw	a5,4(a5)
+     868:	01c7e793          	ori	a5,a5,28
+     86c:	fed40713          	addi	a4,s0,-19
+     870:	85ba                	mv	a1,a4
+     872:	853e                	mv	a0,a5
+     874:	39f9                	jal	552 <reg_8b_read>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:448
+        if (status & I2C_TRANSFER_COMP_MASK)
+     876:	fed44783          	lbu	a5,-19(s0)
+     87a:	07e2                	slli	a5,a5,0x18
+     87c:	87e1                	srai	a5,a5,0x18
+     87e:	0007d763          	bgez	a5,88c <i2c_master_write+0x1b6>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:450
+        {
+        	this_i2cm->state = I2CM_STATE_IDLE;
+     882:	fdc42783          	lw	a5,-36(s0)
+     886:	00078423          	sb	zero,8(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:451
+            break;
+     88a:	a04d                	j	92c <i2c_master_write+0x256>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:456
+        }
+
+
+    	// still have bytes to send
+		if (data_count < data_size)
+     88c:	fef44703          	lbu	a4,-17(s0)
+     890:	fd944783          	lbu	a5,-39(s0)
+     894:	04f77463          	bgeu	a4,a5,8dc <i2c_master_write+0x206>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:459
+		{
+			// load any additional bytes into tx fifo when it becomes almost empty
+			reg_8b_read(this_i2cm->base_address | FIFO_STATUS_REG, &fifo_status);
+     898:	fdc42783          	lw	a5,-36(s0)
+     89c:	43dc                	lw	a5,4(a5)
+     89e:	0347e793          	ori	a5,a5,52
+     8a2:	feb40713          	addi	a4,s0,-21
+     8a6:	85ba                	mv	a1,a4
+     8a8:	853e                	mv	a0,a5
+     8aa:	3165                	jal	552 <reg_8b_read>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:460
+			if (fifo_status & TX_FIFO_AEMPTY_MASK)	// if tx fifo is almost empty
+     8ac:	feb44783          	lbu	a5,-21(s0)
+     8b0:	8bc1                	andi	a5,a5,16
+     8b2:	c78d                	beqz	a5,8dc <i2c_master_write+0x206>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:462
+			{
+				reg_8b_write(this_i2cm->base_address | REG_DATA_BUFFER, *data_buffer);  // push the data into tx buffer
+     8b4:	fdc42783          	lw	a5,-36(s0)
+     8b8:	43d8                	lw	a4,4(a5)
+     8ba:	fd442783          	lw	a5,-44(s0)
+     8be:	0007c783          	lbu	a5,0(a5)
+     8c2:	85be                	mv	a1,a5
+     8c4:	853a                	mv	a0,a4
+     8c6:	36ed                	jal	4b0 <reg_8b_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:465
+
+				// update the counter and data buffer pointer
+				data_buffer++;
+     8c8:	fd442783          	lw	a5,-44(s0)
+     8cc:	0785                	addi	a5,a5,1
+     8ce:	fcf42a23          	sw	a5,-44(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:466
+				data_count++;
+     8d2:	fef44783          	lbu	a5,-17(s0)
+     8d6:	0785                	addi	a5,a5,1
+     8d8:	fef407a3          	sb	a5,-17(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:471
+			}
+        }
+
+        // check for I2C errors including NACK
+    	reg_8b_read(this_i2cm->base_address | REG_INT_STATUS2, &i2c_int2);
+     8dc:	fdc42783          	lw	a5,-36(s0)
+     8e0:	43dc                	lw	a5,4(a5)
+     8e2:	0287e793          	ori	a5,a5,40
+     8e6:	fec40713          	addi	a4,s0,-20
+     8ea:	85ba                	mv	a1,a4
+     8ec:	853e                	mv	a0,a5
+     8ee:	3195                	jal	552 <reg_8b_read>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:472
+        if (i2c_int2 & I2C_ERR)
+     8f0:	fec44783          	lbu	a5,-20(s0)
+     8f4:	8bbd                	andi	a5,a5,15
+     8f6:	d7b5                	beqz	a5,862 <i2c_master_write+0x18c>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:475
+        {
+			// reset the i2c master
+			reg_8b_modify(this_i2cm->base_address | REG_CONFIG, I2C_MASTER_RESET, I2C_MASTER_RESET);
+     8f8:	fdc42783          	lw	a5,-36(s0)
+     8fc:	43dc                	lw	a5,4(a5)
+     8fe:	00c7e793          	ori	a5,a5,12
+     902:	4611                	li	a2,4
+     904:	4591                	li	a1,4
+     906:	853e                	mv	a0,a5
+     908:	3ed9                	jal	4de <reg_8b_modify>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:476
+			reg_8b_modify(this_i2cm->base_address | REG_CONFIG, I2C_MASTER_RESET, ~I2C_MASTER_RESET);
+     90a:	fdc42783          	lw	a5,-36(s0)
+     90e:	43dc                	lw	a5,4(a5)
+     910:	00c7e793          	ori	a5,a5,12
+     914:	0fb00613          	li	a2,251
+     918:	4591                	li	a1,4
+     91a:	853e                	mv	a0,a5
+     91c:	36c9                	jal	4de <reg_8b_modify>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:478
+
+        	i2c_status = 1;
+     91e:	4785                	li	a5,1
+     920:	fef40723          	sb	a5,-18(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:479
+        	this_i2cm->state = I2CM_STATE_IDLE;
+     924:	fdc42783          	lw	a5,-36(s0)
+     928:	00078423          	sb	zero,8(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:484
+            break;
+        }
+    }
+#endif
+	return i2c_status;
+     92c:	fee44783          	lbu	a5,-18(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/i2c_controller/i2c_master.c:485 (discriminator 1)
+}
+     930:	853e                	mv	a0,a5
+     932:	50b2                	lw	ra,44(sp)
+     934:	5422                	lw	s0,40(sp)
+     936:	6145                	addi	sp,sp,48
+     938:	8082                	ret
+
+0000093a <gpio_init>:
+gpio_init():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:60
+#include <stddef.h>
+
+unsigned char gpio_init(struct gpio_instance *this_gpio,
+		uint32_t base_addr,
+		uint32_t lines_num, uint32_t gpio_dirs)
+{
+     93a:	7179                	addi	sp,sp,-48
+     93c:	d606                	sw	ra,44(sp)
+     93e:	d422                	sw	s0,40(sp)
+     940:	1800                	addi	s0,sp,48
+     942:	fca42e23          	sw	a0,-36(s0)
+     946:	fcb42c23          	sw	a1,-40(s0)
+     94a:	fcc42a23          	sw	a2,-44(s0)
+     94e:	fcd42823          	sw	a3,-48(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:61
+	unsigned int index = 0;
+     952:	fe042623          	sw	zero,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:62
+	if (NULL == this_gpio) {
+     956:	fdc42783          	lw	a5,-36(s0)
+     95a:	e399                	bnez	a5,960 <gpio_init+0x26>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:63
+		return 1;
+     95c:	4785                	li	a5,1
+     95e:	a04d                	j	a00 <_STACK_SIZE>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:65
+	}
+	this_gpio->base_address = base_addr;
+     960:	fdc42783          	lw	a5,-36(s0)
+     964:	fd842703          	lw	a4,-40(s0)
+     968:	c3d8                	sw	a4,4(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:67
+
+	for (index = 0; index < lines_num; index++) {
+     96a:	fe042623          	sw	zero,-20(s0)
+     96e:	a051                	j	9f2 <gpio_init+0xb8>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:68
+		this_gpio->gpio_config[index].pin = 0x01 << index;
+     970:	fec42783          	lw	a5,-20(s0)
+     974:	4705                	li	a4,1
+     976:	00f717b3          	sll	a5,a4,a5
+     97a:	86be                	mv	a3,a5
+     97c:	fdc42703          	lw	a4,-36(s0)
+     980:	fec42783          	lw	a5,-20(s0)
+     984:	078a                	slli	a5,a5,0x2
+     986:	97ba                	add	a5,a5,a4
+     988:	c794                	sw	a3,8(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:70
+
+		if (gpio_dirs & (0x01 << index)) {
+     98a:	fec42783          	lw	a5,-20(s0)
+     98e:	4705                	li	a4,1
+     990:	00f717b3          	sll	a5,a4,a5
+     994:	873e                	mv	a4,a5
+     996:	fd042783          	lw	a5,-48(s0)
+     99a:	8ff9                	and	a5,a5,a4
+     99c:	c795                	beqz	a5,9c8 <gpio_init+0x8e>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:71
+			reg_32b_modify(this_gpio->base_address | GPIO_DIRECTION,
+     99e:	fdc42783          	lw	a5,-36(s0)
+     9a2:	43dc                	lw	a5,4(a5)
+     9a4:	0107e693          	ori	a3,a5,16
+     9a8:	fdc42703          	lw	a4,-36(s0)
+     9ac:	fec42783          	lw	a5,-20(s0)
+     9b0:	078a                	slli	a5,a5,0x2
+     9b2:	97ba                	add	a5,a5,a4
+     9b4:	478c                	lw	a1,8(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:72
+					this_gpio->gpio_config[index].pin, (GPIO_OUTPUT << index));
+     9b6:	fec42783          	lw	a5,-20(s0)
+     9ba:	4705                	li	a4,1
+     9bc:	00f717b3          	sll	a5,a4,a5
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:71
+			reg_32b_modify(this_gpio->base_address | GPIO_DIRECTION,
+     9c0:	863e                	mv	a2,a5
+     9c2:	8536                	mv	a0,a3
+     9c4:	345d                	jal	46a <reg_32b_modify>
+     9c6:	a00d                	j	9e8 <gpio_init+0xae>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:77
+#ifdef _DIRECTION_INTERNAL_MEMORY_USE_
+			this_gpio->gpio_config[index].direction = GPIO_OUTPUT;
+#endif
+		} else {
+			reg_32b_modify(this_gpio->base_address | GPIO_DIRECTION,
+     9c8:	fdc42783          	lw	a5,-36(s0)
+     9cc:	43dc                	lw	a5,4(a5)
+     9ce:	0107e693          	ori	a3,a5,16
+     9d2:	fdc42703          	lw	a4,-36(s0)
+     9d6:	fec42783          	lw	a5,-20(s0)
+     9da:	078a                	slli	a5,a5,0x2
+     9dc:	97ba                	add	a5,a5,a4
+     9de:	479c                	lw	a5,8(a5)
+     9e0:	4601                	li	a2,0
+     9e2:	85be                	mv	a1,a5
+     9e4:	8536                	mv	a0,a3
+     9e6:	3451                	jal	46a <reg_32b_modify>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:67 (discriminator 2)
+	for (index = 0; index < lines_num; index++) {
+     9e8:	fec42783          	lw	a5,-20(s0)
+     9ec:	0785                	addi	a5,a5,1
+     9ee:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:67 (discriminator 1)
+     9f2:	fec42703          	lw	a4,-20(s0)
+     9f6:	fd442783          	lw	a5,-44(s0)
+     9fa:	f6f76be3          	bltu	a4,a5,970 <gpio_init+0x36>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:84
+#ifdef _DIRECTION_INTERNAL_MEMORY_USE_
+			this_gpio->gpio_config[index].direction = GPIO_INPUT;
+#endif
+		}
+	}
+	return 0;
+     9fe:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:85
+}
+     a00:	853e                	mv	a0,a5
+     a02:	50b2                	lw	ra,44(sp)
+     a04:	5422                	lw	s0,40(sp)
+     a06:	6145                	addi	sp,sp,48
+     a08:	8082                	ret
+
+00000a0a <gpio_output_write>:
+gpio_output_write():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:104
+	return 0;
+}
+
+unsigned char gpio_output_write(struct gpio_instance *this_gpio,
+		uint32_t index, uint32_t value)
+{
+     a0a:	1101                	addi	sp,sp,-32
+     a0c:	ce06                	sw	ra,28(sp)
+     a0e:	cc22                	sw	s0,24(sp)
+     a10:	1000                	addi	s0,sp,32
+     a12:	fea42623          	sw	a0,-20(s0)
+     a16:	feb42423          	sw	a1,-24(s0)
+     a1a:	fec42223          	sw	a2,-28(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:105
+	if (NULL == this_gpio) {
+     a1e:	fec42783          	lw	a5,-20(s0)
+     a22:	e399                	bnez	a5,a28 <gpio_output_write+0x1e>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:106
+		return 1;
+     a24:	4785                	li	a5,1
+     a26:	a01d                	j	a4c <gpio_output_write+0x42>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:109
+	}
+
+	reg_32b_modify(this_gpio->base_address | GPIO_WR_DATA,
+     a28:	fec42783          	lw	a5,-20(s0)
+     a2c:	43dc                	lw	a5,4(a5)
+     a2e:	0047e693          	ori	a3,a5,4
+     a32:	fec42703          	lw	a4,-20(s0)
+     a36:	fe842783          	lw	a5,-24(s0)
+     a3a:	078a                	slli	a5,a5,0x2
+     a3c:	97ba                	add	a5,a5,a4
+     a3e:	479c                	lw	a5,8(a5)
+     a40:	fe442603          	lw	a2,-28(s0)
+     a44:	85be                	mv	a1,a5
+     a46:	8536                	mv	a0,a3
+     a48:	340d                	jal	46a <reg_32b_modify>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:112
+			this_gpio->gpio_config[index].pin, value);
+
+	return 0;
+     a4a:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/bsp/driver/gpio/gpio.c:113
+}
+     a4c:	853e                	mv	a0,a5
+     a4e:	40f2                	lw	ra,28(sp)
+     a50:	4462                	lw	s0,24(sp)
+     a52:	6105                	addi	sp,sp,32
+     a54:	8082                	ret
+
+00000a56 <lscc_uart_putc>:
+lscc_uart_putc():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:48
+#endif
+
+struct gpio_instance gpio_inst;
+
+static int lscc_uart_putc(char c, FILE *file)
+{
+     a56:	7179                	addi	sp,sp,-48
+     a58:	d606                	sw	ra,44(sp)
+     a5a:	d422                	sw	s0,40(sp)
+     a5c:	1800                	addi	s0,sp,48
+     a5e:	87aa                	mv	a5,a0
+     a60:	fcb42c23          	sw	a1,-40(s0)
+     a64:	fcf40fa3          	sb	a5,-33(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:50
+#ifdef LSCC_STDIO_UART_APB
+		int ret = EOF;
+     a68:	57fd                	li	a5,-1
+     a6a:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:51
+		ret = uart_putc(&uart_core_uart, c);
+     a6e:	fdf44783          	lbu	a5,-33(s0)
+     a72:	85be                	mv	a1,a5
+     a74:	88018513          	addi	a0,gp,-1920 # 166c <uart_core_uart>
+     a78:	ea2ff0ef          	jal	ra,11a <uart_putc>
+     a7c:	87aa                	mv	a5,a0
+     a7e:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:52
+		if (c == '\n' && ret == 0)
+     a82:	fdf40703          	lb	a4,-33(s0)
+     a86:	47a9                	li	a5,10
+     a88:	00f71d63          	bne	a4,a5,aa2 <lscc_uart_putc+0x4c>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:52 (discriminator 1)
+     a8c:	fec42783          	lw	a5,-20(s0)
+     a90:	eb89                	bnez	a5,aa2 <lscc_uart_putc+0x4c>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:53
+			ret = uart_putc(&uart_core_uart, '\r');
+     a92:	45b5                	li	a1,13
+     a94:	88018513          	addi	a0,gp,-1920 # 166c <uart_core_uart>
+     a98:	e82ff0ef          	jal	ra,11a <uart_putc>
+     a9c:	87aa                	mv	a5,a0
+     a9e:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:54
+		return ret;
+     aa2:	fec42783          	lw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:58
+#else
+		return EOF;
+#endif
+}
+     aa6:	853e                	mv	a0,a5
+     aa8:	50b2                	lw	ra,44(sp)
+     aaa:	5422                	lw	s0,40(sp)
+     aac:	6145                	addi	sp,sp,48
+     aae:	8082                	ret
+
+00000ab0 <lscc_uart_getc>:
+lscc_uart_getc():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:62
+
+
+static int lscc_uart_getc(FILE *file)
+{
+     ab0:	1101                	addi	sp,sp,-32
+     ab2:	ce22                	sw	s0,28(sp)
+     ab4:	1000                	addi	s0,sp,32
+     ab6:	fea42623          	sw	a0,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:64
+	(void) file;
+	return EOF;
+     aba:	57fd                	li	a5,-1
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:65
+}
+     abc:	853e                	mv	a0,a5
+     abe:	4472                	lw	s0,28(sp)
+     ac0:	6105                	addi	sp,sp,32
+     ac2:	8082                	ret
+
+00000ac4 <lscc_uart_flush>:
+lscc_uart_flush():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:69
+
+
+static int lscc_uart_flush(FILE *file)
+{
+     ac4:	1101                	addi	sp,sp,-32
+     ac6:	ce22                	sw	s0,28(sp)
+     ac8:	1000                	addi	s0,sp,32
+     aca:	fea42623          	sw	a0,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:71
+	(void) file;
+	return 0;
+     ace:	4781                	li	a5,0
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:72
+}
+     ad0:	853e                	mv	a0,a5
+     ad2:	4472                	lw	s0,28(sp)
+     ad4:	6105                	addi	sp,sp,32
+     ad6:	8082                	ret
+
+00000ad8 <bsp_init>:
+bsp_init():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:76
+
+
+static void bsp_init(void)
+{
+     ad8:	1141                	addi	sp,sp,-16
+     ada:	c606                	sw	ra,12(sp)
+     adc:	c422                	sw	s0,8(sp)
+     ade:	0800                	addi	s0,sp,16
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:78
+	//initialize GPIO
+	gpio_inst.instance_name = GPIO_INST_NAME;
+     ae0:	8d818793          	addi	a5,gp,-1832 # 16c4 <gpio_inst>
+     ae4:	6705                	lui	a4,0x1
+     ae6:	41c70713          	addi	a4,a4,1052 # 141c <__iob+0xc>
+     aea:	c398                	sw	a4,0(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:79
+	gpio_init(&gpio_inst, GPIO_INST_BASE_ADDR, GPIO_INST_LINES_NUM, GPIO_INST_GPIO_DIRS);
+     aec:	0ff00693          	li	a3,255
+     af0:	4621                	li	a2,8
+     af2:	65a1                	lui	a1,0x8
+     af4:	8d818513          	addi	a0,gp,-1832 # 16c4 <gpio_inst>
+     af8:	3589                	jal	93a <gpio_init>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:91
+	uart_core_uart.intrAvail = true;
+	//pic_isr_register(UART0_INST_IRQ, uart_isr, (void *)&uart_core_uart);
+#endif
+
+	//initialize UART
+	uart_init(&uart_core_uart, UART_INST_BASE_ADDR, UART_INST_SYS_CLK * 1000000, UART_INST_BAUD_RATE, 1, 8);
+     afa:	47a1                	li	a5,8
+     afc:	4705                	li	a4,1
+     afe:	66f1                	lui	a3,0x1c
+     b00:	20068693          	addi	a3,a3,512 # 1c200 <_stack_start+0x1a0b0>
+     b04:	0112b637          	lui	a2,0x112b
+     b08:	88060613          	addi	a2,a2,-1920 # 112a880 <_stack_start+0x1128730>
+     b0c:	65a5                	lui	a1,0x9
+     b0e:	80058593          	addi	a1,a1,-2048 # 8800 <_stack_start+0x66b0>
+     b12:	88018513          	addi	a0,gp,-1920 # 166c <uart_core_uart>
+     b16:	d7aff0ef          	jal	ra,90 <uart_init>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:92
+	iob_init(lscc_uart_putc, lscc_uart_getc, lscc_uart_flush);
+     b1a:	6785                	lui	a5,0x1
+     b1c:	ac478613          	addi	a2,a5,-1340 # ac4 <lscc_uart_flush>
+     b20:	6785                	lui	a5,0x1
+     b22:	ab078593          	addi	a1,a5,-1360 # ab0 <lscc_uart_getc>
+     b26:	6785                	lui	a5,0x1
+     b28:	a5678513          	addi	a0,a5,-1450 # a56 <lscc_uart_putc>
+     b2c:	819ff0ef          	jal	ra,344 <iob_init>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:96
+#endif
+
+#if (defined I2C0_INST_BASE_ADDR)
+	i2c_master_config( &i2c_core_i2c, I2CM_ADDR_7BIT_MODE, INT_MODE, 87);   // see i2c_0 instance for 100Khz prescaler
+     b30:	05700693          	li	a3,87
+     b34:	4601                	li	a2,0
+     b36:	459d                	li	a1,7
+     b38:	86c18513          	addi	a0,gp,-1940 # 1658 <i2c_core_i2c>
+     b3c:	3c79                	jal	5da <i2c_master_config>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:97
+	i2c_master_init(&i2c_core_i2c,I2C0_INST_BASE_ADDR);
+     b3e:	67a1                	lui	a5,0x8
+     b40:	40078593          	addi	a1,a5,1024 # 8400 <_stack_start+0x62b0>
+     b44:	86c18513          	addi	a0,gp,-1940 # 1658 <i2c_core_i2c>
+     b48:	3c3d                	jal	586 <i2c_master_init>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:99
+#endif
+}
+     b4a:	0001                	nop
+     b4c:	40b2                	lw	ra,12(sp)
+     b4e:	4422                	lw	s0,8(sp)
+     b50:	0141                	addi	sp,sp,16
+     b52:	8082                	ret
+
+00000b54 <oled_send>:
+oled_send():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:107
+// Quick and dirty I2C routines to drive a SSD1306 based oled on SCL and SDA pins
+//
+
+// Send i2C data string, pass code-array and size to send
+void oled_send(uint8_t *data,uint16_t size)
+{
+     b54:	1101                	addi	sp,sp,-32
+     b56:	ce06                	sw	ra,28(sp)
+     b58:	cc22                	sw	s0,24(sp)
+     b5a:	1000                	addi	s0,sp,32
+     b5c:	fea42623          	sw	a0,-20(s0)
+     b60:	87ae                	mv	a5,a1
+     b62:	fef41523          	sh	a5,-22(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:108
+	i2c_master_write(&i2c_core_i2c,SSD1306_ADR,size,data);
+     b66:	fea45783          	lhu	a5,-22(s0)
+     b6a:	0ff7f793          	zext.b	a5,a5
+     b6e:	fec42683          	lw	a3,-20(s0)
+     b72:	863e                	mv	a2,a5
+     b74:	03c00593          	li	a1,60
+     b78:	86c18513          	addi	a0,gp,-1940 # 1658 <i2c_core_i2c>
+     b7c:	3ea9                	jal	6d6 <i2c_master_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:109
+}
+     b7e:	0001                	nop
+     b80:	40f2                	lw	ra,28(sp)
+     b82:	4462                	lw	s0,24(sp)
+     b84:	6105                	addi	sp,sp,32
+     b86:	8082                	ret
+
+00000b88 <oled_lattice>:
+oled_lattice():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:113
+
+//Send lattice logo bmp data place at col/page location - to be replaced by an image structure
+void oled_lattice(uint8_t column,uint8_t page)
+{
+     b88:	1101                	addi	sp,sp,-32
+     b8a:	ce06                	sw	ra,28(sp)
+     b8c:	cc22                	sw	s0,24(sp)
+     b8e:	1000                	addi	s0,sp,32
+     b90:	87aa                	mv	a5,a0
+     b92:	872e                	mv	a4,a1
+     b94:	fef407a3          	sb	a5,-17(s0)
+     b98:	87ba                	mv	a5,a4
+     b9a:	fef40723          	sb	a5,-18(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:114
+	oled_graph[2]= column;oled_graph[3]=column+LATTICE_WIDTH-1;
+     b9e:	6785                	lui	a5,0x1
+     ba0:	5f478793          	addi	a5,a5,1524 # 15f4 <oled_graph>
+     ba4:	fef44703          	lbu	a4,-17(s0)
+     ba8:	00e78123          	sb	a4,2(a5)
+     bac:	fef44783          	lbu	a5,-17(s0)
+     bb0:	07778793          	addi	a5,a5,119
+     bb4:	0ff7f713          	zext.b	a4,a5
+     bb8:	6785                	lui	a5,0x1
+     bba:	5f478793          	addi	a5,a5,1524 # 15f4 <oled_graph>
+     bbe:	00e781a3          	sb	a4,3(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:115
+	oled_graph[5]=page;oled_graph[6]=page+(LATTICE_HEIGHT/8)+1;						// put data into indexed setup array
+     bc2:	6785                	lui	a5,0x1
+     bc4:	5f478793          	addi	a5,a5,1524 # 15f4 <oled_graph>
+     bc8:	fee44703          	lbu	a4,-18(s0)
+     bcc:	00e782a3          	sb	a4,5(a5)
+     bd0:	fee44783          	lbu	a5,-18(s0)
+     bd4:	0791                	addi	a5,a5,4
+     bd6:	0ff7f713          	zext.b	a4,a5
+     bda:	6785                	lui	a5,0x1
+     bdc:	5f478793          	addi	a5,a5,1524 # 15f4 <oled_graph>
+     be0:	00e78323          	sb	a4,6(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:116
+	i2c_master_write(&i2c_core_i2c,SSD1306_ADR,sizeof(oled_graph),oled_graph); 		// send setup
+     be4:	6785                	lui	a5,0x1
+     be6:	5f478693          	addi	a3,a5,1524 # 15f4 <oled_graph>
+     bea:	461d                	li	a2,7
+     bec:	03c00593          	li	a1,60
+     bf0:	86c18513          	addi	a0,gp,-1940 # 1658 <i2c_core_i2c>
+     bf4:	34cd                	jal	6d6 <i2c_master_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:117
+	i2c_master_write(&i2c_core_i2c,SSD1306_ADR,LATTICE_SIZE, lattice1); 			// send data1
+     bf6:	6785                	lui	a5,0x1
+     bf8:	47c78693          	addi	a3,a5,1148 # 147c <lattice1>
+     bfc:	0b500613          	li	a2,181
+     c00:	03c00593          	li	a1,60
+     c04:	86c18513          	addi	a0,gp,-1940 # 1658 <i2c_core_i2c>
+     c08:	34f9                	jal	6d6 <i2c_master_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:118
+	i2c_master_write(&i2c_core_i2c,SSD1306_ADR,LATTICE_SIZE, lattice2); 			// send data2
+     c0a:	6785                	lui	a5,0x1
+     c0c:	53478693          	addi	a3,a5,1332 # 1534 <lattice2>
+     c10:	0b500613          	li	a2,181
+     c14:	03c00593          	li	a1,60
+     c18:	86c18513          	addi	a0,gp,-1940 # 1658 <i2c_core_i2c>
+     c1c:	3c6d                	jal	6d6 <i2c_master_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:119
+}
+     c1e:	0001                	nop
+     c20:	40f2                	lw	ra,28(sp)
+     c22:	4462                	lw	s0,24(sp)
+     c24:	6105                	addi	sp,sp,32
+     c26:	8082                	ret
+
+00000c28 <oled_clear>:
+oled_clear():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:123
+
+// Fill the oled with a pattern : 128x32 bits ,in 512 bytes/
+void oled_clear(uint8_t pattern)
+{
+     c28:	7179                	addi	sp,sp,-48
+     c2a:	d606                	sw	ra,44(sp)
+     c2c:	d422                	sw	s0,40(sp)
+     c2e:	1800                	addi	s0,sp,48
+     c30:	87aa                	mv	a5,a0
+     c32:	fcf40fa3          	sb	a5,-33(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:124
+	uint8_t i,d[9]={0x40,0,0,0,0,0,0,0,0}; 										   // data write (0x40) 8 bytes per transmission (avoid unwanted large data arrays)
+     c36:	04000793          	li	a5,64
+     c3a:	fef42223          	sw	a5,-28(s0)
+     c3e:	fe042423          	sw	zero,-24(s0)
+     c42:	fe040623          	sb	zero,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:125
+	for(i=1;i<9;++i) d[i]=pattern;												   // fill patten in array
+     c46:	4785                	li	a5,1
+     c48:	fef407a3          	sb	a5,-17(s0)
+     c4c:	a839                	j	c6a <oled_clear+0x42>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:125 (discriminator 3)
+     c4e:	fef44783          	lbu	a5,-17(s0)
+     c52:	ff040713          	addi	a4,s0,-16
+     c56:	97ba                	add	a5,a5,a4
+     c58:	fdf44703          	lbu	a4,-33(s0)
+     c5c:	fee78a23          	sb	a4,-12(a5)
+     c60:	fef44783          	lbu	a5,-17(s0)
+     c64:	0785                	addi	a5,a5,1
+     c66:	fef407a3          	sb	a5,-17(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:125 (discriminator 1)
+     c6a:	fef44703          	lbu	a4,-17(s0)
+     c6e:	47a1                	li	a5,8
+     c70:	fce7ffe3          	bgeu	a5,a4,c4e <oled_clear+0x26>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:126
+	oled_graph[2]=0;oled_graph[3]=127;oled_graph[5]=0;oled_graph[6]=4;			   // put command into indexed array Col 0-127, Pag 0-4
+     c74:	6785                	lui	a5,0x1
+     c76:	5f478793          	addi	a5,a5,1524 # 15f4 <oled_graph>
+     c7a:	00078123          	sb	zero,2(a5)
+     c7e:	6785                	lui	a5,0x1
+     c80:	5f478793          	addi	a5,a5,1524 # 15f4 <oled_graph>
+     c84:	07f00713          	li	a4,127
+     c88:	00e781a3          	sb	a4,3(a5)
+     c8c:	6785                	lui	a5,0x1
+     c8e:	5f478793          	addi	a5,a5,1524 # 15f4 <oled_graph>
+     c92:	000782a3          	sb	zero,5(a5)
+     c96:	6785                	lui	a5,0x1
+     c98:	5f478793          	addi	a5,a5,1524 # 15f4 <oled_graph>
+     c9c:	4711                	li	a4,4
+     c9e:	00e78323          	sb	a4,6(a5)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:127
+	i2c_master_write(&i2c_core_i2c,SSD1306_ADR,sizeof(oled_graph),oled_graph); 	   // send setup command
+     ca2:	6785                	lui	a5,0x1
+     ca4:	5f478693          	addi	a3,a5,1524 # 15f4 <oled_graph>
+     ca8:	461d                	li	a2,7
+     caa:	03c00593          	li	a1,60
+     cae:	86c18513          	addi	a0,gp,-1940 # 1658 <i2c_core_i2c>
+     cb2:	3415                	jal	6d6 <i2c_master_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:128
+	for(i=0;i<SSD1306_D/8;++i) {i2c_master_write(&i2c_core_i2c,SSD1306_ADR,9,d);}; // send 8 data bytes in repeat
+     cb4:	fe0407a3          	sb	zero,-17(s0)
+     cb8:	a839                	j	cd6 <oled_clear+0xae>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:128 (discriminator 3)
+     cba:	fe440793          	addi	a5,s0,-28
+     cbe:	86be                	mv	a3,a5
+     cc0:	4625                	li	a2,9
+     cc2:	03c00593          	li	a1,60
+     cc6:	86c18513          	addi	a0,gp,-1940 # 1658 <i2c_core_i2c>
+     cca:	3431                	jal	6d6 <i2c_master_write>
+     ccc:	fef44783          	lbu	a5,-17(s0)
+     cd0:	0785                	addi	a5,a5,1
+     cd2:	fef407a3          	sb	a5,-17(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:128 (discriminator 1)
+     cd6:	fef44703          	lbu	a4,-17(s0)
+     cda:	03f00793          	li	a5,63
+     cde:	fce7fee3          	bgeu	a5,a4,cba <oled_clear+0x92>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:129
+}
+     ce2:	0001                	nop
+     ce4:	0001                	nop
+     ce6:	50b2                	lw	ra,44(sp)
+     ce8:	5422                	lw	s0,40(sp)
+     cea:	6145                	addi	sp,sp,48
+     cec:	8082                	ret
+
+00000cee <main>:
+main():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:134
+
+
+
+// main loop
+int main(void) {
+     cee:	1141                	addi	sp,sp,-16
+     cf0:	c606                	sw	ra,12(sp)
+     cf2:	c422                	sw	s0,8(sp)
+     cf4:	0800                	addi	s0,sp,16
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:138
+	static uint8_t idx = 0; // index 0
+	static uint8_t pin_state = 0xFF; // all pins
+
+	bsp_init();	delay(1000);
+     cf6:	33cd                	jal	ad8 <bsp_init>
+     cf8:	3e800513          	li	a0,1000
+     cfc:	20ed                	jal	de6 <delay>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:139
+	printf("Hello RISC-V world!\n");
+     cfe:	6785                	lui	a5,0x1
+     d00:	42878513          	addi	a0,a5,1064 # 1428 <__iob+0x18>
+     d04:	2235                	jal	e30 <puts>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:140
+    delay(500);oled_send(oled_init,sizeof(oled_init)); 			    // init oled ssd1306
+     d06:	1f400513          	li	a0,500
+     d0a:	28f1                	jal	de6 <delay>
+     d0c:	45ed                	li	a1,27
+     d0e:	6785                	lui	a5,0x1
+     d10:	46078513          	addi	a0,a5,1120 # 1460 <oled_init>
+     d14:	3581                	jal	b54 <oled_send>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:141
+    delay(500);oled_clear(0xff);oled_send(oled_normal,2); 			// clear oled with pattern 0x00 - black
+     d16:	1f400513          	li	a0,500
+     d1a:	20f1                	jal	de6 <delay>
+     d1c:	0ff00513          	li	a0,255
+     d20:	3721                	jal	c28 <oled_clear>
+     d22:	4589                	li	a1,2
+     d24:	6785                	lui	a5,0x1
+     d26:	5ec78513          	addi	a0,a5,1516 # 15ec <oled_normal>
+     d2a:	352d                	jal	b54 <oled_send>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:142
+    delay(500);oled_lattice(0x04,0x00); 							// send lattice logo (upside down logo)
+     d2c:	1f400513          	li	a0,500
+     d30:	285d                	jal	de6 <delay>
+     d32:	4581                	li	a1,0
+     d34:	4511                	li	a0,4
+     d36:	3d89                	jal	b88 <oled_lattice>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:145
+
+	while (true) {
+		gpio_output_write(&gpio_inst, idx, pin_state);
+     d38:	8201c783          	lbu	a5,-2016(gp) # 160c <idx.1>
+     d3c:	873e                	mv	a4,a5
+     d3e:	80f1c783          	lbu	a5,-2033(gp) # 15fb <pin_state.0>
+     d42:	863e                	mv	a2,a5
+     d44:	85ba                	mv	a1,a4
+     d46:	8d818513          	addi	a0,gp,-1832 # 16c4 <gpio_inst>
+     d4a:	31c1                	jal	a0a <gpio_output_write>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:147
+
+		if (++idx == LED_COUNT) {  							// flip led state in acycle
+     d4c:	8201c783          	lbu	a5,-2016(gp) # 160c <idx.1>
+     d50:	0785                	addi	a5,a5,1
+     d52:	0ff7f713          	zext.b	a4,a5
+     d56:	82e18023          	sb	a4,-2016(gp) # 160c <idx.1>
+     d5a:	8201c703          	lbu	a4,-2016(gp) # 160c <idx.1>
+     d5e:	47a1                	li	a5,8
+     d60:	00f71c63          	bne	a4,a5,d78 <main+0x8a>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:148
+			idx = 0;
+     d64:	82018023          	sb	zero,-2016(gp) # 160c <idx.1>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:149
+			pin_state = ~pin_state;
+     d68:	80f1c783          	lbu	a5,-2033(gp) # 15fb <pin_state.0>
+     d6c:	fff7c793          	not	a5,a5
+     d70:	0ff7f713          	zext.b	a4,a5
+     d74:	80e187a3          	sb	a4,-2033(gp) # 15fb <pin_state.0>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:155
+		}
+
+		if (RTL_SIM) {  									// delay in a cycle
+			delay(1);
+		} else {
+			delay(250);
+     d78:	0fa00513          	li	a0,250
+     d7c:	20ad                	jal	de6 <delay>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:158
+		}
+
+		if (pin_state == 0xFF) {oled_send(oled_normal,2);}  //flip inverse
+     d7e:	80f1c703          	lbu	a4,-2033(gp) # 15fb <pin_state.0>
+     d82:	0ff00793          	li	a5,255
+     d86:	00f71863          	bne	a4,a5,d96 <main+0xa8>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:158 (discriminator 1)
+     d8a:	4589                	li	a1,2
+     d8c:	6785                	lui	a5,0x1
+     d8e:	5ec78513          	addi	a0,a5,1516 # 15ec <oled_normal>
+     d92:	33c9                	jal	b54 <oled_send>
+     d94:	a031                	j	da0 <main+0xb2>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:159
+		else {oled_send(oled_inverse,2);}
+     d96:	4589                	li	a1,2
+     d98:	6785                	lui	a5,0x1
+     d9a:	5f078513          	addi	a0,a5,1520 # 15f0 <oled_inverse>
+     d9e:	3b5d                	jal	b54 <oled_send>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:161
+
+		printf(".");										// send some data to Serial UART
+     da0:	02e00513          	li	a0,46
+     da4:	2051                	jal	e28 <putchar>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/main.c:145
+		gpio_output_write(&gpio_inst, idx, pin_state);
+     da6:	bf49                	j	d38 <main+0x4a>
+
+00000da8 <delayCycle>:
+delayCycle():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/utils.c:65
+}
+
+#else
+
+void delayCycle(uint32_t cycle)
+{
+     da8:	7179                	addi	sp,sp,-48
+     daa:	d622                	sw	s0,44(sp)
+     dac:	1800                	addi	s0,sp,48
+     dae:	fca42e23          	sw	a0,-36(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/utils.c:68
+    if (!RTL_SIM)
+    {
+    	volatile uint32_t count = cycle;
+     db2:	fdc42783          	lw	a5,-36(s0)
+     db6:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/utils.c:69
+    	count *= CYCLE_HZ;
+     dba:	fec42703          	lw	a4,-20(s0)
+     dbe:	6789                	lui	a5,0x2
+     dc0:	08d78793          	addi	a5,a5,141 # 208d <__global_pointer$+0x2a1>
+     dc4:	02f707b3          	mul	a5,a4,a5
+     dc8:	fef42623          	sw	a5,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/utils.c:71
+
+    	while (count--);
+     dcc:	0001                	nop
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/utils.c:71 (discriminator 1)
+     dce:	fec42783          	lw	a5,-20(s0)
+     dd2:	fff78713          	addi	a4,a5,-1
+     dd6:	fee42623          	sw	a4,-20(s0)
+     dda:	fbf5                	bnez	a5,dce <delayCycle+0x26>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/utils.c:77
+    } else
+    {
+    	uint32_t count_sim = 10;
+    	while (count_sim--);
+    }
+}
+     ddc:	0001                	nop
+     dde:	0001                	nop
+     de0:	5432                	lw	s0,44(sp)
+     de2:	6145                	addi	sp,sp,48
+     de4:	8082                	ret
+
+00000de6 <delay>:
+delay():
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/utils.c:81
+
+#endif
+void delay(uint32_t count)
+{
+     de6:	1101                	addi	sp,sp,-32
+     de8:	ce06                	sw	ra,28(sp)
+     dea:	cc22                	sw	s0,24(sp)
+     dec:	1000                	addi	s0,sp,32
+     dee:	fea42623          	sw	a0,-20(s0)
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/utils.c:85
+#ifdef CPU_M_FREQUENCY
+	delayMS(count);
+#else
+	delayCycle(count);
+     df2:	fec42503          	lw	a0,-20(s0)
+     df6:	3f4d                	jal	da8 <delayCycle>
+C:\Users\javos\workspace\riscv_mc_hello\Debug/../src/utils.c:87
+#endif
+}
+     df8:	0001                	nop
+     dfa:	40f2                	lw	ra,28(sp)
+     dfc:	4462                	lw	s0,24(sp)
+     dfe:	6105                	addi	sp,sp,32
+     e00:	8082                	ret
+
+00000e02 <printf>:
+printf():
+     e02:	7139                	addi	sp,sp,-64
+     e04:	da3e                	sw	a5,52(sp)
+     e06:	6785                	lui	a5,0x1
+     e08:	d22e                	sw	a1,36(sp)
+     e0a:	85aa                	mv	a1,a0
+     e0c:	4147a503          	lw	a0,1044(a5) # 1414 <__iob+0x4>
+     e10:	d432                	sw	a2,40(sp)
+     e12:	1050                	addi	a2,sp,36
+     e14:	ce06                	sw	ra,28(sp)
+     e16:	d636                	sw	a3,44(sp)
+     e18:	d83a                	sw	a4,48(sp)
+     e1a:	dc42                	sw	a6,56(sp)
+     e1c:	de46                	sw	a7,60(sp)
+     e1e:	c632                	sw	a2,12(sp)
+     e20:	2069                	jal	eaa <vfprintf>
+     e22:	40f2                	lw	ra,28(sp)
+     e24:	6121                	addi	sp,sp,64
+     e26:	8082                	ret
+
+00000e28 <putchar>:
+putchar():
+     e28:	6785                	lui	a5,0x1
+     e2a:	4147a583          	lw	a1,1044(a5) # 1414 <__iob+0x4>
+     e2e:	a335                	j	135a <fputc>
+
+00000e30 <puts>:
+puts():
+     e30:	57a002ef          	jal	t0,13aa <__riscv_save_0>
+     e34:	6785                	lui	a5,0x1
+     e36:	4147a583          	lw	a1,1044(a5) # 1414 <__iob+0x4>
+     e3a:	1141                	addi	sp,sp,-16
+     e3c:	842a                	mv	s0,a0
+     e3e:	0045c783          	lbu	a5,4(a1)
+     e42:	4481                	li	s1,0
+     e44:	8b89                	andi	a5,a5,2
+     e46:	eb91                	bnez	a5,e5a <puts+0x2a>
+     e48:	54fd                	li	s1,-1
+     e4a:	8526                	mv	a0,s1
+     e4c:	0141                	addi	sp,sp,16
+     e4e:	a341                	j	13ce <__riscv_restore_0>
+     e50:	c62e                	sw	a1,12(sp)
+     e52:	9782                	jalr	a5
+     e54:	45b2                	lw	a1,12(sp)
+     e56:	c111                	beqz	a0,e5a <puts+0x2a>
+     e58:	54fd                	li	s1,-1
+     e5a:	00044503          	lbu	a0,0(s0)
+     e5e:	0405                	addi	s0,s0,1
+     e60:	459c                	lw	a5,8(a1)
+     e62:	f57d                	bnez	a0,e50 <puts+0x20>
+     e64:	4529                	li	a0,10
+     e66:	9782                	jalr	a5
+     e68:	d16d                	beqz	a0,e4a <puts+0x1a>
+     e6a:	bff9                	j	e48 <puts+0x18>
+
+00000e6c <__ultoa_invert>:
+__ultoa_invert():
+     e6c:	20067793          	andi	a5,a2,512
+     e70:	872a                	mv	a4,a0
+     e72:	852e                	mv	a0,a1
+     e74:	02700593          	li	a1,39
+     e78:	c781                	beqz	a5,e80 <__ultoa_invert+0x14>
+     e7a:	dff67613          	andi	a2,a2,-513
+     e7e:	459d                	li	a1,7
+     e80:	4825                	li	a6,9
+     e82:	86ba                	mv	a3,a4
+     e84:	02c6f7b3          	remu	a5,a3,a2
+     e88:	0ff7f793          	zext.b	a5,a5
+     e8c:	02c75733          	divu	a4,a4,a2
+     e90:	00f87563          	bgeu	a6,a5,e9a <__ultoa_invert+0x2e>
+     e94:	97ae                	add	a5,a5,a1
+     e96:	0ff7f793          	zext.b	a5,a5
+     e9a:	0505                	addi	a0,a0,1
+     e9c:	03078793          	addi	a5,a5,48
+     ea0:	fef50fa3          	sb	a5,-1(a0)
+     ea4:	fcc6ffe3          	bgeu	a3,a2,e82 <__ultoa_invert+0x16>
+     ea8:	8082                	ret
+
+00000eaa <vfprintf>:
+vfprintf():
+     eaa:	4d0002ef          	jal	t0,137a <__riscv_save_12>
+     eae:	00454783          	lbu	a5,4(a0)
+     eb2:	1101                	addi	sp,sp,-32
+     eb4:	597d                	li	s2,-1
+     eb6:	8b89                	andi	a5,a5,2
+     eb8:	48078263          	beqz	a5,133c <vfprintf+0x492>
+     ebc:	67c1                	lui	a5,0x10
+     ebe:	17fd                	addi	a5,a5,-1
+     ec0:	8aaa                	mv	s5,a0
+     ec2:	8a32                	mv	s4,a2
+     ec4:	4901                	li	s2,0
+     ec6:	01410c13          	addi	s8,sp,20
+     eca:	6c85                	lui	s9,0x1
+     ecc:	c43e                	sw	a5,8(sp)
+     ece:	0005c483          	lbu	s1,0(a1)
+     ed2:	46048563          	beqz	s1,133c <vfprintf+0x492>
+     ed6:	02500793          	li	a5,37
+     eda:	00158b93          	addi	s7,a1,1
+     ede:	00f49863          	bne	s1,a5,eee <vfprintf+0x44>
+     ee2:	0015c483          	lbu	s1,1(a1)
+     ee6:	00258b93          	addi	s7,a1,2
+     eea:	00f49763          	bne	s1,a5,ef8 <vfprintf+0x4e>
+     eee:	0905                	addi	s2,s2,1
+     ef0:	85d6                	mv	a1,s5
+     ef2:	8526                	mv	a0,s1
+     ef4:	219d                	jal	135a <fputc>
+     ef6:	a295                	j	105a <vfprintf+0x1b0>
+     ef8:	4981                	li	s3,0
+     efa:	4b01                	li	s6,0
+     efc:	4401                	li	s0,0
+     efe:	467d                	li	a2,31
+     f00:	06c00593          	li	a1,108
+     f04:	06800513          	li	a0,104
+     f08:	06a00813          	li	a6,106
+     f0c:	07400893          	li	a7,116
+     f10:	4325                	li	t1,9
+     f12:	02a00e13          	li	t3,42
+     f16:	02e00e93          	li	t4,46
+     f1a:	4729                	li	a4,10
+     f1c:	07f00f13          	li	t5,127
+     f20:	02b00693          	li	a3,43
+     f24:	02d00f93          	li	t6,45
+     f28:	03000293          	li	t0,48
+     f2c:	02000393          	li	t2,32
+     f30:	02300d93          	li	s11,35
+     f34:	04866d63          	bltu	a2,s0,f8e <vfprintf+0xe4>
+     f38:	04d48063          	beq	s1,a3,f78 <vfprintf+0xce>
+     f3c:	0296e363          	bltu	a3,s1,f62 <vfprintf+0xb8>
+     f40:	02748e63          	beq	s1,t2,f7c <vfprintf+0xd2>
+     f44:	05b48263          	beq	s1,s11,f88 <vfprintf+0xde>
+     f48:	fd048793          	addi	a5,s1,-48
+     f4c:	0ff7f793          	zext.b	a5,a5
+     f50:	04f36c63          	bltu	t1,a5,fa8 <vfprintf+0xfe>
+     f54:	04047493          	andi	s1,s0,64
+     f58:	c0b1                	beqz	s1,f9c <vfprintf+0xf2>
+     f5a:	02e989b3          	mul	s3,s3,a4
+     f5e:	99be                	add	s3,s3,a5
+     f60:	a039                	j	f6e <vfprintf+0xc4>
+     f62:	03f48063          	beq	s1,t6,f82 <vfprintf+0xd8>
+     f66:	fe5491e3          	bne	s1,t0,f48 <vfprintf+0x9e>
+     f6a:	00146413          	ori	s0,s0,1
+     f6e:	000bc483          	lbu	s1,0(s7)
+     f72:	0b85                	addi	s7,s7,1
+     f74:	f0e1                	bnez	s1,f34 <vfprintf+0x8a>
+     f76:	a069                	j	1000 <vfprintf+0x156>
+     f78:	00246413          	ori	s0,s0,2
+     f7c:	00446413          	ori	s0,s0,4
+     f80:	b7fd                	j	f6e <vfprintf+0xc4>
+     f82:	00846413          	ori	s0,s0,8
+     f86:	b7e5                	j	f6e <vfprintf+0xc4>
+     f88:	01046413          	ori	s0,s0,16
+     f8c:	b7cd                	j	f6e <vfprintf+0xc4>
+     f8e:	fa8f7de3          	bgeu	t5,s0,f48 <vfprintf+0x9e>
+     f92:	04b49763          	bne	s1,a1,fe0 <vfprintf+0x136>
+     f96:	08046413          	ori	s0,s0,128
+     f9a:	bfd1                	j	f6e <vfprintf+0xc4>
+     f9c:	02eb0b33          	mul	s6,s6,a4
+     fa0:	02046413          	ori	s0,s0,32
+     fa4:	9b3e                	add	s6,s6,a5
+     fa6:	b7e1                	j	f6e <vfprintf+0xc4>
+     fa8:	03c49363          	bne	s1,t3,fce <vfprintf+0x124>
+     fac:	04047493          	andi	s1,s0,64
+     fb0:	000a2783          	lw	a5,0(s4)
+     fb4:	0a11                	addi	s4,s4,4
+     fb6:	e4c5                	bnez	s1,105e <vfprintf+0x1b4>
+     fb8:	0007c663          	bltz	a5,fc4 <vfprintf+0x11a>
+     fbc:	02046413          	ori	s0,s0,32
+     fc0:	8b3e                	mv	s6,a5
+     fc2:	b775                	j	f6e <vfprintf+0xc4>
+     fc4:	40f00b33          	neg	s6,a5
+     fc8:	02846413          	ori	s0,s0,40
+     fcc:	b74d                	j	f6e <vfprintf+0xc4>
+     fce:	fdd492e3          	bne	s1,t4,f92 <vfprintf+0xe8>
+     fd2:	04047793          	andi	a5,s0,64
+     fd6:	36079363          	bnez	a5,133c <vfprintf+0x492>
+     fda:	04046413          	ori	s0,s0,64
+     fde:	bf41                	j	f6e <vfprintf+0xc4>
+     fe0:	00a49a63          	bne	s1,a0,ff4 <vfprintf+0x14a>
+     fe4:	10047793          	andi	a5,s0,256
+     fe8:	c399                	beqz	a5,fee <vfprintf+0x144>
+     fea:	20046413          	ori	s0,s0,512
+     fee:	10046413          	ori	s0,s0,256
+     ff2:	bfb5                	j	f6e <vfprintf+0xc4>
+     ff4:	0ef4f793          	andi	a5,s1,239
+     ff8:	f7078be3          	beq	a5,a6,f6e <vfprintf+0xc4>
+     ffc:	f71489e3          	beq	s1,a7,f6e <vfprintf+0xc4>
+    1000:	0009d763          	bgez	s3,100e <vfprintf+0x164>
+    1004:	fbf47413          	andi	s0,s0,-65
+    1008:	0442                	slli	s0,s0,0x10
+    100a:	8041                	srli	s0,s0,0x10
+    100c:	4981                	li	s3,0
+    100e:	0204e793          	ori	a5,s1,32
+    1012:	f9b78713          	addi	a4,a5,-101 # ff9b <_stack_start+0xde4b>
+    1016:	0ff77713          	zext.b	a4,a4
+    101a:	4689                	li	a3,2
+    101c:	00e6f663          	bgeu	a3,a4,1028 <vfprintf+0x17e>
+    1020:	06100713          	li	a4,97
+    1024:	02e79f63          	bne	a5,a4,1062 <vfprintf+0x1b8>
+    1028:	007a0493          	addi	s1,s4,7
+    102c:	98e1                	andi	s1,s1,-8
+    102e:	6785                	lui	a5,0x1
+    1030:	04a1                	addi	s1,s1,8
+    1032:	4a1d                	li	s4,7
+    1034:	44478d93          	addi	s11,a5,1092 # 1444 <__iob+0x34>
+    1038:	8821                	andi	s0,s0,8
+    103a:	c051                	beqz	s0,10be <vfprintf+0x214>
+    103c:	414b0b33          	sub	s6,s6,s4
+    1040:	014d8433          	add	s0,s11,s4
+    1044:	088d9063          	bne	s11,s0,10c4 <vfprintf+0x21a>
+    1048:	9952                	add	s2,s2,s4
+    104a:	845a                	mv	s0,s6
+    104c:	2e804263          	bgtz	s0,1330 <vfprintf+0x486>
+    1050:	000b5363          	bgez	s6,1056 <vfprintf+0x1ac>
+    1054:	4b01                	li	s6,0
+    1056:	995a                	add	s2,s2,s6
+    1058:	8a26                	mv	s4,s1
+    105a:	85de                	mv	a1,s7
+    105c:	bd8d                	j	ece <vfprintf+0x24>
+    105e:	89be                	mv	s3,a5
+    1060:	b739                	j	f6e <vfprintf+0xc4>
+    1062:	06300713          	li	a4,99
+    1066:	00e49c63          	bne	s1,a4,107e <vfprintf+0x1d4>
+    106a:	000a2783          	lw	a5,0(s4)
+    106e:	004a0493          	addi	s1,s4,4
+    1072:	01410d93          	addi	s11,sp,20
+    1076:	00f10a23          	sb	a5,20(sp)
+    107a:	4a05                	li	s4,1
+    107c:	bf75                	j	1038 <vfprintf+0x18e>
+    107e:	07300713          	li	a4,115
+    1082:	04e49763          	bne	s1,a4,10d0 <vfprintf+0x226>
+    1086:	000a2d83          	lw	s11,0(s4)
+    108a:	004a0493          	addi	s1,s4,4
+    108e:	000d9563          	bnez	s11,1098 <vfprintf+0x1ee>
+    1092:	6785                	lui	a5,0x1
+    1094:	43c78d93          	addi	s11,a5,1084 # 143c <__iob+0x2c>
+    1098:	04047793          	andi	a5,s0,64
+    109c:	55fd                	li	a1,-1
+    109e:	c391                	beqz	a5,10a2 <vfprintf+0x1f8>
+    10a0:	85ce                	mv	a1,s3
+    10a2:	856e                	mv	a0,s11
+    10a4:	2c79                	jal	1342 <strnlen>
+    10a6:	8a2a                	mv	s4,a0
+    10a8:	bf41                	j	1038 <vfprintf+0x18e>
+    10aa:	85d6                	mv	a1,s5
+    10ac:	02000513          	li	a0,32
+    10b0:	246d                	jal	135a <fputc>
+    10b2:	1b7d                	addi	s6,s6,-1
+    10b4:	41640933          	sub	s2,s0,s6
+    10b8:	ff6a69e3          	bltu	s4,s6,10aa <vfprintf+0x200>
+    10bc:	b741                	j	103c <vfprintf+0x192>
+    10be:	012b0433          	add	s0,s6,s2
+    10c2:	bfcd                	j	10b4 <vfprintf+0x20a>
+    10c4:	000dc503          	lbu	a0,0(s11)
+    10c8:	85d6                	mv	a1,s5
+    10ca:	0d85                	addi	s11,s11,1
+    10cc:	2479                	jal	135a <fputc>
+    10ce:	bf9d                	j	1044 <vfprintf+0x19a>
+    10d0:	06400713          	li	a4,100
+    10d4:	00e48663          	beq	s1,a4,10e0 <vfprintf+0x236>
+    10d8:	06900713          	li	a4,105
+    10dc:	04e49e63          	bne	s1,a4,1138 <vfprintf+0x28e>
+    10e0:	08047793          	andi	a5,s0,128
+    10e4:	000a2503          	lw	a0,0(s4)
+    10e8:	004a0493          	addi	s1,s4,4
+    10ec:	cb95                	beqz	a5,1120 <vfprintf+0x276>
+    10ee:	00055663          	bgez	a0,10fa <vfprintf+0x250>
+    10f2:	40a00533          	neg	a0,a0
+    10f6:	40046413          	ori	s0,s0,1024
+    10fa:	fef47793          	andi	a5,s0,-17
+    10fe:	01079d13          	slli	s10,a5,0x10
+    1102:	04047413          	andi	s0,s0,64
+    1106:	010d5d13          	srli	s10,s10,0x10
+    110a:	c409                	beqz	s0,1114 <vfprintf+0x26a>
+    110c:	00a9ea33          	or	s4,s3,a0
+    1110:	060a0e63          	beqz	s4,118c <vfprintf+0x2e2>
+    1114:	4629                	li	a2,10
+    1116:	85e2                	mv	a1,s8
+    1118:	3b91                	jal	e6c <__ultoa_invert>
+    111a:	41850a33          	sub	s4,a0,s8
+    111e:	a0bd                	j	118c <vfprintf+0x2e2>
+    1120:	10047793          	andi	a5,s0,256
+    1124:	d7e9                	beqz	a5,10ee <vfprintf+0x244>
+    1126:	20047793          	andi	a5,s0,512
+    112a:	c781                	beqz	a5,1132 <vfprintf+0x288>
+    112c:	0562                	slli	a0,a0,0x18
+    112e:	8561                	srai	a0,a0,0x18
+    1130:	bf7d                	j	10ee <vfprintf+0x244>
+    1132:	0542                	slli	a0,a0,0x10
+    1134:	8541                	srai	a0,a0,0x10
+    1136:	bf65                	j	10ee <vfprintf+0x244>
+    1138:	07500713          	li	a4,117
+    113c:	10e49263          	bne	s1,a4,1240 <vfprintf+0x396>
+    1140:	983d                	andi	s0,s0,-17
+    1142:	0442                	slli	s0,s0,0x10
+    1144:	8041                	srli	s0,s0,0x10
+    1146:	4629                	li	a2,10
+    1148:	08047793          	andi	a5,s0,128
+    114c:	000a2503          	lw	a0,0(s4)
+    1150:	004a0493          	addi	s1,s4,4
+    1154:	eb91                	bnez	a5,1168 <vfprintf+0x2be>
+    1156:	10047793          	andi	a5,s0,256
+    115a:	c799                	beqz	a5,1168 <vfprintf+0x2be>
+    115c:	20047793          	andi	a5,s0,512
+    1160:	12078863          	beqz	a5,1290 <vfprintf+0x3e6>
+    1164:	0ff57513          	zext.b	a0,a0
+    1168:	ff947793          	andi	a5,s0,-7
+    116c:	01079d13          	slli	s10,a5,0x10
+    1170:	04047713          	andi	a4,s0,64
+    1174:	010d5d13          	srli	s10,s10,0x10
+    1178:	df59                	beqz	a4,1116 <vfprintf+0x26c>
+    117a:	00a9e733          	or	a4,s3,a0
+    117e:	ff41                	bnez	a4,1116 <vfprintf+0x26c>
+    1180:	9825                	andi	s0,s0,-23
+    1182:	01041d13          	slli	s10,s0,0x10
+    1186:	010d5d13          	srli	s10,s10,0x10
+    118a:	4a01                	li	s4,0
+    118c:	040d7713          	andi	a4,s10,64
+    1190:	10070363          	beqz	a4,1296 <vfprintf+0x3ec>
+    1194:	ffed7d93          	andi	s11,s10,-2
+    1198:	0dc2                	slli	s11,s11,0x10
+    119a:	010ddd93          	srli	s11,s11,0x10
+    119e:	8452                	mv	s0,s4
+    11a0:	013a5d63          	bge	s4,s3,11ba <vfprintf+0x310>
+    11a4:	6705                	lui	a4,0x1
+    11a6:	00ed7733          	and	a4,s10,a4
+    11aa:	844e                	mv	s0,s3
+    11ac:	e719                	bnez	a4,11ba <vfprintf+0x310>
+    11ae:	feed7793          	andi	a5,s10,-18
+    11b2:	01079d93          	slli	s11,a5,0x10
+    11b6:	010ddd93          	srli	s11,s11,0x10
+    11ba:	010df793          	andi	a5,s11,16
+    11be:	0e078763          	beqz	a5,12ac <vfprintf+0x402>
+    11c2:	101c                	addi	a5,sp,32
+    11c4:	97d2                	add	a5,a5,s4
+    11c6:	ff37c703          	lbu	a4,-13(a5)
+    11ca:	03000793          	li	a5,48
+    11ce:	0cf71763          	bne	a4,a5,129c <vfprintf+0x3f2>
+    11d2:	fefdfd93          	andi	s11,s11,-17
+    11d6:	0dc2                	slli	s11,s11,0x10
+    11d8:	010ddd93          	srli	s11,s11,0x10
+    11dc:	008df793          	andi	a5,s11,8
+    11e0:	ef89                	bnez	a5,11fa <vfprintf+0x350>
+    11e2:	001df793          	andi	a5,s11,1
+    11e6:	0e078863          	beqz	a5,12d6 <vfprintf+0x42c>
+    11ea:	89d2                	mv	s3,s4
+    11ec:	01645763          	bge	s0,s6,11fa <vfprintf+0x350>
+    11f0:	408b0433          	sub	s0,s6,s0
+    11f4:	014409b3          	add	s3,s0,s4
+    11f8:	845a                	mv	s0,s6
+    11fa:	010df793          	andi	a5,s11,16
+    11fe:	408b0b33          	sub	s6,s6,s0
+    1202:	0e078e63          	beqz	a5,12fe <vfprintf+0x454>
+    1206:	85d6                	mv	a1,s5
+    1208:	03000513          	li	a0,48
+    120c:	22b9                	jal	135a <fputc>
+    120e:	00cdd793          	srli	a5,s11,0xc
+    1212:	8b85                	andi	a5,a5,1
+    1214:	e3f9                	bnez	a5,12da <vfprintf+0x430>
+    1216:	0905                	addi	s2,s2,1
+    1218:	844e                	mv	s0,s3
+    121a:	108a4563          	blt	s4,s0,1324 <vfprintf+0x47a>
+    121e:	4781                	li	a5,0
+    1220:	0149c463          	blt	s3,s4,1228 <vfprintf+0x37e>
+    1224:	414987b3          	sub	a5,s3,s4
+    1228:	993e                	add	s2,s2,a5
+    122a:	8452                	mv	s0,s4
+    122c:	e0040ee3          	beqz	s0,1048 <vfprintf+0x19e>
+    1230:	147d                	addi	s0,s0,-1
+    1232:	008c07b3          	add	a5,s8,s0
+    1236:	0007c503          	lbu	a0,0(a5)
+    123a:	85d6                	mv	a1,s5
+    123c:	2a39                	jal	135a <fputc>
+    123e:	b7fd                	j	122c <vfprintf+0x382>
+    1240:	06f00713          	li	a4,111
+    1244:	04e48463          	beq	s1,a4,128c <vfprintf+0x3e2>
+    1248:	07000713          	li	a4,112
+    124c:	00e49763          	bne	s1,a4,125a <vfprintf+0x3b0>
+    1250:	010c8793          	addi	a5,s9,16 # 1010 <vfprintf+0x166>
+    1254:	8c5d                	or	s0,s0,a5
+    1256:	4641                	li	a2,16
+    1258:	bdc5                	j	1148 <vfprintf+0x29e>
+    125a:	07800713          	li	a4,120
+    125e:	02e79163          	bne	a5,a4,1280 <vfprintf+0x3d6>
+    1262:	05800793          	li	a5,88
+    1266:	00f48463          	beq	s1,a5,126e <vfprintf+0x3c4>
+    126a:	6785                	lui	a5,0x1
+    126c:	b7e5                	j	1254 <vfprintf+0x3aa>
+    126e:	6789                	lui	a5,0x2
+    1270:	80078793          	addi	a5,a5,-2048 # 1800 <_bss_end+0xb4>
+    1274:	8c5d                	or	s0,s0,a5
+    1276:	0442                	slli	s0,s0,0x10
+    1278:	8041                	srli	s0,s0,0x10
+    127a:	21000613          	li	a2,528
+    127e:	b5e9                	j	1148 <vfprintf+0x29e>
+    1280:	85d6                	mv	a1,s5
+    1282:	02500513          	li	a0,37
+    1286:	28d1                	jal	135a <fputc>
+    1288:	0909                	addi	s2,s2,2
+    128a:	b19d                	j	ef0 <vfprintf+0x46>
+    128c:	4621                	li	a2,8
+    128e:	bd6d                	j	1148 <vfprintf+0x29e>
+    1290:	47a2                	lw	a5,8(sp)
+    1292:	8d7d                	and	a0,a0,a5
+    1294:	bdd1                	j	1168 <vfprintf+0x2be>
+    1296:	8452                	mv	s0,s4
+    1298:	8dea                	mv	s11,s10
+    129a:	b705                	j	11ba <vfprintf+0x310>
+    129c:	00cdd793          	srli	a5,s11,0xc
+    12a0:	8b85                	andi	a5,a5,1
+    12a2:	e399                	bnez	a5,12a8 <vfprintf+0x3fe>
+    12a4:	0405                	addi	s0,s0,1
+    12a6:	bf1d                	j	11dc <vfprintf+0x332>
+    12a8:	0409                	addi	s0,s0,2
+    12aa:	bf0d                	j	11dc <vfprintf+0x332>
+    12ac:	406df793          	andi	a5,s11,1030
+    12b0:	d795                	beqz	a5,11dc <vfprintf+0x332>
+    12b2:	bfcd                	j	12a4 <vfprintf+0x3fa>
+    12b4:	85d6                	mv	a1,s5
+    12b6:	02000513          	li	a0,32
+    12ba:	c63e                	sw	a5,12(sp)
+    12bc:	2879                	jal	135a <fputc>
+    12be:	47b2                	lw	a5,12(sp)
+    12c0:	0785                	addi	a5,a5,1
+    12c2:	ff67c9e3          	blt	a5,s6,12b4 <vfprintf+0x40a>
+    12c6:	4781                	li	a5,0
+    12c8:	008b4463          	blt	s6,s0,12d0 <vfprintf+0x426>
+    12cc:	408b07b3          	sub	a5,s6,s0
+    12d0:	993e                	add	s2,s2,a5
+    12d2:	943e                	add	s0,s0,a5
+    12d4:	b71d                	j	11fa <vfprintf+0x350>
+    12d6:	87a2                	mv	a5,s0
+    12d8:	b7ed                	j	12c2 <vfprintf+0x418>
+    12da:	6785                	lui	a5,0x1
+    12dc:	80078793          	addi	a5,a5,-2048 # 800 <i2c_master_write+0x12a>
+    12e0:	00fdfdb3          	and	s11,s11,a5
+    12e4:	0dc2                	slli	s11,s11,0x10
+    12e6:	010ddd93          	srli	s11,s11,0x10
+    12ea:	0909                	addi	s2,s2,2
+    12ec:	05800513          	li	a0,88
+    12f0:	000d9463          	bnez	s11,12f8 <vfprintf+0x44e>
+    12f4:	07800513          	li	a0,120
+    12f8:	85d6                	mv	a1,s5
+    12fa:	2085                	jal	135a <fputc>
+    12fc:	bf31                	j	1218 <vfprintf+0x36e>
+    12fe:	406df793          	andi	a5,s11,1030
+    1302:	f0078be3          	beqz	a5,1218 <vfprintf+0x36e>
+    1306:	002df793          	andi	a5,s11,2
+    130a:	02000513          	li	a0,32
+    130e:	c399                	beqz	a5,1314 <vfprintf+0x46a>
+    1310:	02b00513          	li	a0,43
+    1314:	400dfd93          	andi	s11,s11,1024
+    1318:	000d8463          	beqz	s11,1320 <vfprintf+0x476>
+    131c:	02d00513          	li	a0,45
+    1320:	0905                	addi	s2,s2,1
+    1322:	bfd9                	j	12f8 <vfprintf+0x44e>
+    1324:	85d6                	mv	a1,s5
+    1326:	03000513          	li	a0,48
+    132a:	2805                	jal	135a <fputc>
+    132c:	147d                	addi	s0,s0,-1
+    132e:	b5f5                	j	121a <vfprintf+0x370>
+    1330:	85d6                	mv	a1,s5
+    1332:	02000513          	li	a0,32
+    1336:	2015                	jal	135a <fputc>
+    1338:	147d                	addi	s0,s0,-1
+    133a:	bb09                	j	104c <vfprintf+0x1a2>
+    133c:	854a                	mv	a0,s2
+    133e:	6105                	addi	sp,sp,32
+    1340:	a89d                	j	13b6 <__riscv_restore_12>
+
+00001342 <strnlen>:
+    1342:	95aa                	add	a1,a1,a0
+    1344:	87aa                	mv	a5,a0
+    1346:	00b78563          	beq	a5,a1,1350 <strnlen+0xe>
+    134a:	0007c703          	lbu	a4,0(a5)
+    134e:	e701                	bnez	a4,1356 <strnlen+0x14>
+    1350:	40a78533          	sub	a0,a5,a0
+    1354:	8082                	ret
+    1356:	0785                	addi	a5,a5,1
+    1358:	b7fd                	j	1346 <strnlen+0x4>
+
+0000135a <fputc>:
+    135a:	050002ef          	jal	t0,13aa <__riscv_save_0>
+    135e:	0045c703          	lbu	a4,4(a1)
+    1362:	8b09                	andi	a4,a4,2
+    1364:	cb01                	beqz	a4,1374 <fputc+0x1a>
+    1366:	459c                	lw	a5,8(a1)
+    1368:	842a                	mv	s0,a0
+    136a:	0ff57513          	zext.b	a0,a0
+    136e:	9782                	jalr	a5
+    1370:	00055363          	bgez	a0,1376 <fputc+0x1c>
+    1374:	547d                	li	s0,-1
+    1376:	8522                	mv	a0,s0
+    1378:	a899                	j	13ce <__riscv_restore_0>
+
+0000137a <__riscv_save_12>:
+    137a:	7139                	addi	sp,sp,-64
+    137c:	4301                	li	t1,0
+    137e:	c66e                	sw	s11,12(sp)
+    1380:	a019                	j	1386 <__riscv_save_10+0x4>
+
+00001382 <__riscv_save_10>:
+    1382:	7139                	addi	sp,sp,-64
+    1384:	5341                	li	t1,-16
+    1386:	c86a                	sw	s10,16(sp)
+    1388:	ca66                	sw	s9,20(sp)
+    138a:	cc62                	sw	s8,24(sp)
+    138c:	ce5e                	sw	s7,28(sp)
+    138e:	a019                	j	1394 <__riscv_save_4+0x4>
+
+00001390 <__riscv_save_4>:
+    1390:	7139                	addi	sp,sp,-64
+    1392:	5301                	li	t1,-32
+    1394:	d05a                	sw	s6,32(sp)
+    1396:	d256                	sw	s5,36(sp)
+__riscv_save_7():
+    1398:	d452                	sw	s4,40(sp)
+    139a:	d64e                	sw	s3,44(sp)
+    139c:	d84a                	sw	s2,48(sp)
+    139e:	da26                	sw	s1,52(sp)
+    13a0:	dc22                	sw	s0,56(sp)
+    13a2:	de06                	sw	ra,60(sp)
+    13a4:	40610133          	sub	sp,sp,t1
+    13a8:	8282                	jr	t0
+
+000013aa <__riscv_save_0>:
+__riscv_save_1():
+    13aa:	1141                	addi	sp,sp,-16
+    13ac:	c04a                	sw	s2,0(sp)
+    13ae:	c226                	sw	s1,4(sp)
+    13b0:	c422                	sw	s0,8(sp)
+    13b2:	c606                	sw	ra,12(sp)
+    13b4:	8282                	jr	t0
+
+000013b6 <__riscv_restore_12>:
+__riscv_restore_12():
+    13b6:	4db2                	lw	s11,12(sp)
+    13b8:	0141                	addi	sp,sp,16
+
+000013ba <__riscv_restore_10>:
+    13ba:	4d02                	lw	s10,0(sp)
+    13bc:	4c92                	lw	s9,4(sp)
+    13be:	4c22                	lw	s8,8(sp)
+    13c0:	4bb2                	lw	s7,12(sp)
+    13c2:	0141                	addi	sp,sp,16
+
+000013c4 <__riscv_restore_4>:
+    13c4:	4b02                	lw	s6,0(sp)
+    13c6:	4a92                	lw	s5,4(sp)
+    13c8:	4a22                	lw	s4,8(sp)
+    13ca:	49b2                	lw	s3,12(sp)
+    13cc:	0141                	addi	sp,sp,16
+
+000013ce <__riscv_restore_0>:
+    13ce:	4902                	lw	s2,0(sp)
+    13d0:	4492                	lw	s1,4(sp)
+    13d2:	4422                	lw	s0,8(sp)
+    13d4:	40b2                	lw	ra,12(sp)
+    13d6:	0141                	addi	sp,sp,16
+    13d8:	8082                	ret
+	...

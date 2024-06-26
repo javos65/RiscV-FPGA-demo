@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LFD2NX" date="2024 06 21 20:44:30" device="LFD2NX-40" gen_platform="Propel" generator="ipgen" library="module" module="apb_interconnect" name="apb0" package="CABGA196" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="1.2.0">
+ <Package>
+  <File modified="2024 06 21 20:44:30" name="rtl/apb0_bb.v" type="black_box_verilog"/>
+  <File modified="2024 06 21 20:44:30" name="apb0.cfg" type="cfg"/>
+  <File modified="2024 06 21 20:44:30" name="misc/apb0_tmpl.v" type="template_verilog"/>
+  <File modified="2024 06 21 20:44:30" name="misc/apb0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 06 21 20:44:30" name="rtl/apb0.v" type="top_level_verilog"/>
+  <File modified="2024 06 21 20:44:30" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2024 06 21 20:44:30" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 06 21 20:44:30" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 06 21 20:44:30" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2024 06 21 18:44:30" name="testbench/apb_int_top.v" type="testbench_verilog"/>
+  <File modified="2019 12 20 02:26:39" name="testbench/create_apb_interconnect_top.py" type="testbench"/>
+  <File modified="2019 12 20 02:26:39" name="testbench/lscc_apb_master_dummy.v" type="testbench_verilog"/>
+  <File modified="2019 12 20 02:26:39" name="testbench/lscc_apb_slave_dummy.v" type="testbench_verilog"/>
+  <File modified="2019 12 20 02:26:39" name="testbench/lscc_dummy_model_lfsr.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

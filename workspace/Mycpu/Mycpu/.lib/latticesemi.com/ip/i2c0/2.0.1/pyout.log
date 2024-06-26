@@ -1,0 +1,86 @@
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.cfg 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\constraints\i2c0.ldc 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_params.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\design.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.ipx 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.cfg 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\constraints\i2c0.ldc 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_params.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\design.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.ipx 
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.1631306999999964
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 6, 'O_DIV': {'CLKOP': 14, 'CLKOS': 84}, 'BWFAC': 9.446534284495836, 'fbk_div': 84, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.387634971937585, 'BW_3DB': 1.9054607179632614, 'BW_OPL': 1.7378008287493891, 'PM_3DB': 83.7356363080623}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+WARNING: missing driver HDL files.
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\pll0.cfg 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\misc\pll0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\misc\pll0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\constraints\pll0.ldc 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\testbench\dut_params.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\design.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\module\pll0\1.8.0\pll0.ipx 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.cfg 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\constraints\i2c0.ldc 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_params.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\design.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.ipx 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.cfg 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\constraints\i2c0.ldc 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_params.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\design.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.ipx 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.cfg 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\constraints\i2c0.ldc 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_params.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\design.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.ipx 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.cfg 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\constraints\i2c0.ldc 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_params.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_inst.v 

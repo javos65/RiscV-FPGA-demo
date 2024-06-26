@@ -1,0 +1,13 @@
+cpu0_ipgen_BufferCC_1_
+cpu0_ipgen_FlowCCByToggle
+cpu0_ipgen_JtagBridge
+cpu0_ipgen_SystemDebugger
+cpu0_ipgen_StreamFifoLowLatency_Dbg_IMAC
+gpio0
+i2c0_ipgen_lscc_i2c_master_arbtr
+i2c0_ipgen_lscc_i2c_master_cntrl_fsm_top
+i2c0
+osc0
+pll0
+uart0
+Mycpu

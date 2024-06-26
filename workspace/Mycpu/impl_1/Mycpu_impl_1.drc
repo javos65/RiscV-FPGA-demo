@@ -1,0 +1,5 @@
+WARNING <71003020> - Top module port 'TCK' does not connect to anything.
+WARNING <71003020> - Top module port 'TMS' does not connect to anything.
+WARNING <71003020> - Top module port 'TDI' does not connect to anything.
+WARNING <71003020> - Top module port 'TDO' does not connect to anything.
+DRC detected 0 errors and 0 warnings.

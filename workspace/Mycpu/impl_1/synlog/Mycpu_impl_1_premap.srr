@@ -1,0 +1,377 @@
+# Wed Jun 26 14:46:10 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: FOXXPS15
+
+Implementation : impl_1
+Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 248R, Built Mar  7 2024 08:35:47, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 122MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 136MB)
+
+Reading constraint file: C:\Users\javos\workspace\Mycpu\impl_1\Mycpu_impl_1_cpe.ldc
+@W: MT453 :"c:/users/javos/workspace/mycpu/impl_1/mycpu_impl_1_cpe.ldc":5:0:5:0|clock period is too long for clock osc0_inst_lf_clk_out_o, changing period from 31250.0 to 15625.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 15625.0 ns to 7812.5 ns. 
+@W: MT536 |Found constraint file with both legacy-style and FPGA timing constraints. 
+@L: C:\Users\javos\workspace\Mycpu\impl_1\Mycpu_impl_1_scck.rpt 
+See clock summary report "C:\Users\javos\workspace\Mycpu\impl_1\Mycpu_impl_1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 159MB peak: 159MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 159MB peak: 160MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 174MB)
+
+NConnInternalConnection caching is on
+@N: FX493 |Applying initial value "0" on instance inputArea_target.
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0000" on instance jtag_tap_fsm_state[3:0].
+@N: FX493 |Applying initial value "00000000" on instance mem_LUT\.mem_reg\.async\.data_buff_r[7:0].
+@N: FX493 |Applying initial value "010" on instance genblk5\.ahbl_hsize_p_r[2:0].
+@N: FX493 |Applying initial value "000000000000000" on instance genblk5\.rd_prev_r[14:0].
+@N: FX493 |Applying initial value "0" on instance genblk5\.ahbl_hresp_r.
+@N: FX493 |Applying initial value "1" on instance genblk5\.ahbl_hreadyout_ext_r.
+@W: BN132 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2491:16:2491:21|Removing sequential instance uart0_inst.lscc_uart_inst.u_txmitt.nfifo_thrrdy.thr_ready because it is equivalent to instance uart0_inst.lscc_uart_inst.u_txmitt.genblk4.thr_empty. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 226MB peak: 226MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 226MB peak: 227MB)
+
+@N: MO111 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) on net gpio_en_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) on net gpio_en_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_3 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) on net gpio_en_o_3 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_4 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) on net gpio_en_o_4 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_5 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) on net gpio_en_o_5 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":778:36:778:44|Tristate driver gpio_en_o_6 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) on net gpio_en_o_6 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z13_layer0(verilog)) has its enable tied to GND.
+@W: MO129 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1249:12:1249:17|Sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk5.ahbl_hsize_p_r[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1249:12:1249:17|Sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk5.ahbl_hsize_p_r[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1249:12:1249:17|Sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.genblk5.ahbl_hsize_p_r[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1249:12:1249:17|Sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.genblk5.ahbl_hsize_p_r[2] is reduced to a combinational gate by constant propagation.
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 226MB peak: 227MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 226MB peak: 227MB)
+
+@N: BN115 :"c:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":756:2:756:10|Removing instance inst_wr_a (in view: work.lscc_ram_dp_true_main_Z48_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":771:2:771:10|Removing instance inst_wr_b (in view: work.lscc_ram_dp_true_main_Z48_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":9371:45:9371:53|Removing instance AHBL_ARB\.u_arbiter (in view: work.sysmem0_ipgen_lscc_sys_mem_Z28_layer0(verilog)) because it does not drive other instances.
+Encoding state machine cs_sm[2:0] (in view: work.ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine cs_ahbl_sm[8:0] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z6_layer0(verilog))
+original code -> new code
+   000000001 -> 000000001
+   000000010 -> 000000010
+   000000100 -> 000000100
+   000001000 -> 000001000
+   000010000 -> 000010000
+   000100000 -> 000100000
+   001000000 -> 001000000
+   010000000 -> 010000000
+   100000000 -> 100000000
+Encoding state machine buff_valid_r[2:0] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z6_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   11 -> 10
+Encoding state machine dual_clk\.cs_apb_sm[2:0] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z6_layer0(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+Encoding state machine <encrypted> (in view: work.cpu0_ipgen_Riscv_Dbg_IMAC(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine genblk1\.bus_sm_cs[3:0] (in view: work.gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+@N: MO225 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":321:16:321:21|There are no possible illegal states for state machine genblk1\.bus_sm_cs[3:0] (in view: work.gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s(verilog)); safe FSM implementation is not required.
+Encoding state machine <encrypted> (in view: work.i2c0_ipgen_lscc_sclk_gen(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+Encoding state machine <encrypted> (in view: work.i2c0_ipgen_lscc_i2c_master_start_gen_Z14_layer0(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+Encoding state machine <encrypted> (in view: work.i2c0_ipgen_lscc_i2c_master_stop_gen_10s_18s_85s_24s_10s_0_1_2_3(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.i2c0_ipgen_lscc_i2c_master_cntrl_fsm(verilog))
+original code -> new code
+   0000 -> 000000000001
+   0001 -> 000000000010
+   0010 -> 000000000100
+   0011 -> 000000001000
+   0100 -> 000000010000
+   0101 -> 000000100000
+   0110 -> 000001000000
+   0111 -> 000010000000
+   1000 -> 000100000000
+   1001 -> 001000000000
+   1010 -> 010000000000
+   1011 -> 100000000000
+Encoding state machine <encrypted> (in view: work.i2c0_ipgen_lscc_i2c_master_byte_tx_fsm(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+Encoding state machine <encrypted> (in view: work.i2c0_ipgen_lscc_i2c_master_byte_rx_fsm(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+Encoding state machine <encrypted> (in view: work.i2c0_ipgen_lscc_apb2lmmi_8s_4s_1s_0s_1_2_4_8_4s(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+Encoding state machine genblk5\.err_sm_r[2:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+Encoding state machine genblk5\.bridge_sm_r[8:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog))
+original code -> new code
+   00000000000001 -> 000000001
+   00000000000010 -> 000000010
+   00000000000100 -> 000000100
+   00000000100000 -> 000001000
+   00000001000000 -> 000010000
+   00000010000000 -> 000100000
+   00000100000000 -> 001000000
+   00001000000000 -> 010000000
+   00010000000000 -> 100000000
+@N: FX493 |Applying initial value "1" on instance genblk5\.bridge_sm_r[0].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[1].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[2].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[3].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[4].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[5].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[6].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[7].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[8].
+Encoding state machine genblk5\.err_sm_r[2:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_0(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+Encoding state machine genblk5\.bridge_sm_r[8:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_0(verilog))
+original code -> new code
+   00000000000001 -> 000000001
+   00000000000010 -> 000000010
+   00000000000100 -> 000000100
+   00000000100000 -> 000001000
+   00000001000000 -> 000010000
+   00000010000000 -> 000100000
+   00000100000000 -> 001000000
+   00001000000000 -> 010000000
+   00010000000000 -> 100000000
+@N: FX493 |Applying initial value "1" on instance genblk5\.bridge_sm_r[0].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[1].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[2].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[3].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[4].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[5].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[6].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[7].
+@N: FX493 |Applying initial value "0" on instance genblk5\.bridge_sm_r[8].
+Encoding state machine nfifo_int\.cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_Z50_layer0(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+@N: MO225 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1070:16:1070:21|There are no possible illegal states for state machine nfifo_int\.cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_Z50_layer0(verilog)); safe FSM implementation is not required.
+Encoding state machine cs_state[4:0] (in view: work.uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D(verilog))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine nfifo_fsm\.tx_state[6:0] (in view: work.uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64(verilog))
+original code -> new code
+   0000001 -> 0000001
+   0000010 -> 0000010
+   0000100 -> 0000100
+   0001000 -> 0001000
+   0010000 -> 0010000
+   0100000 -> 0100000
+   1000000 -> 1000000
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 234MB peak: 234MB)
+
+@W: MO197 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1325:12:1325:17|Removing FSM register genblk5\.bridge_sm_r[8] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1325:12:1325:17|Removing FSM register genblk5\.bridge_sm_r[6] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1325:12:1325:17|Removing FSM register genblk5\.bridge_sm_r[5] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1325:12:1325:17|Removing FSM register genblk5\.bridge_sm_r[2] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1325:12:1325:17|Removing FSM register genblk5\.bridge_sm_r[1] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1337:12:1337:17|Removing FSM register genblk5\.err_sm_r[0] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1325:12:1325:17|Removing FSM register genblk5\.bridge_sm_r[7] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog)) because its output is a constant.
+@W: MO197 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1337:12:1337:17|Removing FSM register genblk5\.err_sm_r[1] (in view view:work.sysmem0_ipgen_lscc_ahblmem_subordinate_Z29_layer0_1(verilog)) because its output is a constant.
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 234MB peak: 234MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=84 on top level netlist Mycpu 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 234MB peak: 235MB)
+
+Some data will not be shown as it is part of encrypted module
+
+
+Clock Summary
+******************
+
+          Start                                                                                              Requested     Requested     Clock        Clock                     Clock
+Level     Clock                                                                                              Frequency     Period        Type         Group                     Load 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                                                                             200.0 MHz     5.000         system       system_clkgroup           0    
+                                                                                                                                                                                     
+0 -       osc0_inst_hf_clk_out_o                                                                             18.0 MHz      55.556        declared     default_clkgroup          0    
+                                                                                                                                                                                     
+0 -       osc0_inst_lf_clk_out_o                                                                             0.1 MHz       15625.000     declared     default_clkgroup          0    
+                                                                                                                                                                                     
+0 -       pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     2143 
+                                                                                                                                                                                     
+0 -       pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock                                              200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     949  
+                                                                                                                                                                                     
+0 -       cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     83   
+                                                                                                                                                                                     
+0 -       cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_4     9    
+=====================================================================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                                                                   Clock     Source                                                          Clock Pin                                                                                                                                                                                                      Non-clock Pin     Non-clock Pin
+Clock                                                                                              Load      Pin                                                             Seq Example                                                                                                                                                                                                    Seq Example       Comb Example 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                                             0         -                                                               -                                                                                                                                                                                                              -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+osc0_inst_hf_clk_out_o                                                                             0         osc0_inst.lscc_osc_inst.gen_osca\.u_OSC_A.HFCLKOUT(OSCA)        -                                                                                                                                                                                                              -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+osc0_inst_lf_clk_out_o                                                                             0         osc0_inst.lscc_osc_inst.gen_osca\.u_OSC_A.LFCLKOUT(OSCA)        -                                                                                                                                                                                                              -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              2143      pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     sysmem0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AHBL\.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[15\]\.mem_file\.u_mem0.LIFCL\.dp16k.CLKB     -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock                                              949       pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOS(PLL)     uart0_inst.lscc_uart_inst.u_txmitt.tx_in_shift_s.C                                                                                                                                                             -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               83        -                                                               -                                                                                                                                                                                                              -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     9         -                                                               -                                                                                                                                                                                                              -                 -            
+===========================================================================================================================================================================================================================================================================================================================================================================================================================
+
+@W: MT530 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\module\ahbl2apb0\1.1.0\rtl\ahbl2apb0.v":537:16:537:21|Found inferred clock pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock which controls 949 sequential elements including ahbl2apb0_inst.lscc_ahbl2apb_inst.dual_clk\.cs_apb_sm[1]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\javos\workspace\mycpu\mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":5413:4:5413:9|Found inferred clock pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock which controls 2143 sequential elements including ahbl0_inst.lscc_ahbl_interconnect_inst.ahb_lite_bus\.u_lscc_ahbl_bus.u_lscc_ahbl_multiplexor.active_tx_r. This clock has no specified timing constraint which may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 9 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 3108 clock pin(s) of sequential element(s)
+0 instances converted, 3108 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_76      ENCRYPTED           JTAGH19                9          ENCRYPTED      
+=======================================================================================
+======================================================================================================================= Gated/Generated Clocks =======================================================================================================================
+Clock Tree ID     Driving Element                                            Drive Element Type     Unconverted Fanout     Sample Instance                                                                                              Explanation                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_25      pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOS     PLL                    935                    ahbl2apb0_inst.lscc_ahbl2apb_inst.dual_clk\.cs_apb_sm[1]                                                     Clock Optimization not enabled
+@KP:ckid0_72      pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP     PLL                    2090                   ahbl0_inst.lscc_ahbl_interconnect_inst.ahb_lite_bus\.u_lscc_ahbl_bus.u_lscc_ahbl_multiplexor.active_tx_r     Clock Optimization not enabled
+@KP:ckid0_75      ENCRYPTED                                                  DCC                    83                     ENCRYPTED                                                                                                    Clock Optimization not enabled
+======================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 232MB peak: 235MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 232MB peak: 235MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 235MB peak: 235MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 235MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+# Wed Jun 26 14:46:13 2024
+
+###########################################################]

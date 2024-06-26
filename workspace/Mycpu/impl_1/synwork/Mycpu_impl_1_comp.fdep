@@ -1,0 +1,404 @@
+#OPTIONS:"|-mixedhdl|-modhint|C:\\Users\\javos\\workspace\\Mycpu\\impl_1\\synwork\\_verilog_hintfile|-top|Mycpu|-layerid|0|-orig_srs|C:\\Users\\javos\\workspace\\Mycpu\\impl_1\\synwork\\Mycpu_impl_1_comp.srs|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-I|C:\\Users\\javos\\workspace\\Mycpu|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\cpu0\\2.5.0|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\gpio0\\1.6.2|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\i2c0\\2.0.1|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\sysmem0\\2.1.0|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\uart0\\1.3.0|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\ahbl0\\1.3.0|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\ahbl2apb0\\1.1.0|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\apb0\\1.2.0|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\osc0\\1.4.0|-I|C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\pll0\\1.8.0|-I|C:\\Users\\javos\\workspace\\Mycpu\\impl_1\\|-I|C:\\lscc\\radiant\\2023.2\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\lucent\\lfd2nx.v|-devicelib|C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\bin64\\c_ver.exe":1709958256
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\impl_1\\synwork\\_verilog_hintfile":1718977922
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\lucent\\lfd2nx.v":1711013466
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\lucent\\pmi_def.v":1709958283
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vlog\\hypermods.v":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vlog\\scemi_objects.v":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vlog\\scemi_pipes.svh":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_lfd2nx.v":1589160700
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_addsub.v":1562800400
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/adder_subtractor/rtl/lscc_add_sub.v":1683513052
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_add.v":1562800366
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/adder/rtl/lscc_adder.v":1684803183
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_complex_mult.v":1562800443
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/complex_mult/rtl/lscc_complex_mult.v":1698224940
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_counter.v":1562800475
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/counter/rtl/lscc_cntr.v":1564990907
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_distributed_dpram.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/distributed_dpram/rtl/lscc_distributed_dpram.v":1695018057
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_distributed_spram.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/distributed_spram/rtl/lscc_distributed_spram.v":1695018104
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_distributed_rom.v":1565060115
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/distributed_rom/rtl/lscc_distributed_rom.v":1695018080
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_distributed_shift_reg.v":1666080348
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/ram_shift_reg/rtl/lscc_shift_register.v":1695019042
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_fifo.v":1706256138
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../avant/fifo/rtl/lscc_fifo.v":1707371068
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_fifo_dc.v":1706256145
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../avant/fifo_dc/rtl/lscc_fifo_dc.v":1707371103
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_mac.v":1562800511
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/mult_accumulate/rtl/lscc_mult_accumulate.v":1698226765
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_multaddsubsum.v":1562800615
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":1698227216
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_multaddsub.v":1562800566
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/mult_add_sub/rtl/lscc_mult_add_sub.v":1698227041
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_mult.v":1562800537
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/multiplier/rtl/lscc_multiplier.v":1698227389
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_ram_dp.v":1644979873
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../avant/ram_dp/rtl/lscc_ram_dp.v":1705564178
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_ram_dp_be.v":1644980856
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../avant/ram_dp/rtl/lscc_ram_dp.v":1705564178
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_ram_dp_true.v":1644979914
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../avant/ram_dp_true/rtl/lscc_ram_dp_true.v":1705564245
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_ram_dq.v":1644979923
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../avant/ram_dq/rtl/lscc_ram_dq.v":1705564266
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_ram_dq_be.v":1644979933
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../avant/ram_dq/rtl/lscc_ram_dq.v":1705564266
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_rom.v":1644979944
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../avant/rom/rtl/lscc_rom.v":1705564287
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_sub.v":1562800650
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1564990995
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\Mycpu.v":1719405901
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\pll0\\1.8.0\\rtl\\pll0.v":1719322858
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\apb0\\1.2.0\\rtl\\apb0.v":1718995472
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\ahbl2apb0\\1.1.0\\rtl\\ahbl2apb0.v":1684734500
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\uart0\\1.3.0\\rtl\\uart0.v":1718977624
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\sysmem0\\2.1.0\\rtl\\sysmem0.v":1719405886
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\ahbl0\\1.3.0\\rtl\\ahbl0.v":1684734498
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\cpu0\\2.5.0\\rtl\\cpu0.v":1718995386
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\module\\osc0\\1.4.0\\rtl\\osc0.v":1718977640
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\gpio0\\1.6.2\\rtl\\gpio0.v":1718977634
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\Mycpu\\lib\\latticesemi.com\\ip\\i2c0\\2.0.1\\rtl\\i2c0.v":1719322872
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\reginit.bin":1719405903
+0			"C:\lscc\radiant\2023.2\ip\pmi\pmi_lfd2nx.v" verilog
+1		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_addsub.v" verilog
+2		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" verilog
+3		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_add.v" verilog
+4		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/adder/rtl\lscc_adder.v" verilog
+5		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v" verilog
+6		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" verilog
+7		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_counter.v" verilog
+8		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/counter/rtl\lscc_cntr.v" verilog
+9		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_dpram.v" verilog
+10		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" verilog
+11		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_spram.v" verilog
+12		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" verilog
+13		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_rom.v" verilog
+14		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" verilog
+15		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_shift_reg.v" verilog
+16		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" verilog
+17		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_fifo.v" verilog
+18		*	"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo/rtl\lscc_fifo.v" verilog
+19		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_fifo_dc.v" verilog
+20		*	"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v" verilog
+21		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v" verilog
+22		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" verilog
+23		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v" verilog
+24		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" verilog
+25		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v" verilog
+26		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" verilog
+27		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v" verilog
+28		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" verilog
+29		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp.v" verilog
+30		*	"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v" verilog
+31		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_be.v" verilog
+32		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_true.v" verilog
+33		*	"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v" verilog
+34		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq.v" verilog
+35		*	"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v" verilog
+36		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq_be.v" verilog
+37		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_rom.v" verilog
+38		*	"C:\lscc\radiant\2023.2\ip\pmi\../avant/rom/rtl\lscc_rom.v" verilog
+39		*	"C:\lscc\radiant\2023.2\ip\pmi\pmi_sub.v" verilog
+40		*	"C:\lscc\radiant\2023.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" verilog
+41			"C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v" verilog
+42			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v" verilog
+43			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v" verilog
+44			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl2apb0\1.1.0\rtl\ahbl2apb0.v" verilog
+45			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v" verilog
+46			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v" verilog
+47			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v" verilog
+48			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\cpu0\2.5.0\rtl\cpu0.v" verilog
+49			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\osc0\1.4.0\rtl\osc0.v" verilog
+50			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v" verilog
+51			"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v" verilog
+#Dependency Lists(Uses List)
+0 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+1 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 0
+2 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 1 0
+3 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 2 1 0
+4 0 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 3 2 1
+5 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 4 3 2 1 0
+6 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 5 4 3 2 1 0
+7 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 6 5 4 3 2 1 0
+8 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 7 6 5 4 3 2 1 0
+9 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 8 7 6 5 4 3 2 1 0
+10 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 9 8 7 6 5 4 3 2 1 0
+11 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 10 9 8 7 6 5 4 3 2 1 0
+12 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 11 10 9 8 7 6 5 4 3 2 1 0
+13 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 12 11 10 9 8 7 6 5 4 3 2 1 0
+14 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+15 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+16 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+17 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+18 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+19 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+20 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+21 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+22 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+23 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+24 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+25 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+26 0 40 39 38 37 36 35 34 33 32 31 30 29 28 27 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+27 40 39 38 37 36 35 34 33 32 31 30 29 28 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+28 0 40 39 38 37 36 35 34 33 32 31 30 29 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+29 40 39 38 37 36 35 34 33 32 31 30 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+30 40 39 38 37 36 35 34 33 32 30 31 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+31 40 39 38 37 36 35 34 33 32 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+32 40 39 38 37 36 35 34 33 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+33 40 39 38 37 36 35 34 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+34 40 39 38 37 36 35 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+35 40 39 38 37 35 36 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+36 40 39 38 37 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+37 40 39 38 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+38 40 39 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+39 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+40 0 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+41 45 46 42 49 51 50 48 43 44 47
+42 -1
+43 -1
+44 -1
+45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+46 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+47 -1
+48 -1
+49 -1
+50 -1
+51 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+#Dependency Lists(Users Of)
+0 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+1 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 0
+2 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 1 0
+3 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 2 1 0
+4 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 3 2 1 0
+5 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 4 3 2 1 0
+6 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 5 4 3 2 1 0
+7 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 6 5 4 3 2 1 0
+8 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 7 6 5 4 3 2 1 0
+9 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 8 7 6 5 4 3 2 1 0
+10 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 9 8 7 6 5 4 3 2 1 0
+11 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 10 9 8 7 6 5 4 3 2 1 0
+12 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 11 10 9 8 7 6 5 4 3 2 1 0
+13 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 12 11 10 9 8 7 6 5 4 3 2 1 0
+14 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+15 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+16 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+17 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+18 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+19 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+20 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+21 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+22 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+23 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+24 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+25 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+26 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+27 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+28 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+29 51 46 45 40 39 38 37 36 35 34 33 32 31 30 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+30 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+31 51 46 45 40 39 38 37 36 35 34 33 32 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+32 51 46 45 40 39 38 37 36 35 34 33 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+33 51 46 45 40 39 38 37 36 35 34 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+34 51 46 45 40 39 38 37 36 35 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+35 51 46 45 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+36 51 46 45 40 39 38 37 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+37 51 46 45 40 39 38 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+38 51 46 45 40 39 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+39 51 46 45 40 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+40 51 46 45 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+41 -1
+42 41
+43 41
+44 41
+45 41
+46 41
+47 41
+48 41
+49 41
+50 41
+51 41
+#Design Unit to File Association
+module work i2c0_ipgen_lscc_i2c_master_lmmi 51
+module work i2c0_ipgen_lscc_i2c_master_controller 51
+module work i2c0_ipgen_lscc_i2c_master_cntrl_fsm_top 51
+module work i2c0_ipgen_lscc_i2c_master_cntrl_fsm 51
+module work i2c0_ipgen_lscc_i2c_master_byte_tx_fsm 51
+module work i2c0_ipgen_lscc_i2c_master_byte_rx_fsm 51
+module work i2c0_ipgen_lscc_i2c_glitch_filter 51
+module work i2c0_ipgen_lscc_i2c_master_stop_gen 51
+module work i2c0_ipgen_lscc_i2c_master_start_gen 51
+module work i2c0_ipgen_lscc_sclk_gen 51
+module work i2c0_ipgen_lscc_i2c_master_arbtr 51
+module work i2c0_ipgen_lscc_i2c_bus_cntrl_fsm_top 51
+module work i2c0_ipgen_lscc_delay_gen 51
+module work i2c0_ipgen_lscc_apb2lmmi 51
+module work i2c0_ipgen_lscc_i2c_master_native 51
+module work i2c0_ipgen_lscc_i2c_master 51
+module work gpio0_ipgen_lscc_gpio_lmmi 50
+module work gpio0_ipgen_lscc_apb2lmmi 50
+module work gpio0_ipgen_lscc_gpio 50
+module work osc0_ipgen_lscc_osc 49
+module work cpu0_ipgen_vex_jtag_bridge 48
+module work cpu0_ipgen_StreamFifoLowLatency_NoDbg_IMAC 48
+module work cpu0_ipgen_StreamFifoLowLatency_NoDbg_IC 48
+module work cpu0_ipgen_StreamFifoLowLatency_NoDbg_I 48
+module work cpu0_ipgen_StreamFifoLowLatency_Dbg_IMAC 48
+module work cpu0_ipgen_StreamFifoLowLatency_Dbg_IC 48
+module work cpu0_ipgen_StreamFifoLowLatency_Dbg_I 48
+module work cpu0_ipgen_DataCache_Cache_NoDbg_IMAC 48
+module work cpu0_ipgen_InstructionCache_Cache_NoDbg_IMAC 48
+module work cpu0_ipgen_DataCache_Cache_NoDbg_IC 48
+module work cpu0_ipgen_InstructionCache_Cache_NoDbg_IC 48
+module work cpu0_ipgen_DataCache_Cache_NoDbg_I 48
+module work cpu0_ipgen_InstructionCache_Cache_NoDbg_I 48
+module work cpu0_ipgen_DataCache_Cache_Dbg_IMAC 48
+module work cpu0_ipgen_InstructionCache_Cache_Dbg_IMAC 48
+module work cpu0_ipgen_DataCache_Cache_Dbg_IC 48
+module work cpu0_ipgen_InstructionCache_Cache_Dbg_IC 48
+module work cpu0_ipgen_DataCache_Cache_Dbg_I 48
+module work cpu0_ipgen_InstructionCache_Cache_Dbg_I 48
+module work cpu0_ipgen_BufferCC_1_ 48
+module work cpu0_ipgen_SystemDebugger 48
+module work cpu0_ipgen_FlowCCByToggle 48
+module work cpu0_ipgen_JtagBridge 48
+module work cpu0_ipgen_d_ff_plain_rst_we_t 48
+module work cpu0_ipgen_d_ff_plain_rst_t 48
+module work cpu0_ipgen_Riscv_NoDbg_IC 48
+module work cpu0_ipgen_Riscv_Dbg_IC 48
+module work cpu0_ipgen_Riscv_NoDbg_I 48
+module work cpu0_ipgen_Riscv_Dbg_I 48
+module work cpu0_ipgen_Riscv_Cache_NoDbg_IC 48
+module work cpu0_ipgen_Riscv_Cache_Dbg_IC 48
+module work cpu0_ipgen_Riscv_Cache_NoDbg_I 48
+module work cpu0_ipgen_Riscv_Cache_Dbg_I 48
+module work cpu0_ipgen_Riscv_NoDbg_IMAC 48
+module work cpu0_ipgen_Riscv_Dbg_IMAC 48
+module work cpu0_ipgen_Riscv_Cache_NoDbg_IMAC 48
+module work cpu0_ipgen_Riscv_Cache_Dbg_IMAC 48
+module work cpu0_ipgen_vex_debug 48
+module work cpu0_ipgen_timer_32 48
+module work cpu0_ipgen_pic 48
+module work cpu0_ipgen_lscc_cpu_ahbl_mux 48
+module work cpu0_ipgen_riscvsmall 48
+module work ahbl0_ipgen_lscc_ahbl_decoder_comp 47
+module work ahbl0_ipgen_lscc_ahbl_decoder_prim 47
+module work ahbl0_ipgen_lscc_ahbl_input_stage 47
+module work ahbl0_ipgen_lscc_ahbl_crossbar 47
+module work ahbl0_ipgen_lscc_ahbl_default_slv 47
+module work ahbl0_ipgen_lscc_ahbl_multiplexor 47
+module work ahbl0_ipgen_lscc_ahbl_decoder 47
+module work ahbl0_ipgen_lscc_ahbl_bus 47
+module work ahbl0_ipgen_lscc_ahbl_arbmux 47
+module work ahbl0_ipgen_lscc_ahbl_prio_arb 47
+module work ahbl0_ipgen_lscc_ahbl_fair_arb 47
+module work ahbl0_ipgen_lscc_ahbl_arbiter 47
+module work ahbl0_ipgen_lscc_ahbl_interconnect 47
+module work sysmem0_ipgen_lscc_lram_core 46
+module work sysmem0_ipgen_lscc_smem_lram 46
+module work sysmem0_ipgen_lscc_mem 46
+module work sysmem0_ipgen_lscc_fifo_streamer 46
+module work sysmem0_ipgen_lscc_axi4stream_rx 46
+module work sysmem0_ipgen_lscc_axi4mem_subordinate 46
+module work sysmem0_ipgen_lscc_axi4mem_arbiter 46
+module work sysmem0_ipgen_lscc_ahblmem_subordinate 46
+module work sysmem0_ipgen_lscc_ahblmem_arbiter 46
+module work sysmem0_ipgen_lscc_sys_mem 46
+module work uart0_ipgen_lscc_uart_txmitt 45
+module work uart0_ipgen_lscc_uart_rxcver 45
+module work uart0_ipgen_lscc_uart_rxcver_fifo 45
+module work uart0_ipgen_lscc_uart_intface 45
+module work uart0_ipgen_lscc_uart_txcver_fifo 45
+module work uart0_ipgen_lscc_uart 45
+module work ahbl2apb0_ipgen_lscc_ahbl2apb 44
+module work apb0_ipgen_lscc_apb_decoder_comp 43
+module work apb0_ipgen_lscc_apb_decoder_prim 43
+module work apb0_ipgen_lscc_apb_crossbar 43
+module work apb0_ipgen_lscc_apb_multiplexor 43
+module work apb0_ipgen_lscc_apb_decoder 43
+module work apb0_ipgen_lscc_apb_bus 43
+module work apb0_ipgen_lscc_apb_arbmux 43
+module work apb0_ipgen_lscc_apb_thermo_mask 43
+module work apb0_ipgen_lscc_apb_prio_arb 43
+module work apb0_ipgen_lscc_apb_arbiter 43
+module work apb0_ipgen_lscc_apb_interconnect 43
+module work pll0_ipgen_lscc_apb2lmmi 42
+module work pll0_ipgen_lscc_pll 42
+module work uart0 45
+module work sysmem0 46
+module work pll0 42
+module work osc0 49
+module work i2c0 51
+module work gpio0 50
+module work cpu0 48
+module work apb0 43
+module work ahbl2apb0 44
+module work ahbl0 47
+module work Mycpu 41
+module work pmi_sub 39
+module work pmi_rom 37
+module work lscc_rom_inst_core 38
+module work lscc_rom_inst 38
+module work lscc_rom 38
+module work pmi_ram_dq_be 36
+module work pmi_ram_dq 34
+module work lscc_ram_dq_core 35
+module work lscc_ram_dq_inst 35
+module work lscc_ram_dq_main 35
+module work lscc_ram_dq 35
+module work pmi_ram_dp_true 32
+module work lscc_ram_dp_true_core 33
+module work lscc_ram_dp_true_inst 33
+module work lscc_write_through 33
+module work lscc_ram_dp_true_main 33
+module work lscc_ram_dp_true 33
+module work pmi_ram_dp_be 31
+module work pmi_ram_dp 29
+module work lscc_ram_dp_core 30
+module work lscc_ram_dp_main 30
+module work lscc_ram_dp 30
+module work pmi_mult 27
+module work pmi_multaddsub 25
+module work pmi_multaddsubsum 23
+module work lscc_mult_add_sub_sum 24
+module work pmi_mac 21
+module work lscc_mult_accumulate 22
+module work pmi_fifo_dc 19
+module work lscc_fifo_mem_core 20
+module work lscc_fifo_mem_main 20
+module work lscc_fifo_mem 20
+module work lscc_fifo_dc_hw_core 20
+module work lscc_hard_fifo_dc 20
+module work lscc_soft_fifo_dc 20
+module work lscc_fifo_dc_main 20
+module work lscc_fifo_dc_fwft_fabric 20
+module work lscc_fifo_dc 20
+module work pmi_fifo 17
+module work lscc_fifo_hw_core 18
+module work lscc_hard_fifo 18
+module work lscc_soft_fifo 18
+module work lscc_fifo_main 18
+module work lscc_fifo_fwft_fabric 18
+module work lscc_fifo 18
+module work pmi_distributed_shift_reg 15
+module work lscc_shift_register 16
+module work pmi_distributed_rom 13
+module work lscc_distributed_rom 14
+module work pmi_distributed_spram 11
+module work lscc_distributed_spram 12
+module work pmi_distributed_dpram 9
+module work lscc_distributed_dpram 10
+module work pmi_counter 7
+module work lscc_cntr 8
+module work pmi_complex_mult 5
+module work lscc_multiplier_dsp 6
+module work lscc_multiplier_lut 6
+module work lscc_multiplier 6
+module work lscc_mult_add_sub 6
+module work lscc_complex_mult 6
+module work pmi_add 3
+module work pmi_addsub 1
+module work lscc_subtractor 2
+module work lscc_adder 2
+module work lscc_add_sub 2

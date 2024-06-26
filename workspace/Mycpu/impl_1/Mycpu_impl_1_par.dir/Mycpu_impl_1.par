@@ -1,0 +1,29 @@
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Wed Jun 26 14:47:25 2024
+
+Command Line: par -w -n 10 -t 1 -s 1 -cores 1 -stopzero -hsp m -exp \
+	parPathBased=OFF Mycpu_impl_1_map.udb Mycpu_impl_1.udb 
+
+
+Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
+Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
+----------   --------     -----------     ------       ---------------    -----------     ----     ------
+5_3   *      0            -6.358          7202964      -                  -               01:03    Completed
+5_1          0            -7.286          7558001      -                  -               01:03    Completed
+5_2          0            -7.435          7985719      -                  -               01:10    Completed
+5_4          -            -               -            -                  -               40       Skipped
+5_5          -            -               -            -                  -               44       Skipped
+5_6          -            -               -            -                  -               33       Skipped
+5_7          -            -               -            -                  -               30       Skipped
+5_8          -            -               -            -                  -               38       Skipped
+5_9          -            -               -            -                  -               37       Skipped
+5_10         -            -               -            -                  -               44       Skipped
+
+* : Design saved.
+
+INFO <60001138> - par: Iterations 5_4, 5_5, 5_6, 5_7, 5_8, 5_9, and 5_10 were terminated during the PAR process to save total runtime, as it was determined they would not improve upon a timing result achieved in a previous iteration.
+
+Total (real) run time for 10-seed: 7 mins 42 secs 
+
+par done!

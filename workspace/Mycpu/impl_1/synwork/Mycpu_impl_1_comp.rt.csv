@@ -1,0 +1,2 @@
+Library, Design Unit ,Compile time , Hardware Gen ,Optimization Stg1 ,Optimization Stg2 , Peak Mem Usage, Incr Mem Usage, Hardware Gen ,Optimization Stg1 ,Optimization Stg2
+work, cpu0_ipgen_Riscv_Dbg_IMAC,0h:00m:01s,0h:00m:00s,0h:00m:00s,0h:00m:01s,   365 MB,   100 MB,     3 MB,    21 MB,    77 MB

@@ -1,0 +1,10 @@
+-w
+-gui
+-msgset "C:/Users/javos/workspace/Mycpu/promote.xml"
+-n 10
+-t 1
+-s 1
+-cores 1
+-stopzero
+-hsp m
+-exp parPathBased=OFF

@@ -1,0 +1,14 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-work_is_curlib|0|-ignore_undefined_lib|-lib|pmi"
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\bin64\\c_vhdl.exe":1709958258
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\location.map":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\std.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\std1164.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\numeric.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\umr_capim.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\arith.vhd":1709958292
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\unsigned.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_lfd2nx.vhd":1648540023
+@E
+@ 

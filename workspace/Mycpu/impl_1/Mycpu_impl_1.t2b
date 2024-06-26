@@ -1,0 +1,4 @@
+-gui
+-msgset "C:/Users/javos/workspace/Mycpu/promote.xml"
+
+-g REGISTER_INIT:ON

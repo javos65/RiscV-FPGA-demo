@@ -1,0 +1,70 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: FOXXPS15
+
+Implementation : impl_1
+
+# Written on Wed Jun 26 14:46:11 2024
+
+##### FILES SYNTAX CHECKED ##############################################
+Constraint File(s):      "C:\Users\javos\workspace\Mycpu\impl_1\Mycpu_impl_1_cpe.ldc"
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+          Start                                                                                              Requested     Requested     Clock        Clock                     Clock
+Level     Clock                                                                                              Frequency     Period        Type         Group                     Load 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                                                                             200.0 MHz     5.000         system       system_clkgroup           0    
+                                                                                                                                                                                     
+0 -       osc0_inst_hf_clk_out_o                                                                             18.0 MHz      55.556        declared     default_clkgroup          0    
+                                                                                                                                                                                     
+0 -       osc0_inst_lf_clk_out_o                                                                             0.1 MHz       15625.000     declared     default_clkgroup          0    
+                                                                                                                                                                                     
+0 -       pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     2143 
+                                                                                                                                                                                     
+0 -       pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock                                              200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     949  
+                                                                                                                                                                                     
+0 -       cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     83   
+                                                                                                                                                                                     
+0 -       cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_4     9    
+=====================================================================================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                                                                                   Clock     Source                                                          Clock Pin                                                                                                                                                                                                      Non-clock Pin     Non-clock Pin
+Clock                                                                                              Load      Pin                                                             Seq Example                                                                                                                                                                                                    Seq Example       Comb Example 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                                             0         -                                                               -                                                                                                                                                                                                              -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+osc0_inst_hf_clk_out_o                                                                             0         osc0_inst.lscc_osc_inst.gen_osca\.u_OSC_A.HFCLKOUT(OSCA)        -                                                                                                                                                                                                              -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+osc0_inst_lf_clk_out_o                                                                             0         osc0_inst.lscc_osc_inst.gen_osca\.u_OSC_A.LFCLKOUT(OSCA)        -                                                                                                                                                                                                              -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              2143      pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     sysmem0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AHBL\.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[15\]\.mem_file\.u_mem0.LIFCL\.dp16k.CLKB     -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock                                              949       pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOS(PLL)     uart0_inst.lscc_uart_inst.u_txmitt.tx_in_shift_s.C                                                                                                                                                             -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               83        -                                                               -                                                                                                                                                                                                              -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                           
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     9         -                                                               -                                                                                                                                                                                                              -                 -            
+===========================================================================================================================================================================================================================================================================================================================================================================================================================

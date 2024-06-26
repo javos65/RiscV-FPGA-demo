@@ -1,0 +1,109 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: FOXXPS15
+
+Implementation : impl_1
+
+# Written on Wed Jun 26 14:46:13 2024
+
+##### DESIGN INFO #######################################################
+
+Top View:                "Mycpu"
+Constraint File(s):      "C:\Users\javos\workspace\Mycpu\impl_1\Mycpu_impl_1_cpe.ldc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 6 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                                                                           Ending                                                                                             |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                                             System                                                                                             |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                                                             pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                                                             cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     |     5.000            |     No paths         |     5.000            |     No paths                         
+pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock                                              pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock                                              |     5.000            |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock                                              pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              System                                                                                             |     5.000            |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock                                              |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              |     5.000            |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               |     Diff grp         |     No paths         |     No paths         |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               System                                                                                             |     No paths         |     No paths         |     No paths         |     5.000                            
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock                                              |     Diff grp         |     No paths         |     No paths         |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               |     5.000            |     No paths         |     2.500            |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     System                                                                                             |     5.000            |     No paths         |     No paths         |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               |     No paths         |     No paths         |     No paths         |     Diff grp                         
+cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     |     5.000            |     5.000            |     2.500            |     2.500                            
+=================================================================================================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:led_o[0] (bidir end point)
+p:led_o[0] (bidir start point)
+p:led_o[1] (bidir end point)
+p:led_o[1] (bidir start point)
+p:led_o[2] (bidir end point)
+p:led_o[2] (bidir start point)
+p:led_o[3] (bidir end point)
+p:led_o[3] (bidir start point)
+p:led_o[4] (bidir end point)
+p:led_o[4] (bidir start point)
+p:led_o[5] (bidir end point)
+p:led_o[5] (bidir start point)
+p:led_o[6] (bidir end point)
+p:led_o[6] (bidir start point)
+p:led_o[7] (bidir end point)
+p:led_o[7] (bidir start point)
+p:rstn_i
+p:rxd_i
+p:scl0 (bidir end point)
+p:scl0 (bidir start point)
+p:sda0 (bidir end point)
+p:sda0 (bidir start point)
+p:txd_o
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

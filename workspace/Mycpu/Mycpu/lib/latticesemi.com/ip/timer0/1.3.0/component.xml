@@ -1,0 +1,1703 @@
+<?xml version="1.0" ?>
+<ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>timer0</ipxact:name>
+    <ipxact:version>1.3.0</ipxact:version>
+    <ipxact:busInterfaces>
+        <ipxact:busInterface>
+            <ipxact:name>APB_S0</ipxact:name>
+            <ipxact:displayName>APB_S0</ipxact:displayName>
+            <ipxact:description>APB Slave port</ipxact:description>
+            <ipxact:busType library="AMBA3" name="APB" vendor="amba.com" version="r1p0"/>
+            <ipxact:abstractionTypes>
+                <ipxact:abstractionType>
+                    <ipxact:abstractionRef library="AMBA3" name="APB_rtl" vendor="amba.com" version="r1p0"/>
+                    <ipxact:portMaps>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PSELx</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb_psel_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PADDR</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb_paddr_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PWRITE</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb_pwrite_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PWDATA</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb_pwdata_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PENABLE</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb_penable_i</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PREADY</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb_pready_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PRDATA</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb_prdata_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>PSLVERR</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>apb_pslverr_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                    </ipxact:portMaps>
+                </ipxact:abstractionType>
+            </ipxact:abstractionTypes>
+            <ipxact:slave>
+                <ipxact:memoryMapRef memoryMapRef="gp_timer_mem_map"/>
+            </ipxact:slave>
+        </ipxact:busInterface>
+        <ipxact:busInterface>
+            <ipxact:name>INTR</ipxact:name>
+            <ipxact:displayName>INTR</ipxact:displayName>
+            <ipxact:description>Interrupt Request</ipxact:description>
+            <ipxact:busType library="busdef.interrupt" name="interrupt" vendor="spiritconsortium.org" version="1.0"/>
+            <ipxact:abstractionTypes>
+                <ipxact:abstractionType>
+                    <ipxact:abstractionRef library="busdef.interrupt" name="interrupt_rtl" vendor="spiritconsortium.org" version="1.0"/>
+                    <ipxact:portMaps>
+                        <ipxact:portMap>
+                            <ipxact:logicalPort>
+                                <ipxact:name>IRQ</ipxact:name>
+                            </ipxact:logicalPort>
+                            <ipxact:physicalPort>
+                                <ipxact:name>int_o</ipxact:name>
+                            </ipxact:physicalPort>
+                        </ipxact:portMap>
+                    </ipxact:portMaps>
+                </ipxact:abstractionType>
+            </ipxact:abstractionTypes>
+            <ipxact:master/>
+        </ipxact:busInterface>
+    </ipxact:busInterfaces>
+    <ipxact:memoryMaps>
+        <ipxact:memoryMap>
+            <ipxact:name>gp_timer_mem_map</ipxact:name>
+            <ipxact:description>gp_timer memory map information</ipxact:description>
+            <ipxact:addressBlock>
+                <ipxact:name>gp_timer_registers</ipxact:name>
+                <ipxact:baseAddress>0</ipxact:baseAddress>
+                <ipxact:range>64</ipxact:range>
+                <ipxact:width>32</ipxact:width>
+                <ipxact:access>read-write</ipxact:access>
+                <ipxact:register>
+                    <ipxact:name>INT_STATUS</ipxact:name>
+                    <ipxact:displayName>INT_STATUS</ipxact:displayName>
+                    <ipxact:description>Interrupt Status Register</ipxact:description>
+                    <ipxact:addressOffset>0</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>to1_int</ipxact:name>
+                        <ipxact:displayName>to1_int</ipxact:displayName>
+                        <ipxact:description>Timer 1 Timeout Interrupt</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to2_int</ipxact:name>
+                        <ipxact:displayName>to2_int</ipxact:displayName>
+                        <ipxact:description>Timer 2 Timeout Interrupt</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to3_int</ipxact:name>
+                        <ipxact:displayName>to3_int</ipxact:displayName>
+                        <ipxact:description>Timer 3 Timeout Interrupt</ipxact:description>
+                        <ipxact:bitOffset>2</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to4_int</ipxact:name>
+                        <ipxact:displayName>to4_int</ipxact:displayName>
+                        <ipxact:description>Timer 4 Timeout Interrupt</ipxact:description>
+                        <ipxact:bitOffset>3</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to5_int</ipxact:name>
+                        <ipxact:displayName>to5_int</ipxact:displayName>
+                        <ipxact:description>Timer 5 Timeout Interrupt</ipxact:description>
+                        <ipxact:bitOffset>4</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to6_int</ipxact:name>
+                        <ipxact:displayName>to6_int</ipxact:displayName>
+                        <ipxact:description>Timer 6 Timeout Interrupt</ipxact:description>
+                        <ipxact:bitOffset>5</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to7_int</ipxact:name>
+                        <ipxact:displayName>to7_int</ipxact:displayName>
+                        <ipxact:description>Timer 7 Timeout Interrupt</ipxact:description>
+                        <ipxact:bitOffset>6</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to8_int</ipxact:name>
+                        <ipxact:displayName>to8_int</ipxact:displayName>
+                        <ipxact:description>Timer 8 Timeout Interrupt</ipxact:description>
+                        <ipxact:bitOffset>7</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>8</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>24</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>INT_ENABLE</ipxact:name>
+                    <ipxact:displayName>INT_ENABLE</ipxact:displayName>
+                    <ipxact:description>Interrupt Enable Register</ipxact:description>
+                    <ipxact:addressOffset>4</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>to1_en</ipxact:name>
+                        <ipxact:displayName>to1_en</ipxact:displayName>
+                        <ipxact:description>Timer 1 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to2_en</ipxact:name>
+                        <ipxact:displayName>to2_en</ipxact:displayName>
+                        <ipxact:description>Timer 2 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to3_en</ipxact:name>
+                        <ipxact:displayName>to3_en</ipxact:displayName>
+                        <ipxact:description>Timer 3 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>2</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to4_en</ipxact:name>
+                        <ipxact:displayName>to4_en</ipxact:displayName>
+                        <ipxact:description>Timer 4 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>3</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to5_en</ipxact:name>
+                        <ipxact:displayName>to5_en</ipxact:displayName>
+                        <ipxact:description>Timer 5 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>4</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to6_en</ipxact:name>
+                        <ipxact:displayName>to6_en</ipxact:displayName>
+                        <ipxact:description>Timer 6 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>5</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to7_en</ipxact:name>
+                        <ipxact:displayName>to7_en</ipxact:displayName>
+                        <ipxact:description>Timer 7 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>6</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to8_en</ipxact:name>
+                        <ipxact:displayName>to8_en</ipxact:displayName>
+                        <ipxact:description>Timer 8 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>7</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>8</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>24</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>INT_SET</ipxact:name>
+                    <ipxact:displayName>INT_SET</ipxact:displayName>
+                    <ipxact:description>Interrupt Set Register</ipxact:description>
+                    <ipxact:addressOffset>8</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>write-only</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>to1_set</ipxact:name>
+                        <ipxact:displayName>to1_set</ipxact:displayName>
+                        <ipxact:description>Timer 1 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>write-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to2_set</ipxact:name>
+                        <ipxact:displayName>to2_set</ipxact:displayName>
+                        <ipxact:description>Timer 2 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>write-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to3_set</ipxact:name>
+                        <ipxact:displayName>to3_set</ipxact:displayName>
+                        <ipxact:description>Timer 3 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>2</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>write-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to4_set</ipxact:name>
+                        <ipxact:displayName>to4_set</ipxact:displayName>
+                        <ipxact:description>Timer 4 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>3</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>write-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to5_set</ipxact:name>
+                        <ipxact:displayName>to5_set</ipxact:displayName>
+                        <ipxact:description>Timer 5 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>4</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>write-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to6_set</ipxact:name>
+                        <ipxact:displayName>to6_set</ipxact:displayName>
+                        <ipxact:description>Timer 6 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>5</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>write-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to7_set</ipxact:name>
+                        <ipxact:displayName>to7_set</ipxact:displayName>
+                        <ipxact:description>Timer 7 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>6</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>write-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>to8_set</ipxact:name>
+                        <ipxact:displayName>to8_set</ipxact:displayName>
+                        <ipxact:description>Timer 8 Timeout Interrupt Enable</ipxact:description>
+                        <ipxact:bitOffset>7</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>write-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>8</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>24</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>GBL_CTRL</ipxact:name>
+                    <ipxact:displayName>GBL_CTRL</ipxact:displayName>
+                    <ipxact:description>Global Control Register</ipxact:description>
+                    <ipxact:addressOffset>12</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>tmr_en</ipxact:name>
+                        <ipxact:displayName>tmr_en</ipxact:displayName>
+                        <ipxact:description>Enable or disable timer</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>8</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>8</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>24</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>STATUS_T1</ipxact:name>
+                    <ipxact:displayName>STATUS_T1</ipxact:displayName>
+                    <ipxact:description>Timer 1 Status Register</ipxact:description>
+                    <ipxact:addressOffset>16</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-only</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>tmr_run</ipxact:name>
+                        <ipxact:displayName>tmr_run</ipxact:displayName>
+                        <ipxact:description>Flag to indicate if internal counter is running or not</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>31</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>CONTROL_T1</ipxact:name>
+                    <ipxact:displayName>CONTROL_T1</ipxact:displayName>
+                    <ipxact:description>Timer 1 Control Register</ipxact:description>
+                    <ipxact:addressOffset>20</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>cont</ipxact:name>
+                        <ipxact:displayName>cont</ipxact:displayName>
+                        <ipxact:description>Set internal counter behaviour to continuous or single-shot</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>1</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>dir</ipxact:name>
+                        <ipxact:displayName>dir</ipxact:displayName>
+                        <ipxact:description>Direction of counter</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>start</ipxact:name>
+                        <ipxact:displayName>start</ipxact:displayName>
+                        <ipxact:description>Start the counter</ipxact:description>
+                        <ipxact:bitOffset>2</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>stop</ipxact:name>
+                        <ipxact:displayName>stop</ipxact:displayName>
+                        <ipxact:description>Stop the counter</ipxact:description>
+                        <ipxact:bitOffset>3</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>pscaler_dis</ipxact:name>
+                        <ipxact:displayName>pscaler_dis</ipxact:displayName>
+                        <ipxact:description>Disable Prescaler</ipxact:description>
+                        <ipxact:bitOffset>4</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>5</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>3</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>pscaler_ratio</ipxact:name>
+                        <ipxact:displayName>pscaler_ratio</ipxact:displayName>
+                        <ipxact:description>Prescaler Ratio</ipxact:description>
+                        <ipxact:bitOffset>8</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>8</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>16</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>16</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>PERIOD_T1</ipxact:name>
+                    <ipxact:displayName>PERIOD_T1</ipxact:displayName>
+                    <ipxact:description>Timer 1 Period Register</ipxact:description>
+                    <ipxact:addressOffset>24</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>load_val</ipxact:name>
+                        <ipxact:displayName>load_val</ipxact:displayName>
+                        <ipxact:description>Value loaded to the internal counter</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>SNAPSHOT_T1</ipxact:name>
+                    <ipxact:displayName>SNAPSHOT_T1</ipxact:displayName>
+                    <ipxact:description>Timer 1 Snapshot Register</ipxact:description>
+                    <ipxact:addressOffset>28</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-only</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>snap_val</ipxact:name>
+                        <ipxact:displayName>snap_val</ipxact:displayName>
+                        <ipxact:description>A snapshot of the internal counter value</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>STATUS_T2</ipxact:name>
+                    <ipxact:displayName>STATUS_T2</ipxact:displayName>
+                    <ipxact:description>Timer 2 Status Register</ipxact:description>
+                    <ipxact:addressOffset>32</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-only</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>tmr_run</ipxact:name>
+                        <ipxact:displayName>tmr_run</ipxact:displayName>
+                        <ipxact:description>Flag to indicate if internal counter is running or not</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>31</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>CONTROL_T2</ipxact:name>
+                    <ipxact:displayName>CONTROL_T2</ipxact:displayName>
+                    <ipxact:description>Timer 2 Control Register</ipxact:description>
+                    <ipxact:addressOffset>36</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>cont</ipxact:name>
+                        <ipxact:displayName>cont</ipxact:displayName>
+                        <ipxact:description>Set internal counter behaviour to continuous or single-shot</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>1</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>dir</ipxact:name>
+                        <ipxact:displayName>dir</ipxact:displayName>
+                        <ipxact:description>Direction of counter</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>start</ipxact:name>
+                        <ipxact:displayName>start</ipxact:displayName>
+                        <ipxact:description>Start the counter</ipxact:description>
+                        <ipxact:bitOffset>2</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>stop</ipxact:name>
+                        <ipxact:displayName>stop</ipxact:displayName>
+                        <ipxact:description>Stop the counter</ipxact:description>
+                        <ipxact:bitOffset>3</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>pscaler_dis</ipxact:name>
+                        <ipxact:displayName>pscaler_dis</ipxact:displayName>
+                        <ipxact:description>Disable Prescaler</ipxact:description>
+                        <ipxact:bitOffset>4</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>5</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>3</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>pscaler_ratio</ipxact:name>
+                        <ipxact:displayName>pscaler_ratio</ipxact:displayName>
+                        <ipxact:description>Prescaler Ratio</ipxact:description>
+                        <ipxact:bitOffset>8</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>8</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>16</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>16</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>PERIOD_T2</ipxact:name>
+                    <ipxact:displayName>PERIOD_T2</ipxact:displayName>
+                    <ipxact:description>Timer 2 Period Register</ipxact:description>
+                    <ipxact:addressOffset>40</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>load_val</ipxact:name>
+                        <ipxact:displayName>load_val</ipxact:displayName>
+                        <ipxact:description>Value loaded to the internal counter</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>24</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>24</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>8</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>SNAPSHOT_T2</ipxact:name>
+                    <ipxact:displayName>SNAPSHOT_T2</ipxact:displayName>
+                    <ipxact:description>Timer 2 Snapshot Register</ipxact:description>
+                    <ipxact:addressOffset>44</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-only</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>snap_val</ipxact:name>
+                        <ipxact:displayName>snap_val</ipxact:displayName>
+                        <ipxact:description>A snapshot of the internal counter value</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>STATUS_T3</ipxact:name>
+                    <ipxact:displayName>STATUS_T3</ipxact:displayName>
+                    <ipxact:description>Timer 3 Status Register</ipxact:description>
+                    <ipxact:addressOffset>48</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-only</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>tmr_run</ipxact:name>
+                        <ipxact:displayName>tmr_run</ipxact:displayName>
+                        <ipxact:description>Flag to indicate if internal counter is running or not</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>31</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>CONTROL_T3</ipxact:name>
+                    <ipxact:displayName>CONTROL_T3</ipxact:displayName>
+                    <ipxact:description>Timer 3 Control Register</ipxact:description>
+                    <ipxact:addressOffset>52</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>cont</ipxact:name>
+                        <ipxact:displayName>cont</ipxact:displayName>
+                        <ipxact:description>Set internal counter behaviour to continuous or single-shot</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>1</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>dir</ipxact:name>
+                        <ipxact:displayName>dir</ipxact:displayName>
+                        <ipxact:description>Direction of counter</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>start</ipxact:name>
+                        <ipxact:displayName>start</ipxact:displayName>
+                        <ipxact:description>Start the counter</ipxact:description>
+                        <ipxact:bitOffset>2</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>stop</ipxact:name>
+                        <ipxact:displayName>stop</ipxact:displayName>
+                        <ipxact:description>Stop the counter</ipxact:description>
+                        <ipxact:bitOffset>3</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>pscaler_dis</ipxact:name>
+                        <ipxact:displayName>pscaler_dis</ipxact:displayName>
+                        <ipxact:description>Disable Prescaler</ipxact:description>
+                        <ipxact:bitOffset>4</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>5</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>3</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>pscaler_ratio</ipxact:name>
+                        <ipxact:displayName>pscaler_ratio</ipxact:displayName>
+                        <ipxact:description>Prescaler Ratio</ipxact:description>
+                        <ipxact:bitOffset>8</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>8</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>16</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>16</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>PERIOD_T3</ipxact:name>
+                    <ipxact:displayName>PERIOD_T3</ipxact:displayName>
+                    <ipxact:description>Timer 3 Period Register</ipxact:description>
+                    <ipxact:addressOffset>56</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>load_val</ipxact:name>
+                        <ipxact:displayName>load_val</ipxact:displayName>
+                        <ipxact:description>Value loaded to the internal counter</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>SNAPSHOT_T3</ipxact:name>
+                    <ipxact:displayName>SNAPSHOT_T3</ipxact:displayName>
+                    <ipxact:description>Timer 3 Snapshot Register</ipxact:description>
+                    <ipxact:addressOffset>60</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-only</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>snap_val</ipxact:name>
+                        <ipxact:displayName>snap_val</ipxact:displayName>
+                        <ipxact:description>A snapshot of the internal counter value</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>STATUS_T4</ipxact:name>
+                    <ipxact:displayName>STATUS_T4</ipxact:displayName>
+                    <ipxact:description>Timer 4 Status Register</ipxact:description>
+                    <ipxact:addressOffset>64</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-only</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>tmr_run</ipxact:name>
+                        <ipxact:displayName>tmr_run</ipxact:displayName>
+                        <ipxact:description>Flag to indicate if internal counter is running or not</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>31</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>CONTROL_T4</ipxact:name>
+                    <ipxact:displayName>CONTROL_T4</ipxact:displayName>
+                    <ipxact:description>Timer 4 Control Register</ipxact:description>
+                    <ipxact:addressOffset>68</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>cont</ipxact:name>
+                        <ipxact:displayName>cont</ipxact:displayName>
+                        <ipxact:description>Set internal counter behaviour to continuous or single-shot</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>1</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>dir</ipxact:name>
+                        <ipxact:displayName>dir</ipxact:displayName>
+                        <ipxact:description>Direction of counter</ipxact:description>
+                        <ipxact:bitOffset>1</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>start</ipxact:name>
+                        <ipxact:displayName>start</ipxact:displayName>
+                        <ipxact:description>Start the counter</ipxact:description>
+                        <ipxact:bitOffset>2</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>stop</ipxact:name>
+                        <ipxact:displayName>stop</ipxact:displayName>
+                        <ipxact:description>Stop the counter</ipxact:description>
+                        <ipxact:bitOffset>3</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>pscaler_dis</ipxact:name>
+                        <ipxact:displayName>pscaler_dis</ipxact:displayName>
+                        <ipxact:description>Disable Prescaler</ipxact:description>
+                        <ipxact:bitOffset>4</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>1</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>5</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>3</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>pscaler_ratio</ipxact:name>
+                        <ipxact:displayName>pscaler_ratio</ipxact:displayName>
+                        <ipxact:description>Prescaler Ratio</ipxact:description>
+                        <ipxact:bitOffset>8</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>8</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                    <ipxact:field>
+                        <ipxact:name>rsvd</ipxact:name>
+                        <ipxact:displayName>rsvd</ipxact:displayName>
+                        <ipxact:description>Reserved bits</ipxact:description>
+                        <ipxact:bitOffset>16</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>16</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>PERIOD_T4</ipxact:name>
+                    <ipxact:displayName>PERIOD_T4</ipxact:displayName>
+                    <ipxact:description>Timer 4 Period Register</ipxact:description>
+                    <ipxact:addressOffset>72</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-write</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>load_val</ipxact:name>
+                        <ipxact:displayName>load_val</ipxact:displayName>
+                        <ipxact:description>Value loaded to the internal counter</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-write</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+                <ipxact:register>
+                    <ipxact:name>SNAPSHOT_T4</ipxact:name>
+                    <ipxact:displayName>SNAPSHOT_T4</ipxact:displayName>
+                    <ipxact:description>Timer 4 Snapshot Register</ipxact:description>
+                    <ipxact:addressOffset>76</ipxact:addressOffset>
+                    <ipxact:size>32</ipxact:size>
+                    <ipxact:volatile>true</ipxact:volatile>
+                    <ipxact:access>read-only</ipxact:access>
+                    <ipxact:field>
+                        <ipxact:name>snap_val</ipxact:name>
+                        <ipxact:displayName>snap_val</ipxact:displayName>
+                        <ipxact:description>A snapshot of the internal counter value</ipxact:description>
+                        <ipxact:bitOffset>0</ipxact:bitOffset>
+                        <ipxact:resets>
+                            <ipxact:reset>
+                                <ipxact:value>0</ipxact:value>
+                            </ipxact:reset>
+                        </ipxact:resets>
+                        <ipxact:bitWidth>32</ipxact:bitWidth>
+                        <ipxact:volatile>true</ipxact:volatile>
+                        <ipxact:access>read-only</ipxact:access>
+                        <ipxact:testable testConstraint="unconstrained">true</ipxact:testable>
+                    </ipxact:field>
+                </ipxact:register>
+            </ipxact:addressBlock>
+        </ipxact:memoryMap>
+    </ipxact:memoryMaps>
+    <ipxact:model>
+        <ipxact:instantiations>
+            <ipxact:componentInstantiation>
+                <ipxact:name>timer0</ipxact:name>
+            </ipxact:componentInstantiation>
+            <ipxact:designInstantiation>
+                <ipxact:name>timer0_design</ipxact:name>
+                <ipxact:designRef library="ip" name="timer0" vendor="latticesemi.com" version="1.3.0"/>
+            </ipxact:designInstantiation>
+        </ipxact:instantiations>
+        <ipxact:ports>
+            <ipxact:port>
+                <ipxact:name>rst_n_i</ipxact:name>
+                <ipxact:displayName>rst_n_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isRst>true</lsccip:isRst>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>clk_i</ipxact:name>
+                <ipxact:displayName>clk_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isClk>true</lsccip:isClk>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>apb_psel_i</ipxact:name>
+                <ipxact:displayName>apb_psel_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>apb_paddr_i</ipxact:name>
+                <ipxact:displayName>apb_paddr_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>apb_pwdata_i</ipxact:name>
+                <ipxact:displayName>apb_pwdata_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>apb_pwrite_i</ipxact:name>
+                <ipxact:displayName>apb_pwrite_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>apb_penable_i</ipxact:name>
+                <ipxact:displayName>apb_penable_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>apb_pready_o</ipxact:name>
+                <ipxact:displayName>apb_pready_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>apb_prdata_o</ipxact:name>
+                <ipxact:displayName>apb_prdata_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>apb_pslverr_o</ipxact:name>
+                <ipxact:displayName>apb_pslverr_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>int_o</ipxact:name>
+                <ipxact:displayName>int_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>timeout_o</ipxact:name>
+                <ipxact:displayName>timeout_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+        </ipxact:ports>
+    </ipxact:model>
+    <ipxact:fileSets>
+        <ipxact:fileSet>
+            <ipxact:name>ipx_file_list</ipxact:name>
+            <ipxact:file>
+                <ipxact:name>rtl/timer0_bb.v</ipxact:name>
+                <ipxact:fileType user="black_box_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>timer0.cfg</ipxact:name>
+                <ipxact:fileType user="cfg">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/timer0_tmpl.v</ipxact:name>
+                <ipxact:fileType user="template_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/timer0_tmpl.vhd</ipxact:name>
+                <ipxact:fileType user="template_vhdl">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/timer0.v</ipxact:name>
+                <ipxact:fileType user="top_level_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>constraints/timer0.ldc</ipxact:name>
+                <ipxact:fileType user="timing_constraints">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/dut_params.v</ipxact:name>
+                <ipxact:fileType user="dependency_file">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/dut_inst.v</ipxact:name>
+                <ipxact:fileType user="dependency_file">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>design.xml</ipxact:name>
+                <ipxact:fileType user="IP-XACT_design">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/README.txt</ipxact:name>
+                <ipxact:fileType user="testbench">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/tb_ahbl_mst.v</ipxact:name>
+                <ipxact:fileType user="testbench_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/tb_apb_mst.v</ipxact:name>
+                <ipxact:fileType user="testbench_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/tb_data_checker.v</ipxact:name>
+                <ipxact:fileType user="testbench_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/tb_defines.v</ipxact:name>
+                <ipxact:fileType user="testbench_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/tb_mem.v</ipxact:name>
+                <ipxact:fileType user="testbench_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/tb_top.v</ipxact:name>
+                <ipxact:fileType user="testbench_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>driver/gp_timer.c</ipxact:name>
+                <ipxact:fileType user="driver_source">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>driver/gp_timer.h</ipxact:name>
+                <ipxact:fileType user="driver_header">user</ipxact:fileType>
+            </ipxact:file>
+        </ipxact:fileSet>
+        <ipxact:fileSet>
+            <ipxact:name>driver_file_list</ipxact:name>
+            <ipxact:file>
+                <ipxact:name>driver/gp_timer.c</ipxact:name>
+                <ipxact:fileType user="driver_source">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>driver/gp_timer.h</ipxact:name>
+                <ipxact:fileType user="driver_header">user</ipxact:fileType>
+            </ipxact:file>
+        </ipxact:fileSet>
+    </ipxact:fileSets>
+    <ipxact:vendorExtensions>
+        <lsccip:moduleRef lsccip:library="ip" lsccip:name="gp_timer" lsccip:vendor="latticesemi.com" lsccip:version="1.3.0"/>
+        <lsccip:deviceInfo>
+            <lsccip:architecture>LFD2NX</lsccip:architecture>
+            <lsccip:device>LFD2NX-40</lsccip:device>
+            <lsccip:package>CABGA196</lsccip:package>
+            <lsccip:performanceGrade>7_High-Performance_1.0V</lsccip:performanceGrade>
+        </lsccip:deviceInfo>
+        <lsccip:generationInfo>
+            <lsccip:fileVersion>20180929</lsccip:fileVersion>
+            <lsccip:createdTimestamp>2024 06 21 20:41:03</lsccip:createdTimestamp>
+            <lsccip:radiantBuild>&quot;Lattice Propel&quot; (64-bit) 2023.2.2311232310</lsccip:radiantBuild>
+        </lsccip:generationInfo>
+    </ipxact:vendorExtensions>
+</ipxact:component>

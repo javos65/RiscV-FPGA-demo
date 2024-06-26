@@ -1,0 +1,298 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:Can't find top module!
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2023.2\ip\pmi\pmi_lfd2nx.vhd'.
+@N|Running in 64-bit mode
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3260:17:3260:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3267:17:3267:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4898:25:4898:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4902:25:4902:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4933:29:4933:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4937:29:4937:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2508:29:2508:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2513:29:2513:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2544:33:2544:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2548:33:2548:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2581:29:2581:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2586:29:2586:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2617:33:2617:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2621:33:2621:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3108:29:3108:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3113:29:3113:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3144:33:3144:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3148:33:3148:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3181:29:3181:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3186:29:3186:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3217:33:3217:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3221:33:3221:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@N: CG334 :"C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v":42:13:42:25|Read directive translate_off.
+@N: CG333 :"C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v":44:13:44:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3260:17:3260:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3267:17:3267:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4898:25:4898:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4902:25:4902:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4933:29:4933:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4937:29:4937:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2508:29:2508:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2513:29:2513:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2544:33:2544:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2548:33:2548:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2581:29:2581:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2586:29:2586:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2617:33:2617:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":2621:33:2621:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3108:29:3108:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3113:29:3113:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3144:33:3144:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3148:33:3148:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3181:29:3181:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3186:29:3186:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3217:33:3217:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3221:33:3221:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@N: CG334 :"C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v":42:13:42:25|Read directive translate_off.
+@N: CG333 :"C:\Users\javos\workspace\Mycpu\Mycpu\Mycpu.v":44:13:44:24|Read directive translate_on.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":6094:7:6094:40|Synthesizing module ahbl0_ipgen_lscc_ahbl_interconnect in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":3541:7:3541:35|Synthesizing module ahbl0_ipgen_lscc_ahbl_decoder in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":4249:7:4249:40|Synthesizing module ahbl0_ipgen_lscc_ahbl_decoder_prim in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":4319:7:4319:40|Synthesizing module ahbl0_ipgen_lscc_ahbl_decoder_comp in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":4249:7:4249:40|Synthesizing module ahbl0_ipgen_lscc_ahbl_decoder_prim in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":4319:7:4319:40|Synthesizing module ahbl0_ipgen_lscc_ahbl_decoder_comp in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":5222:7:5222:39|Synthesizing module ahbl0_ipgen_lscc_ahbl_multiplexor in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":4422:7:4422:39|Synthesizing module ahbl0_ipgen_lscc_ahbl_default_slv in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":2113:7:2113:31|Synthesizing module ahbl0_ipgen_lscc_ahbl_bus in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":11:7:11:11|Synthesizing module ahbl0 in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl2apb0\1.1.0\rtl\ahbl2apb0.v":128:7:128:35|Synthesizing module ahbl2apb0_ipgen_lscc_ahbl2apb in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl2apb0\1.1.0\rtl\ahbl2apb0.v":11:7:11:15|Synthesizing module ahbl2apb0 in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":2987:7:2987:38|Synthesizing module apb0_ipgen_lscc_apb_interconnect in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":1644:7:1644:33|Synthesizing module apb0_ipgen_lscc_apb_decoder in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":2342:7:2342:38|Synthesizing module apb0_ipgen_lscc_apb_decoder_prim in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":2412:7:2412:38|Synthesizing module apb0_ipgen_lscc_apb_decoder_comp in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":2342:7:2342:38|Synthesizing module apb0_ipgen_lscc_apb_decoder_prim in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":2412:7:2412:38|Synthesizing module apb0_ipgen_lscc_apb_decoder_comp in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":2342:7:2342:38|Synthesizing module apb0_ipgen_lscc_apb_decoder_prim in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":2412:7:2412:38|Synthesizing module apb0_ipgen_lscc_apb_decoder_comp in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":2618:7:2618:37|Synthesizing module apb0_ipgen_lscc_apb_multiplexor in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":1029:7:1029:29|Synthesizing module apb0_ipgen_lscc_apb_bus in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\apb0\1.2.0\rtl\apb0.v":11:7:11:10|Synthesizing module apb0 in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\cpu0\2.5.0\rtl\cpu0.v":11:7:11:10|Synthesizing module cpu0 in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":508:7:508:27|Synthesizing module gpio0_ipgen_lscc_gpio in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":745:7:745:32|Synthesizing module gpio0_ipgen_lscc_gpio_lmmi in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\synpbase\lib\lucent\lfd2nx.v":9970:7:9970:8|Synthesizing module BB in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":121:7:121:31|Synthesizing module gpio0_ipgen_lscc_apb2lmmi in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":11:7:11:11|Synthesizing module gpio0 in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v":11:7:11:10|Synthesizing module i2c0 in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\osc0\1.4.0\rtl\osc0.v":97:7:97:25|Synthesizing module osc0_ipgen_lscc_osc in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\synpbase\lib\lucent\lfd2nx.v":5240:7:5240:10|Synthesizing module OSCA in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\osc0\1.4.0\rtl\osc0.v":11:7:11:10|Synthesizing module osc0 in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":161:7:161:25|Synthesizing module pll0_ipgen_lscc_pll in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\synpbase\lib\lucent\lfd2nx.v":4201:7:4201:9|Synthesizing module PLL in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":11:7:11:10|Synthesizing module pll0 in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8130:7:8130:32|Synthesizing module sysmem0_ipgen_lscc_sys_mem in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":505:7:505:44|Synthesizing module sysmem0_ipgen_lscc_ahblmem_subordinate in library work.
+@N: CG364 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":3770:7:3770:28|Synthesizing module sysmem0_ipgen_lscc_mem in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1019:7:1019:24|Synthesizing module lscc_write_through in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1128:7:1128:27|Synthesizing module lscc_ram_dp_true_inst in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\synpbase\lib\lucent\lfd2nx.v":528:7:528:11|Synthesizing module DP16K in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CG364 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":3810:7:3810:27|Synthesizing module lscc_ram_dp_true_core in library work.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2613:10:2613:14|Input DCD_N is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2614:10:2614:14|Input CTS_N is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2615:10:2615:14|Input DSR_N is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2616:10:2616:13|Input RI_N is unused.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2253:16:2253:21|Trying to extract state machine for register nfifo_fsm.tx_state.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2027:10:2027:23|Input fifo_empty_thr is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":2028:10:2028:22|Input fifo_full_thr is unused.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1590:4:1590:9|Trying to extract state machine for register cs_state.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":1070:16:1070:21|Trying to extract state machine for register nfifo_int.cs_state.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":520:38:520:45|Input rbr_fifo is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":541:10:541:19|Input fifo_empty is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":544:10:544:15|Input thr_rd is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\uart0\1.3.0\rtl\uart0.v":545:10:545:25|Input fifo_almost_full is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":403:10:403:14|Input clk_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":404:10:404:14|Input rst_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":408:31:408:39|Input addr_s0_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":416:31:416:39|Input addr_s1_i is unused.
+@N: CL159 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1025:10:1025:14|Input clk_i is unused.
+@N: CL159 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1026:10:1026:17|Input clk_en_i is unused.
+@N: CL159 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1027:10:1027:16|Input wr_en_i is unused.
+@N: CL159 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1028:10:1028:14|Input rst_i is unused.
+@N: CL159 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":1029:27:1029:35|Input wr_data_i is unused.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1325:12:1325:17|Trying to extract state machine for register genblk5.bridge_sm_r.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":1337:12:1337:17|Trying to extract state machine for register genblk5.err_sm_r.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":529:10:529:25|Input ahbl_hmastlock_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":530:16:530:27|Input ahbl_hprot_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":541:10:541:20|Input mem_error_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8301:10:8301:19|Input axi_aclk_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8302:10:8302:21|Input axi_resetn_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8342:29:8342:41|Input axi_s0_awid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8343:17:8343:31|Input axi_s0_awaddr_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8344:16:8344:29|Input axi_s0_awlen_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8345:16:8345:30|Input axi_s0_awsize_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8346:16:8346:31|Input axi_s0_awburst_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8347:10:8347:24|Input axi_s0_awlock_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8348:16:8348:31|Input axi_s0_awcache_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8349:16:8349:29|Input axi_s0_awqos_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8350:16:8350:32|Input axi_s0_awregion_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8351:16:8351:30|Input axi_s0_awprot_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8352:10:8352:25|Input axi_s0_awvalid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8354:31:8354:44|Input axi_s0_wdata_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8355:37:8355:50|Input axi_s0_wstrb_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8356:10:8356:23|Input axi_s0_wlast_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8357:10:8357:24|Input axi_s0_wvalid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8362:10:8362:24|Input axi_s0_bready_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8363:29:8363:41|Input axi_s0_arid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8364:17:8364:31|Input axi_s0_araddr_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8365:16:8365:29|Input axi_s0_arlen_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8366:16:8366:30|Input axi_s0_arsize_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8367:16:8367:31|Input axi_s0_arburst_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8368:10:8368:24|Input axi_s0_arlock_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8369:16:8369:31|Input axi_s0_arcache_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8370:16:8370:29|Input axi_s0_arqos_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8371:16:8371:32|Input axi_s0_arregion_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8372:16:8372:30|Input axi_s0_arprot_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8373:10:8373:25|Input axi_s0_arvalid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8380:10:8380:24|Input axi_s0_rready_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8384:29:8384:41|Input axi_s1_awid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8385:17:8385:31|Input axi_s1_awaddr_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8386:16:8386:29|Input axi_s1_awlen_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8387:16:8387:30|Input axi_s1_awsize_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8388:16:8388:31|Input axi_s1_awburst_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8389:10:8389:24|Input axi_s1_awlock_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8390:16:8390:31|Input axi_s1_awcache_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8391:16:8391:29|Input axi_s1_awqos_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8392:16:8392:32|Input axi_s1_awregion_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8393:16:8393:30|Input axi_s1_awprot_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8394:10:8394:25|Input axi_s1_awvalid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8396:31:8396:44|Input axi_s1_wdata_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8397:37:8397:50|Input axi_s1_wstrb_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8398:10:8398:23|Input axi_s1_wlast_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8399:10:8399:24|Input axi_s1_wvalid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8404:10:8404:24|Input axi_s1_bready_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8405:29:8405:41|Input axi_s1_arid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8406:17:8406:31|Input axi_s1_araddr_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8407:16:8407:29|Input axi_s1_arlen_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8408:16:8408:30|Input axi_s1_arsize_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8409:16:8409:31|Input axi_s1_arburst_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8410:10:8410:24|Input axi_s1_arlock_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8411:16:8411:31|Input axi_s1_arcache_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8412:16:8412:29|Input axi_s1_arqos_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8413:16:8413:32|Input axi_s1_arregion_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8414:16:8414:30|Input axi_s1_arprot_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8415:10:8415:25|Input axi_s1_arvalid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8422:10:8422:24|Input axi_s1_rready_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8426:10:8426:19|Input fifo_clk_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8427:10:8427:21|Input fifo_wr_en_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8428:16:8428:29|Input fifo_wr_data_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8429:10:8429:28|Input fifo_interface_en_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8430:10:8430:27|Input fifo_address_rst_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8435:10:8435:23|Input axis_rx_aclk_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8436:10:8436:24|Input axi_rx_tvalid_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8437:31:8437:44|Input axi_rx_tdata_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8438:37:8438:50|Input axi_rx_tstrb_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v":8439:10:8439:23|Input axi_rx_tlast_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":262:10:262:20|Input usr_fbclk_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":286:10:286:20|Input refdetreset is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":299:10:299:19|Input apb_pclk_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":300:10:300:23|Input apb_preset_n_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":301:15:301:27|Input apb_penable_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":302:15:302:24|Input apb_psel_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":303:15:303:26|Input apb_pwrite_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":304:21:304:31|Input apb_paddr_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\pll0\1.8.0\rtl\pll0.v":305:21:305:32|Input apb_pwdata_i is unused.
+@N: CL159 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\osc0\1.4.0\rtl\osc0.v":115:10:115:20|Input hf_switch_i is unused.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\ip\gpio0\1.6.2\rtl\gpio0.v":321:16:321:21|Trying to extract state machine for register genblk1.bus_sm_cs.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl2apb0\1.1.0\rtl\ahbl2apb0.v":537:16:537:21|Trying to extract state machine for register dual_clk.cs_apb_sm.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl2apb0\1.1.0\rtl\ahbl2apb0.v":426:4:426:9|Trying to extract state machine for register buff_valid_r.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl2apb0\1.1.0\rtl\ahbl2apb0.v":302:4:302:9|Trying to extract state machine for register cs_ahbl_sm.
+@N: CL201 :"C:\Users\javos\workspace\Mycpu\Mycpu\lib\latticesemi.com\module\ahbl0\1.3.0\rtl\ahbl0.v":4502:4:4502:9|Trying to extract state machine for register cs_sm.
+@N|Running in 64-bit mode
+

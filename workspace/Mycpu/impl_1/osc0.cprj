@@ -1,0 +1,7 @@
+-ver "C:/lscc/radiant/2023.2/ip/pmi/pmi_lfd2nx.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.2/ip/pmi/pmi_lfd2nx.vhd"
+-ver "C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/module/osc0/1.4.0/rtl/osc0.v"
+-sdc "C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/module/osc0/1.4.0/constraints/osc0.ldc"
+-path "C:/Users/javos/workspace/Mycpu" "C:/Users/javos/workspace/Mycpu/Mycpu/lib/latticesemi.com/module/osc0/1.4.0" "C:/Users/javos/workspace/Mycpu"
+-top osc0
+-a "LFD2NX"

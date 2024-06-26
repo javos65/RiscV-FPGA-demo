@@ -1,0 +1,18 @@
+###File created by Lattice CPE. Do not modify.###
+create_clock -name {clk_i} -period 20 [get_ports clk_i] originating in instance i2c0_inst was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+create_clock -name {hf_clk_out_o} -period 55.556 [get_pins lscc_osc_inst/gen_osca.u_OSC_A/HFCLKOUT] originating in instance osc0_inst was updated to create_clock -name {osc0_inst_hf_clk_out_o} -period 55.556 [get_pins {osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A/HFCLKOUT }] and kept.
+
+create_clock -name {lf_clk_out_o} -period 31250 [get_pins lscc_osc_inst/gen_osca.u_OSC_A/LFCLKOUT] originating in instance osc0_inst was updated to create_clock -name {osc0_inst_lf_clk_out_o} -period 31250 [get_pins {osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A/LFCLKOUT }] and kept.
+
+create_clock -name {clki_i} -period 55.556 [get_ports clki_i] originating in instance pll0_inst was removed because it is defined at a clock input pin of the IP. User constraints should ensure the corresponding top-level port is correctly constrained at the top-level. If kept it may cause incorrect slack calculation.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io] originating in instance i2c0_inst was updated to ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl0] and kept.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io] originating in instance i2c0_inst was kept as is.
+
+ldc_set_port -iobuf {PULLMODE=UP} [get_ports sda_io] originating in instance i2c0_inst was updated to ldc_set_port -iobuf {PULLMODE=UP} [get_ports sda0] and kept.
+
+# IO_TYPE constraint - Refclk originating in instance pll0_inst was updated to # IO_TYPE constraint - Refclk and kept.
+
+

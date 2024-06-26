@@ -1,0 +1,46 @@
+#OPTIONS:"|-modgen|-top|MULT18X18|-I|C:\\lscc\\radiant\\2023.2\\synpbase\\lib|-devicelib|C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\xilinx\\unisim.v|-encrypt|-pro|-sysv|-dw|-primux|-ram|-fixsmult|-tri_compatible|-autosm|-fid2|-sharing|on|-ll|2000|-params|C:\\Users\\javos\\workspace\\Mycpu\\impl_1\\syntmp\\MULT18X18.param"
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\bin64\\c_ver.exe":1709958256
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vlog\\hypermods.v":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vlog\\scemi_objects.v":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vlog\\scemi_pipes.svh":1709958293
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\impl_1\\syntmp\\MULT18X18.v":1709958282
+#CUR:"C:\\Users\\javos\\workspace\\Mycpu\\impl_1\\syntmp\\MULT18X18.param":1719406006
+#numinternalfiles:3
+#defaultlanguage:verilog
+0			"C:\Users\javos\workspace\Mycpu\impl_1\syntmp\MULT18X18.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work VHI 0
+module work VLO 0
+module work MULT18X18 0
+module work PREADD9_CORE 0
+module work MULT9_CORE 0
+module work MULT18_CORE 0
+module work REG18_CORE 0
+module work MULT18X36 0
+module work MULT18X36_CORE 0
+module work MULT36X36 0
+module work MULT36_CORE 0
+module work MULT9X9 0
+module work MULTADDSUB18X18 0
+module work ACC54_CORE 0
+module work MULTADDSUB18X36 0
+module work MULTADDSUB36X36 0
+module work MULTPREADD18X18 0
+module work MULTPREADD9X9 0
+module work MULTADDSUB18X18WIDE 0
+module work MULTADDSUB9X9WIDE 0
+module work MULT18_hw 0
+module work REG18_hw_sync 0
+module work REG18_hw 0
+module work PREADD9_hw_sync 0
+module work PREADD9_hw 0
+module work MULT9_hw_sync 0
+module work MULT9_hw 0
+module work MULT18X36_hw 0
+module work MULT36_hw 0
+module work ACC54_hw_sync 0
+module work ACC54_hw 0

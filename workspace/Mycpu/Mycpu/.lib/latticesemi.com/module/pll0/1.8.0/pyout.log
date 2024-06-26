@@ -1,0 +1,159 @@
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+path:  none lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+WARNING: missing driver HDL files.
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.cfg 
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.2/builder/rtf/ip/common/system_memory)
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_params.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\design.xml 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.ipx 
+path:  none lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  none lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+WARNING: missing driver HDL files.
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.cfg 
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.2/builder/rtf/ip/common/system_memory)
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_params.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\design.xml 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.ipx 
+path:  none lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+WARNING: missing driver HDL files.
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.cfg 
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.2/builder/rtf/ip/common/system_memory)
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_params.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\design.xml 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.ipx 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.cfg 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\misc\i2c0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\rtl\i2c0.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\constraints\i2c0.ldc 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_params.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\design.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\i2c0\2.0.1\i2c0.ipx 
+path:  none lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+WARNING: missing driver HDL files.
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.cfg 
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.2/builder/rtf/ip/common/system_memory)
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_params.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\design.xml 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.ipx 
+path:  none lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+WARNING: missing driver HDL files.
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.cfg 
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.2/builder/rtf/ip/common/system_memory)
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_params.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\design.xml 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.ipx 
+path:  none lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+WARNING: missing driver HDL files.
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.cfg 
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.2/builder/rtf/ip/common/system_memory)
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_params.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\design.xml 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.ipx 
+path:  none lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+WARNING: missing driver HDL files.
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.cfg 
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.2/builder/rtf/ip/common/system_memory)
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_params.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\testbench\dut_inst.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\design.xml 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\component.xml 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.ipx 
+path:  none lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+WARNING: missing driver HDL files.
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0_bb.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\sysmem0.cfg 
+path:  ../../../workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.v 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\misc\sysmem0_tmpl.vhd 
+Writing C:\Users\javos\PropelLocal\Mycpu\Mycpu\.lib\latticesemi.com\ip\sysmem0\2.1.0\rtl\sysmem0.v 
+path:  C:/Users/javos/workspace/riscv_mc_hello/Debug/riscv_mc_hello.mem lib_dir:  C:/Users/javos/PropelLocal/Mycpu/Mycpu/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.2/builder/rtf/ip/common/system_memory)

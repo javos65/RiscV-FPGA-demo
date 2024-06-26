@@ -1,0 +1,150 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link href="file:///C:/lscc/radiant/2023.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2023.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2023.2.1.288.0
+Command Line: postsyn -a LFD2NX -p LFD2NX-40 -t CABGA196 -sp 7_High-Performance_1.0V -oc Commercial -top -w -o Mycpu_impl_1_syn.udb -ldc C:/Users/javos/workspace/Mycpu/impl_1/Mycpu_impl_1.ldc -gui -msgset C:/Users/javos/workspace/Mycpu/promote.xml Mycpu_impl_1.vm 
+   Architecture:     LFD2NX
+   Device:           LFD2NX-40
+   Package:          CABGA196
+   Performance:      7_High-Performance_1.0V
+Reading input file 'Mycpu_impl_1.vm' ...
+Reading constraint file 'C:/Users/javos/workspace/Mycpu/impl_1/Mycpu_impl_1.ldc' ...
+WARNING <1026001> - C:/Users/javos/workspace/Mycpu/impl_1/Mycpu_impl_1.ldc (7) : No pin matched 'osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A/LFCLKOUT'.
+WARNING <1026001> - C:/Users/javos/workspace/Mycpu/impl_1/Mycpu_impl_1.ldc (60) : No port matched 'scl_io'.
+WARNING <1027013> - No pin matched 'osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A/LFCLKOUT'.
+WARNING <1014301> - Can't resolve object 'osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A/LFCLKOUT' in constraint 'create_clock -name {osc0_inst_lf_clk_out_o} -period 31250 -waveform {0.000 15625.000} [get_pins osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A/LFCLKOUT]'.
+WARNING <1027013> - No port matched 'scl_io'.
+WARNING <1014301> - Can't resolve object 'scl_io' in constraint 'ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io]'.
+WARNING <1011001> - Remove invalid constraint 'create_clock -name {osc0_inst_lf_clk_out_o} -period 31250 -waveform {0.000 15625.000} [get_pins osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A/LFCLKOUT]'.
+WARNING <1011001> - Remove invalid constraint 'ldc_set_port -iobuf {PULLMODE=UP} [get_ports scl_io]'.
+Removing unused logic ...
+INFO <35811146> - Signal ahbl2apb0_inst/N_3511 undriven or does not drive anything - clipped
+INFO <35811146> - Signal ahbl2apb0_inst/N_3512 undriven or does not drive anything - clipped
+INFO <35811146> - Signal ahbl2apb0_inst/N_3513 undriven or does not drive anything - clipped
+INFO <35811146> - Signal ahbl2apb0_inst/N_3514 undriven or does not drive anything - clipped
+INFO <35811146> - Signal apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[1].u_lscc_apb_decoder_sel/N_3519 undriven or does not drive anything - clipped
+INFO <35811146> - Signal apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[2].u_lscc_apb_decoder_sel/N_3521 undriven or does not drive anything - clipped
+INFO <35811146> - Signal apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[2].u_lscc_apb_decoder_sel/N_3522 undriven or does not drive anything - clipped
+INFO <35811146> - Signal apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[2].u_lscc_apb_decoder_sel/N_3523 undriven or does not drive anything - clipped
+INFO <35811146> - Signal apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[2].u_lscc_apb_decoder_sel/N_3524 undriven or does not drive anything - clipped
+INFO <35811146> - Signal apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/N_3520 undriven or does not drive anything - clipped
+INFO <35811149> - ... More signals are undriven or does not drive anything - clipped
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[5].genblk1.genblk1.u_BB_data.PIC_inst_out is optimized away.
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[5].genblk1.genblk1.u_BB_data.PIC_inst_tristate is optimized away.
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[6].genblk1.genblk1.u_BB_data.PIC_inst_out is optimized away.
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[6].genblk1.genblk1.u_BB_data.PIC_inst_tristate is optimized away.
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[7].genblk1.genblk1.u_BB_data.PIC_inst_out is optimized away.
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[7].genblk1.genblk1.u_BB_data.PIC_inst_tristate is optimized away.
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[4].genblk1.genblk1.u_BB_data.PIC_inst_out is optimized away.
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[4].genblk1.genblk1.u_BB_data.PIC_inst_tristate is optimized away.
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[1].genblk1.genblk1.u_BB_data.PIC_inst_out is optimized away.
+INFO <35811145> - Instance gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[1].genblk1.genblk1.u_BB_data.PIC_inst_tristate is optimized away.
+INFO <35811148> - ... More instances are optimized away.
+Starting design annotation....
+ 
+Constraint Summary:
+   Total number of constraints: 7
+   Total number of constraints dropped: 2
+ 
+Writing output file 'Mycpu_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 0 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 237 MB
+Checksum -- postsyn: 45d0baec79097dc1f3cbaa5f42ff760850835cf
+
+
+</PRE></DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

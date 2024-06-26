@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/25/2024 22:54:32
+#Project Location: C:/Users/javos/PropelLocal/Mycpu; Project name: Mycpu
+source "C:/Users/javos/PropelLocal/Mycpu/radiant_setup_template.tcl"
+prj_run Export -impl impl_1
+#Stop recording: 6/26/2024 13:36:12

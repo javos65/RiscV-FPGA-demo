@@ -1,0 +1,9 @@
+ldc_set_location -site {A8} [get_ports {led_o[0]}]
+ldc_set_location -site {B8} [get_ports {led_o[1]}]
+ldc_set_location -site {B2} [get_ports rstn_i]
+ldc_set_location -site {C11} [get_ports rxd_i]
+ldc_set_location -site {F11} [get_ports txd_o]
+ldc_set_location -site {D13} [get_ports sda0]
+ldc_set_location -site {C13} [get_ports scl0]
+ldc_set_sysconfig {INITN_PORT=DISABLE}
+set_clock_uncertainty 5 [get_clocks {pll0_inst_clkop_o_net pll0_inst_clkos_o_net}]

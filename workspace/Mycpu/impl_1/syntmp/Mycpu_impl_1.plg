@@ -1,0 +1,37 @@
+@P:  Worst Slack : -3.909
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock - Estimated Frequency : 285.5 MHz
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock - Estimated Period : 3.503
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock - Requested Period : 5.000
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock - Slack : 1.497
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock - Estimated Frequency : 258.5 MHz
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock - Estimated Period : 3.869
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock - Requested Period : 5.000
+@P:  cpu0_ipgen_vex_jtag_bridge_0s_LFD2NX_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock - Slack : 0.566
+@P:  osc0_inst_hf_clk_out_o - Estimated Frequency : NA
+@P:  osc0_inst_hf_clk_out_o - Requested Frequency : 18.0 MHz
+@P:  osc0_inst_hf_clk_out_o - Estimated Period : NA
+@P:  osc0_inst_hf_clk_out_o - Requested Period : 55.556
+@P:  osc0_inst_hf_clk_out_o - Slack : NA
+@P:  osc0_inst_lf_clk_out_o - Estimated Frequency : NA
+@P:  osc0_inst_lf_clk_out_o - Requested Frequency : 0.1 MHz
+@P:  osc0_inst_lf_clk_out_o - Estimated Period : NA
+@P:  osc0_inst_lf_clk_out_o - Requested Period : 15625.000
+@P:  osc0_inst_lf_clk_out_o - Slack : NA
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock - Estimated Frequency : 112.2 MHz
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock - Estimated Period : 8.909
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock - Requested Period : 5.000
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkop_o_inferred_clock - Slack : -3.909
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock - Estimated Frequency : 153.8 MHz
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock - Estimated Period : 6.502
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock - Requested Period : 5.000
+@P:  pll0_ipgen_lscc_pll_Z27_layer0|clkos_o_inferred_clock - Slack : -1.502
+@P:  System - Estimated Frequency : 154.8 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 6.462
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : -1.462
+@P:  CPU Time : 0h:00m:19s
