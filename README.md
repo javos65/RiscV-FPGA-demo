@@ -9,7 +9,7 @@ ____
 FPGA based RiscV, based on the out-of-the-box 'hello world' template from Lattice.<br>
 More info to be found on the following<br>
 
-+ [Tenz Cruvi Board](https://wiki.trenz-electronic.de/display/PD/CR00103+Resources)
++ [Trenz Cruvi Board](https://wiki.trenz-electronic.de/display/PD/CR00103+Resources)
 + [Example1 - not the best example, but its a start.](https://antti-brain.blogspot.com/2022/04/lattice-propel-easy-way.html)
 + [Example2 - a bit more details but based on other board.](https://www.adiuvoengineering.com/post/lattice-propel-risc-v-part-one-hardware)
 + [Propel Tools video @ Lattice - MUST SEE !](https://www.latticesemi.com/Products/DesignSoftwareAndIP/FPGAandLDS/LatticePropel/Propel-Design-Environment-Video-Training-Series)
